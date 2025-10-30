@@ -1,0 +1,92 @@
+% ==========================================
+% BAB I PENDAHULUAN
+% ==========================================
+\chapter{PENDAHULUAN}
+\label{chap:pendahuluan}
+% --- Latar Belakang ---
+\section{Latar Belakang}
+
+Berdasarkan Kamus Besar Bahasa Indonesia (KBBI), Tiket atau karcis adalah surat kecil (carik kertas khusus) sebagai tanda telah membayar ongkos dan sebagainya (untuk naik bus, menonton bioskop, dan sebagainya). Tiket merupakan sebuah dokumen yang berfungsi sebagai bukti hak akses atau tanda pembayaran yang sah untuk menggunakan suatu layanan atau memasuki suatu area tertentu. Secara historis, tiket konvensional dalam bentuk fisik telah menjadi bagian tak terpisahkan dari berbagai sektor, mulai dari transportasi hingga hiburan. Namun, seiring dengan pesatnya perkembangan teknologi informasi, terjadi pergeseran paradigma menuju digitalisasi tiket menjadi tiket elektronik (\textit{e-ticket}). Adopsi \textit{e-ticket} mulai marak pada awal tahun 2000-an, dipelopori oleh industri penerbangan di tahun 1990-an, dan kini telah diadopsi secara masif di berbagai sektor. \textit{E-ticket} menawarkan berbagai keunggulan signifikan dibandingkan tiket konvensional yang rentan terhadap masalah seperti inefisiensi manajemen informasi, perdagangan tiket ilegal, serta berbagai bentuk penipuan dan penyalahgunaan tiket \cite{lubeck2012electronic}. Dari sisi pengguna, \textit{e-ticket} memberikan kemudahan distribusi dan akses, menghilangkan risiko kehilangan tiket fisik, serta membantu menghindari antrean panjang. Selain itu, sistem ini juga lebih efisien dari segi biaya operasional dan memiliki dampak lingkungan yang lebih rendah karena mengurangi penggunaan kertas \cite{chen2007passenger}.
+
+Dalam implementasinya, teknologi \textit{Quick Response Code} (QR Code) telah menjadi salah satu medium paling populer untuk \textit{e-ticket}. QR Code, sebuah evolusi dari kode batang dua dimensi, memungkinkan penyimpanan data yang lebih besar dan proses pemindaian yang sangat cepat menggunakan perangkat kamera ponsel. Adopsi QR Code pada \textit{e-ticket} memberikan kemudahan verifikasi di pintu masuk acara atau gerbang transportasi. Akan tetapi, di balik kemudahan yang ditawarkan, model \textit{e-ticket} yang umum digunakan saat ini---yang berbasis QR Code statis---secara inheren membuka celah keamanan baru yang sebelumnya sulit dieksploitasi pada tiket fisik. Sifat digitalnya memungkinkan sebuah \textit{e-ticket} dapat diduplikasi dengan sempurna dan disebarkan secara instan tanpa penurunan kualitas, sebuah kerentanan yang menjadi akar dari berbagai permasalahan keamanan.
+
+\textit{cari referensi/jurnal terkait kepopuleran qr code. cari referensi terkait qr code yang merupakan evolusi dari barcode 2d. cari referensi/jurnal masalah keamanan e-ticket berbasis qr code statis.}
+
+Celah keamanan pada sistem \textit{e-ticket} statis telah dieksploitasi secara luas, menimbulkan berbagai modus kejahatan digital. Masalah utama yang timbul meliputi duplikasi ilegal melalui tangkapan layar (\textit{screenshot}), pemalsuan (\textit{fraud}), hingga praktik percaloan digital (\textit{scalping}) yang merusak ekosistem penjualan tiket. Permasalahan ini seringkali menjadi sorotan pada acara-acara berskala besar. Sebagai contoh, fenomena percaloan tiket pada konser grup musik Coldplay di Jakarta pada tahun 2023 menunjukkan bagaimana tiket dapat dijual kembali dengan harga berkali-kali lipat di \textit{marketplace}, sehingga merugikan para penggemar \cite{Pamela2023}. Selain itu, masalah kontrol akses juga menjadi krusial, seperti yang terjadi pada pertandingan Timnas Indonesia di Stadion Gelora Bung Karno. Dilaporkan bahwa banyak penonton tanpa tiket berhasil masuk, yang mengakibatkan para pemegang tiket sah justru tidak mendapatkan tempat duduk \cite{Kurniawan2024}. Kedua insiden tersebut menggarisbawahi adanya kelemahan signifikan dalam sistem pertiketan saat ini, baik dari sisi keamanan digital maupun validasi di lapangan.
+
+Rentetan kasus tersebut menunjukkan bahwa sistem verifikasi \textit{e-ticket} yang hanya mengandalkan pemindaian QR Code statis tidak lagi memadai untuk menghadapi ancaman digital modern. Diperlukan sebuah pendekatan yang lebih kokoh untuk menjamin keaslian dan keunikan setiap tiket yang diterbitkan. Untuk mengatasi permasalahan fundamental seperti duplikasi dan pemalsuan, sebuah \textit{e-ticket} idealnya harus memiliki dua sifat utama. Sifat pertama adalah dinamis (\textit{dynamic}), yaitu kode tiket berubah secara berkala dalam interval waktu singkat, sehingga tiket hasil tangkapan layar menjadi tidak valid setelah beberapa saat. Kedua, tiket harus bersifat aman (\textit{secure}), yang keasliannya dapat diverifikasi secara kriptografis untuk memastikan tiket tersebut benar-benar diterbitkan oleh penyelenggara yang sah dan tidak dimodifikasi.
+
+\textit{cari referensi/jurnal terkait sifat ideal e-ticket. cari referensi terkait qr code yang secure dan dynamic.}
+
+Oleh karena itu, penelitian ini bertujuan untuk merancang dan mengimplementasikan sebuah sistem \textit{e-ticket} yang mengusung konsep \textit{Dynamic Secure QR Code}. Urgensi penelitian ini terletak pada kebutuhan untuk memulihkan kepercayaan dan memberikan keamanan dalam transaksi tiket digital. Dengan mengimplementasikan sistem ini, diharapkan dapat memberikan manfaat signifikan bagi dua pihak utama: konsumen akan mendapatkan jaminan bahwa tiket yang mereka miliki adalah asli dan valid, sementara penyelenggara acara dapat melindungi pendapatan mereka dari kebocoran akibat tiket palsu dan menjaga reputasi acara mereka. Penelitian ini akan berfokus pada pengembangan prototipe sistem yang mampu menghasilkan dan memvalidasi \textit{e-ticket} dengan karakteristik dinamis dan aman tersebut.
+
+% --- Rumusan Masalah ---
+\section{Rumusan Masalah}
+Berdasarkan latar belakang yang telah diuraikan, teridentifikasi adanya celah keamanan pada sistem \textit{e-ticketing} yang umum digunakan saat ini, terutama yang berbasis QR Code statis. Celah ini menimbulkan berbagai permasalahan seperti duplikasi, pemalsuan, dan percaloan tiket digital. Oleh karena itu, rumusan masalah dalam penelitian ini adalah sebagai berikut:
+\begin{enumerate}
+\item	Bagaimana merancang dan mengimplementasikan sebuah sistem \textit{e-ticket} yang memanfaatkan konsep \textit{Dynamic Secure QR Code} untuk mengatasi celah keamanan pada sistem pertiketan konvensional?
+\item	Bagaimana alur proses untuk menghasilkan QR Code yang bersifat dinamis (berubah secara periodik) dan aman (terenkripsi dan memiliki tanda tangan digital) serta proses validasinya?
+\item	Bagaimana unjuk kerja sistem yang diusulkan dalam memitigasi risiko duplikasi tiket melalui tangkapan layar (\textit{screenshot}) dan pemalsuan tiket dibandingkan dengan sistem QR Code statis?
+\end{enumerate}
+
+% --- Tujuan ---
+\section{Tujuan}
+Penelitian ini bertujuan untuk merancang dan mengimplementasikan sebuah prototipe (\textit{proof-of-concept}) sistem \textit{e-ticket} yang mampu menghasilkan dan memvalidasi \textit{Dynamic Secure QR Code}. Secara spesifik, penelitian ini akan mendefinisikan dan membangun alur proses teknis yang terperinci untuk generasi dan validasi (\textit{e-ticket}), yang mencakup proses enkripsi data, implementasi token berbasis waktu, dan penggunaan Tanda Tangan Digital. Pada akhirnya, penelitian ini akan melakukan serangkaian pengujian dan analisis terhadap unjuk kerja prototipe untuk membuktikan secara empiris efektivitasnya dalam memitigasi risiko keamanan utama, khususnya dalam mencegah duplikasi tiket melalui serangan tangkapan layar (\textit{screenshot}) dan upaya pemalsuan tiket.
+
+% --- Batasan Masalah ---
+\section{Batasan Masalah}
+Agar penelitian ini dapat lebih fokus dan mendalam, maka ruang lingkup permasalahan dibatasi sebagai berikut:
+\begin{enumerate}
+\item	Penelitian ini berfokus pada perancangan dan implementasi modul inti, yaitu proses generasi (\textit{generation}) dan validasi (\textit{validation}) \textit{Dynamic Secure QR Code}.
+\item	Penelitian ini tidak akan membangun sistem \textit{e-commerce} atau \textit{marketplace} penjualan tiket secara lengkap. Fitur seperti manajemen pengguna, sistem pembayaran, dan manajemen acara tidak menjadi fokus utama.
+\item	Sistem yang dibangun berupa prototipe (\textit{proof-of-concept}) untuk menunjukkan kelayakan konsep, bukan aplikasi skala produksi yang siap dirilis secara komersial.
+\item   Implementasi teknis prototipe akan menggunakan bahasa pemrograman Python beserta \textit{library} kriptografi dan QR Code yang relevan.
+\item   Penelitian tidak mencakup perancangan perangkat keras \textit{(hardware)} pemindai khusus. Proses pemindaian diasumsikan dapat dilakukan menggunakan kamera pada perangkat ponsel pintar.
+\end{enumerate}
+
+% --- Metodologi Pengerjaan TA ---
+\section{Metodologi}
+Tuliskan semua tahapan yang akan dilalui selama pelaksanaan tugas akhir. Tahapan ini spesifik untuk menyelesaikan persoalan tugas akhir. Khusus untuk penyusunan proposal ini, jelaskan secara detail:
+\begin{enumerate}
+\item Tahapan Investigasi dan Perumusan Masalah
+    
+Tahap awal ini berfokus pada pengumpulan fakta untuk mengidentifikasi dan memvalidasi masalah yang ada di latar belakang. Proses ini dilakukan melalui:
+\begin{enumerate}
+\item \textit{Observasi Fenomena:} Mengamati tren transformasi digital dalam sistem pertiketan di Indonesia, yang menunjukkan pergeseran masif dari tiket fisik ke \textit{e-ticket}, terutama yang menggunakan teknologi QR Code.
+\item \textit{Analisis Data Sekunder:} Melakukan pengumpulan dan analisis data dari sumber-sumber kredibel di media massa \textit{online}. Proses ini melibatkan pencarian berita terkait insiden kegagalan sistem tiket pada acara-acara berskala besar.
+\item \textit{Sintesis Masalah:} Menganalisis dan mensintesiskan temuan dari berbagai insiden tersebut untuk merumuskan akar permasalahan utama, yaitu kerentanan QR Code statis terhadap duplikasi ilegal, pemalsuan, dan kelemahan proses validasi.
+
+\end{enumerate}
+
+
+\item Tahapan Studi Literatur dan Pencarian Solusi    
+
+Tahap ini bertujuan untuk membangun landasan teoretis yang kuat dan mengidentifikasi pendekatan solusi yang paling tepat. Langkah-langkah yang dilakukan adalah sebagai berikut:
+\begin{enumerate}
+\item \textit{Identifikasi Landasan Teori:} Menentukan konsep dan teori fundamental yang perlu digali, yang mencakup: teknologi QR Code, Kriptografi Asimetris, Tanda Tangan Digital, dan \textit{Time-based One-Time Password} (TOTP).
+\item \textit{Pencarian Literatur:} Melakukan pencarian sistematis pada basis data akademik untuk menemukan penelitian-penelitian relevan yang telah dilakukan oleh orang lain dengan kata kunci seperti: \textit{"secure QR code ticketing"}, \textit{"e-ticket security"}, dan \textit{"QR code replay attack"}.
+\item \textit{Seleksi dan Sintesis Literatur:} Melakukan seleksi dan sintesis terhadap literatur yang ditemukan untuk membangun argumen bahwa kombinasi Tanda Tangan Digital dan TOTP merupakan pendekatan solusi yang solid dan inovatif. Hasil dari tahap ini akan didokumentasikan pada Bab II.
+\end{enumerate}
+
+
+\item Tahapan Perancangan Sistem    
+
+Merancang arsitektur sistem, alur proses generasi dan validasi QR Code, struktur data \textit{payload}, dan antarmuka antar modul.
+
+\item Tahapan Implementasi Prototipe
+    
+Mengembangkan perangkat lunak prototipe menggunakan bahasa pemrograman Python dan \textit{library} terkait untuk merealisasikan rancangan sistem.
+
+\item Tahapan Pengujian Sistem
+    
+Melakukan pengujian fungsional dan keamanan dengan skenario spesifik untuk memverifikasi kemampuan sistem dalam menolak tiket hasil \textit{screenshot} dan tiket palsu.
+
+\item Tahapan Analisis dan Penarikan Kesimpulan
+    
+Menganalisis data hasil pengujian untuk mengevaluasi kinerja dan efektivitas prototipe, yang kemudian akan menjadi dasar untuk penarikan kesimpulan penelitian.
+    
+\item Tahapan Penyusunan Laporan
+
+Mendokumentasikan seluruh proses dan hasil penelitian ke dalam format laporan Tugas Akhir yang komprehensif.
+
+\end{enumerate}

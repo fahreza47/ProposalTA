@@ -90,6 +90,14 @@
 \usepackage{listings} % for code listing
 \usepackage{amsmath} % for math
 \usepackage{amssymb} % for math symbols
+\usepackage[shortlabels]{enumitem} % for customizing lists
+\setlist[enumerate]{nosep, topsep=-10pt} % mengurangi spasi antar item dan atas bawah daftar
+\setlist[itemize]{nosep, topsep=-10pt} % mengurangi spasi antar item dan atas bawah daftar
+\usepackage[skip=12pt]{parskip}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage[id-ID]{datetime2}
+
 
 \setcounter{tocdepth}{4} % kedalaman daftar isi sampai subsubbab
 \setcounter{secnumdepth}{4} % kedalaman penomoran sampai subsubbab
@@ -155,9 +163,10 @@
 
 % --- Ubah nama daftar listing ke "DAFTAR ALGORITMA" ---
 % --- Harus diletakkan sebelum \begin{document} ---
-\renewcommand{\lstlistlistingname}{\centering\normalsize DAFTAR ALGORITMA} 
-\renewcommand{\lstlistingname}{Algoritma}
-\captionsetup[lstlisting]{justification=raggedright,singlelinecheck=false}
+\renewcommand{\lstlistlistingname}{\centering\normalsize DAFTAR KODE} 
+\renewcommand{\lstlistingname}{Kode}
+\lstset{basicstyle=\ttfamily\footnotesize,breaklines=true}
+%\captionsetup[lstlisting]{justification=raggedright,singlelinecheck=false}
 
 
 \renewcommand \cftchapdotsep{4.5}
@@ -174,9 +183,9 @@
 \begin{center}
 
     
-    \vspace*{3cm}
+    \vspace*{2cm}
     
-    {\Large\bfseries PERANCANGAN SISTEM INFORMASI AKADEMIK BERBASIS WEB}\\
+    {\Large\bfseries PEMANFAATAN TEKNOLOGI DYNAMIC SECURE QR CODE UNTUK MENINGKATKAN VALIDITAS DAN KEAMANAN TRANSAKSI E-TICKET}\\
      \vspace{4cm}
 
     {\Large \textbf{Proposal Tugas Akhir}}\\
@@ -187,25 +196,26 @@
     
     {\large Oleh}\\[0.3cm]
     \textbf{
-    {\large John Doe}\\
-    {\large 18299000}
+    {\large Fahreza Yunanda}\\
+    {\large 18221013}
     }\\
 
     \vspace{2cm}
     
     \begin{figure}[h]
     \centering
-    \includegraphics[width=0.2\textwidth]{ganesha.jpg}
+    \includegraphics[width=0.2\textwidth]{image/ganesha.jpg}
     \end{figure}
     
     
-     \vspace{1cm}
+    % \vspace{1cm}
+    \vfill
 
     \textbf{
     {\large PROGRAM STUDI SISTEM DAN TEKNOLOGI INFORMASI}\\
     {\large SEKOLAH TEKNIK ELEKTRO DAN INFORMATIKA}\\
     {\large INSTITUT TEKNOLOGI BANDUNG}\\
-    {\large Desember 2025}
+    {\large \DTMlangsetup{showdayofmonth=false,showmonthname=true,showyear=true}\today}
     }
 \end{center}
 \end{titlepage}
@@ -222,7 +232,7 @@
   \textbf{\large LEMBAR PENGESAHAN}\\[1cm]
   \vspace*{1.5cm}
     
-  {\large\bfseries PERANCANGAN SISTEM INFORMASI AKADEMIK BERBASIS WEB}\\
+  {\large\bfseries PEMANFAATAN TEKNOLOGI DYNAMIC SECURE QR CODE UNTUK MENINGKATKAN VALIDITAS DAN KEAMANAN TRANSAKSI E-TICKET}\\
      \vspace{2cm}
 
   {\Large \textbf{Proposal Tugas Akhir}}\\
@@ -233,8 +243,8 @@
     
   {\large Oleh}\\[0.3cm]
     \textbf{
-    {\large John Doe}\\
-    {\large 18299000}
+    {\large Fahreza Yunanda}\\
+    {\large 18221013}
   }\\
     
   \vspace{0.5cm}
@@ -246,14 +256,14 @@
   \vspace{1.5cm}
 
   Proposal Tugas Akhir ini telah disetujui dan disahkan\\ 
-  di Bandung, pada tanggal 20 November 2025\\[1cm]
+  di Bandung, pada tanggal \today\\[1cm]
 
 % ==========================================
 % Versi 1 pembimbing (default)
 % ==========================================
 	Pembimbing  \\[3cm]
-	Dr. Ir. John Doe, M.T.   \\[0.2cm]
-	NIP. 123456789 
+	Dr. Yusuf Kurniawan S.T., M.T.   \\[0.2cm]
+	NIP. 197203262008011014 
 % ==========================================
 
 \end{center}
@@ -326,7 +336,7 @@
 % --- Judul Bab ---
 \titleformat{\chapter}[display]
       {\centering\normalfont\large\bfseries} % Commands for the entire chapter title
-      {\MakeUppercase \chaptertitlename\ \thechapter}{14pt}{\large} % Chapter number format
+      {\MakeUppercase \chaptertitlename\ \thechapter}{0pt}{\large} % Chapter number format
 \renewcommand\thechapter{\Roman{chapter}}
 % --- Judul Subbab dan Subsubbab ---
 \titleformat{\section}
@@ -335,201 +345,44 @@
 \titleformat{\subsection}
 	{\normalfont\bfseries}
 	{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+	{\normalfont\bfseries}
+	{\thesubsubsection}{1em}{}
+
 
 % --- Format judul gambar dan tabel ---
 \captionsetup[figure]{labelsep=space}
 \captionsetup[table]{labelsep=space}
 \floatsetup[table]{capposition=top}
 \captionsetup[lstlisting]{labelsep=space}
+\floatsetup[lstlisting]{capposition=top}
 
 % --- Atur indentasi paragraf ---
 \setlength{\parindent}{0pt}
 % -- Change page number style to arabic ---
 \pagenumbering{arabic} 
-      
-% ==========================================
-% BAB I PENDAHULUAN
-% ==========================================
-\chapter{PENDAHULUAN}
 
-% --- Latar Belakang ---
-\section{Latar Belakang}
-Latar Belakang menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tugas akhir. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
-\begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di puskesmas daerah pedesaan dan masalah yang dihadapi.
-\item	Berbagai solusi yang telah diterapkan atau solusi yang tersedia dan memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut.
-\end{enumerate}
-
-% --- Rumusan Masalah ---
-\section{Rumusan Masalah}
-Rumusan Masalah berisi masalah utama yang dibahas dalam tugas akhir. Rumusan masalah yang baik memiliki struktur sebagai berikut:
-\begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
-\end{enumerate}
-
-% --- Tujuan ---
-\section{Tujuan}
-Tuliskan tujuan utama dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tugas akhir. Fokuskan pada hasil akhir yang ingin diperoleh setelah tugas akhir diselesaikan, terkait dengan penyelesaian persoalan pada rumusan masalah. Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di akhir pelaksanaan tugas akhir apakah tercapai atau tidak. Tuliskan kriteria keberhasilan tugas akhir ini.
-
-% --- Batasan Masalah ---
-\section{Batasan Masalah}
-Tuliskan batasan-batasan yang diambil dalam pelaksanaan tugas akhir. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tugas akhir dibuat cukup spesifik.
-
-% --- Metodologi Pengerjaan TA ---
-\section{Metodologi}
-Tuliskan semua tahapan yang akan dilalui selama pelaksanaan tugas akhir. Tahapan ini spesifik untuk menyelesaikan persoalan tugas akhir. Khusus untuk penyusunan proposal ini, jelaskan secara detail:
-\begin{enumerate}
-\item	Tahapan investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Langkah-langkah pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara sistematis di Bab II Studi Literatur.
-\end{enumerate}
-
-% ==========================================
-% BAB II STUDI LITERATUR
-% ==========================================
-\chapter{STUDI LITERATUR}
-\section{Section Pertama}
-\lipsum[1]
-\subsection{Subsection Pertama}
-\lipsum[2]
-\subsubsection{Gambar}
-Penomoran subbab maksimum adalah 4 (empat) tingkat, seperti pada nomor subbab ini. Contoh gambar dapat dilihat pada Gambar \ref{gambar:jaringan}. Gambar dan judulnya diposisikan di tengah. Nomor gambar tidak diakhiri tanda titik. Gambar tersebut dibuat menggunakan aplikasi draw.io dan disimpan ke format PNG setelah dengan zoom setting pada angka 300\%. Ukuran gambar yang ditampilkan dapat diatur dengan mengubah nilai \textit{width} dalam sintaks \textit{includegraphics}.
-
-\begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-	\centering
-    	\includegraphics[width=0.7\textwidth]{gambar1.png}
-	\caption{Contoh gambar jaringan}
-	\label{gambar:jaringan}
-\end{figure}
-
-
-\subsubsection{Tabel}
-Contoh tabel dapat dilihat pada Tabel \ref{tbl:harga1} dan \ref{tbl:harga2}. Tabel dan judulnya dibuat rata kiri dan judul tabel diletakkan di atas tabel. Usahakan tabel dapat ditulis dalam satu halaman, tidak terpotong ke halaman berikutnya.
-
-\begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-\centering
-	\begin{tabular}{ | p{2cm} | p{2cm} | p{3cm} |}
-	\hline
-	Nama 	& Satuan 		& Harga \\
-	\hline
-	Buku 	& Exemplar	& 25000 \\
-	Komputer	& Unit		& 2500000 \\
-	Pensil	& Buah		& 118900 \\
-	\hline
-	\end{tabular}
-\caption{Tabel harga bahan pokok}
-\label{tbl:harga1}
-\end{table}
-
-\begin{table}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-\centering
-	\begin{tabular}{ | l | c | r | }
-	\hline
-	Nama 	& Satuan 		& Harga \\
-	\hline
-	Buku 	& Exemplar	& 25000 \\
-	Komputer	& Unit		& 2500000 \\
-	Pensil	& Buah		& 118900 \\
-	\hline
-	\end{tabular}
-\caption{Tabel harga bahan sekunder}
-\label{tbl:harga2}
-\end{table}
-
-\subsubsection{Rumus}
-Contoh rumus matematika dapat ditulis seperti pada Persamaan \ref{eq:contoh1} di bawah ini. 
-Penomoran persamaan diletakkan di sebelah kanan, dan rumus ditulis dalam mode \textit{display math}.
-\begin{equation}
-E = mc^2
-\label{eq:contoh1}
-\end{equation}
-
-\subsection{Algoritma, Pseudocode, atau Source Code}
-Contoh penulisan algoritma atau pseudocode dapat ditulis seperti pada Algoritma \ref{alg:contoh1} di bawah ini. 
-Gunakan paket \textit{listings} untuk menulis source code dalam bahasa pemrograman tertentu, seperti pada Contoh \ref{lst:contoh1}. 
-
-
-\begin{lstlisting}[language=Python, frame=single, caption={Contoh source code Python}, label={lst:contoh1}]
-def hello_world():
-    print("Hello, World!")       
-hello_world()
-\end{lstlisting}
-
-
-
-
-\begin{lstlisting}[frame=lines, caption={Contoh pseudocode}, label={alg:contoh1}]
-ALGORITHM HelloWorld
-   PRINT "Hello, World!"
-END ALGORITHM
-\end{lstlisting}
-
-
-
-
-% ============================================================================================
-% BAB III ANALISIS MASALAH
-% Pembagian subbab tidak rigid dan dapat bervariasi. Bab ini minimal berisi analisis kebutuhan
-% fungsional dan nonfungsional, analisis berbagai alternatif solusi yang dapat ditawarkan, dan
-% metode pemilihan solusi yang diusulkan.
-% ============================================================================================
-\chapter{ANALISIS MASALAH}
-\section{Analisis Kondisi Saat Ini}
-Menurut \textcite{laudon2020}, gambarkan terlebih dahulu model konseptual sistem yang ada saat ini. Model konseptual ini berisi berbagai komponen atau subsitem dan interaksi antarsubsistem tersebut. Setelah itu, berikan penjelasan tentang masalah yang ada pada sistem tersebut. Paragraf berikut berisi contoh penjabaran masalah sistem informasi fasilitas kesehatan untuk pasien \autocite{pressman2019}. 
-\section{Analisis Kebutuhan}
-\lipsum[4]
-\subsection{Identifikasi Masalah Pengguna}
-\lipsum[5]
-\subsection{Kebutuhan Fungsional}
-\lipsum[6]
-\subsection{Kebutuhan Nonfungsional}
-\lipsum[7]
-
-\section{Analisis Pemilihan Solusi}
-\subsection{Alternatif Solusi}
-\lipsum[8]
-\subsection{Analisis Penentuan Solusi}
-\lipsum[9]
-
-% ==========================================
-% BAB IV DESAIN KONSEP SOLUSI
-% ==========================================
-\chapter{DESAIN KONSEP SOLUSI}
-Ilustrasikan desain konsep solusi dalam bentuk model konseptual dan penjelasan secara ringkas, 
-beserta perbedaannya dengan sistem saat ini. Ilustrasi harus dapat dibandingkan (\textit{before} and \textit{after}). 
-Karena masih berupa proposal, bab ini hanya berisi gambar desain konsep solusi tersebut dan 
-penjelasan perbandingannya dengan gambar sistem yang ada saat ini (yang tergambar di awal Bab III).
-
-% ==========================================
-% BAB V RENCANA SELANJUTNYA
-% ==========================================
-\chapter{RENCANA SELANJUTNYA}
-Jelaskan secara detail langkah-langkah rencana selanjutnya, hal-hal yang diperlukan atau akan disiapkan, dan risiko dan mitigasinya, yang meliputi:
-\begin{enumerate}
-\item	Rencana implementasi, termasuk alat dan bahan yang diperlukan, lingkungan, konfigurasi, biaya, dan sebagainya.
-\item	Desain pengujian dan evaluasi, misalnya metode verifikasi dan validasi.
-\item	Analisis risiko dan mitigasi, misalnya tindakan selanjutnya jika ada yang tidak berjalan sesuai rencana.
-\end{enumerate}
-
+\input{Bab I - Pendahuluan.tex}
+\input{Bab II - Studi-Literatur.tex}
+\input{Bab III - Analisis-Masalah.tex}
+\input{Bab IV - Desain-Konsep-Solusi.tex}
+\input{Bab V - Rencana-Selanjutnya.tex}
 
 \backmatter
 
 % ==========================================
 % DAFTAR PUSTAKA
 % ==========================================
+
 \printbibliography[title={DAFTAR PUSTAKA}]
 
 % ==========================================
 % LAMPIRAN (optional)
 % ==========================================
 \appendix
-
-\chapter{LAMPIRAN A: SOURCE CODE}
-
-\chapter{LAMPIRAN B: HASIL SURVEI}
-
+% Uncomment baris di bawah ini jika ada lampiran
+% \input{Lampiran-A.tex}
+% \input{Lampiran-B.tex}
 
 \end{document}
  
