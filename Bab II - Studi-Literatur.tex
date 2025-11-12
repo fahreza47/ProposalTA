@@ -6,6 +6,32 @@
 \section{Sistem Tiket Elektronik (\textit{E-Ticket})}
 \subsection{Definisi dan Evolusi \textit{E-Ticket}}
 ... (Penjelasan mengenai pergeseran dari tiket konvensional ke digital, serta definisi formal dari \textit{e-ticket} berdasarkan literatur akan ditambahkan di sini) ...
+Menurut KBBI, tiket didefinisikan sebagai surat kecil (carik kertas khusus) sebagai tanda telah membayar ongkos dan sebagainya (untuk naik bus, menonton bioskop, dan sebagainya). Tiket adalah dokumen yang berfungsi sebagai bukti hak akses atau tanda pembayaran yang sah untuk menggunakan suatu layanan. Perkembangan teknologi telah membawa perubahan signifikan dalam hal penerbitan tiket. Salah satu inovasi utama adalah munculnya tiket elektronik atau \textit{e-ticket}, yang merupakan versi digital dari tiket konvensional. \textit{E-ticket} merupakan sarana digitalisasi hak berupa \textit{voucher} atau sertifikat yang menjamin pemiliknya dapat mengklaim suatu barang atau jasa \cite{khan2009secure}.
+
+
+Paragraf 1: Definisi Fundamental Tiket.
+
+    Isi: Mulailah dari yang paling dasar. Apa itu "tiket" secara konseptual? Ambil definisi formal (misalnya dari KBBI atau literatur akademis) yang menyatakan fungsinya sebagai bukti hak akses, bukti pembayaran, atau kontrak layanan.
+
+    Tujuan Jurnal: Mencari definisi akademis untuk "tiket" dan "sistem pertiketan".
+
+    Kata Kunci Pencarian Jurnal: definition of "ticketing system", fungsi tiket dalam layanan, konsep tiket konvensional.
+
+Paragraf 2: Transisi ke Digital (E-Ticket).
+
+    Isi: Perkenalkan istilah "e-ticket". Jelaskan bahwa ini adalah hasil dari digitalisasi tiket konvensional. Jelaskan kapan dan di industri apa (biasanya penerbangan) ini pertama kali muncul dan menjadi standar.
+
+    Tujuan Jurnal: Menemukan sejarah singkat e-ticket dan definisi formalnya.
+
+    Kata Kunci Pencarian Jurnal: definition of "electronic ticket", history of e-ticketing, evolusi tiket elektronik, e-ticket adoption in airlines.
+
+Paragraf 3: Keunggulan E-Ticket.
+
+    Isi: Jelaskan mengapa terjadi pergeseran ke e-ticket. Paparkan keunggulannya dibandingkan tiket kertas: efisiensi biaya (cetak, distribusi), kemudahan bagi pengguna (pembelian online, tidak bisa hilang secara fisik, mudah disimpan), dan ramah lingkungan.
+
+    Tujuan Jurnal: Menemukan penelitian yang menganalisis manfaat dan keunggulan e-ticket. (Jurnal yang Anda temukan sebelumnya, chen2007passenger, sangat cocok di sini).
+
+    Kata Kunci Pencarian Jurnal: advantages of e-ticketing over paper tickets, manfaat tiket elektronik bagi konsumen, cost-benefit analysis of e-ticketing.
 
 \subsection{Peran QR Code dalam Sistem \textit{E-Ticket}}
 ... (Penjelasan mengenai mengapa QR Code menjadi teknologi yang dominan untuk implementasi \textit{e-ticket}, mencakup kemudahan penggunaan dan adopsi luas akan ditambahkan di sini) ...
@@ -92,6 +118,8 @@ Contoh tabel dapat dilihat pada Tabel \ref{tbl:harga1} dan \ref{tbl:harga2}. Tab
 \label{tbl:harga1}
 \end{table}
 
+
+
 \begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\begin{tabular}{ | l | c | r | }
 	\hline
@@ -106,6 +134,16 @@ Contoh tabel dapat dilihat pada Tabel \ref{tbl:harga1} dan \ref{tbl:harga2}. Tab
 \label{tbl:harga2}
 \end{table}
 
+% -- Example of importing table from external file --
+\subsubsection{Mengimpor Tabel dari Berkas Eksternal}
+
+Tabel \ref{tbl:harga3} diimpor dari berkas eksternal \textit{table/tabel1.tex} menggunakan perintah \textit{input}. 
+Dengan demikian, jika tabel tersebut perlu diubah, cukup mengubah pada berkas eksternal tersebut tanpa perlu mengubah pada berkas utama ini.
+
+\input table/tabel1.tex
+
+
+% -- Example of long table --
 \subsubsection{Tabel yang Sangat Panjang}
 Jika tabel terlalu panjang sehingga tidak muat dalam satu halaman, gunakan paket 
 \textit{longtable} untuk membuat tabel yang dapat terpotong ke halaman berikutnya, 
@@ -118,7 +156,7 @@ seperti pada Tabel \ref{tbl:longtable1}.
 \midrule
 \endfirsthead
 
-\caption*{Comprehensive Data Table Example (lanjutan)} \\
+\caption{Comprehensive Data Table Example (lanjutan)} \\
 \toprule
 \textbf{ID} & \textbf{Name} & \textbf{Score} & \textbf{Rank} \\
 \midrule
@@ -126,7 +164,7 @@ seperti pada Tabel \ref{tbl:longtable1}.
 
 \midrule
 \multicolumn{4}{r}{\textit{Bersambung ke halaman berikutnya}} \\
-\bottomrule
+%\bottomrule
 \endfoot
 
 \bottomrule
@@ -187,7 +225,7 @@ seperti pada Tabel \ref{tbl:longtable1}.
 % (You can easily extend this list to hundreds of rows)
 \end{longtable}
 
-\subsubsection{Rumus}
+\subsubsection{Beberapa Contoh Penulisan Rumus atau Persamaan Matematika Menggunakan LaTeX Termasuk Penomorannya}
 Contoh rumus matematika dapat ditulis seperti pada Persamaan \ref{eq:contoh1} di bawah ini. 
 Penomoran persamaan diletakkan di sebelah kanan, dan rumus ditulis dalam mode \textit{display math}.
 \begin{equation}
