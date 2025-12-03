@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,45 @@
 
 
 \refsection{0}
-  \datalist[entry]{cms/global//global/global/global}
-    \entry{BPBI}{misc}{}{}
+  \datalist[entry]{cms/global//global/global}
+    \entry{alsuhibany2025innovative}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b06cdd2d6944bb5a00d0d9cea40288a1}{%
+           family={Alsuhibany},
+           familyi={A\bibinitperiod},
+           given={Suliman\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b06cdd2d6944bb5a00d0d9cea40288a1}
+      \strng{fullhash}{b06cdd2d6944bb5a00d0d9cea40288a1}
+      \strng{bibnamehash}{b06cdd2d6944bb5a00d0d9cea40288a1}
+      \strng{authorbibnamehash}{b06cdd2d6944bb5a00d0d9cea40288a1}
+      \strng{authornamehash}{b06cdd2d6944bb5a00d0d9cea40288a1}
+      \strng{authorfullhash}{b06cdd2d6944bb5a00d0d9cea40288a1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{13}
+      \field{title}{Innovative QR Code System for Tamper-Proof Generation and Fraud-Resistant Verification}
+      \field{volume}{25}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.3390/s25133855
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/25/13/3855
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/25/13/3855
+      \endverb
+    \endentry
+    \entry{BPBI}{misc}{}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -38,7 +75,7 @@
       \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
       \endverb
     \endentry
-    \entry{chen2007passenger}{article}{}{}
+    \entry{chen2007passenger}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6c0bd430e3fe8f79cd010d969dc6c9ea}{%
            family={Chen},
@@ -49,12 +86,10 @@
       }
       \strng{namehash}{6c0bd430e3fe8f79cd010d969dc6c9ea}
       \strng{fullhash}{6c0bd430e3fe8f79cd010d969dc6c9ea}
-      \strng{fullhashraw}{6c0bd430e3fe8f79cd010d969dc6c9ea}
       \strng{bibnamehash}{6c0bd430e3fe8f79cd010d969dc6c9ea}
       \strng{authorbibnamehash}{6c0bd430e3fe8f79cd010d969dc6c9ea}
       \strng{authornamehash}{6c0bd430e3fe8f79cd010d969dc6c9ea}
       \strng{authorfullhash}{6c0bd430e3fe8f79cd010d969dc6c9ea}
-      \strng{authorfullhashraw}{6c0bd430e3fe8f79cd010d969dc6c9ea}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -72,7 +107,65 @@
       \verb 10.1016/j.jairtraman.2006.09.004
       \endverb
     \endentry
-    \entry{Kurniawan2024}{misc}{}{}
+    \entry{khan2009secure}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=a7cf732e8ac25a3b398152b291128f12}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi Fahim\bibnamedelima Ferdous},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51c72b71e981a1ebd0a7bd2a0d53ef63}{%
+           family={Takeshi},
+           familyi={T\bibinitperiod},
+           given={Yashiro},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbf0230128550ebb9f8176e8e071574e}{%
+           family={So},
+           familyi={S\bibinitperiod},
+           given={Ito},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=336eef8bea2b3600d9a03b92e56f35b1}{%
+           family={Bessho},
+           familyi={B\bibinitperiod},
+           given={Masahiro},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=696116c350e928649c7ad1d5b3f6946c}{%
+           family={Sakamura},
+           familyi={S\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{e2d0d1ba97725dc527c8a85b1029faa3}
+      \strng{fullhash}{8bb39b27918f77a984737f38a1884332}
+      \strng{bibnamehash}{8bb39b27918f77a984737f38a1884332}
+      \strng{authorbibnamehash}{8bb39b27918f77a984737f38a1884332}
+      \strng{authornamehash}{e2d0d1ba97725dc527c8a85b1029faa3}
+      \strng{authorfullhash}{8bb39b27918f77a984737f38a1884332}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2009 33rd Annual IEEE International Computer Software and Applications Conference}
+      \field{issn}{0730-3157}
+      \field{title}{A Secure and Flexible Electronic-Ticket System}
+      \field{year}{2009}
+      \field{pages}{421\bibrangedash 426}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/COMPSAC.2009.63
+      \endverb
+    \endentry
+    \entry{Kurniawan2024}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c12172ca1efdd945097da9a6100489a8}{%
            family={Kurniawan},
@@ -83,12 +176,10 @@
       }
       \strng{namehash}{c12172ca1efdd945097da9a6100489a8}
       \strng{fullhash}{c12172ca1efdd945097da9a6100489a8}
-      \strng{fullhashraw}{c12172ca1efdd945097da9a6100489a8}
       \strng{bibnamehash}{c12172ca1efdd945097da9a6100489a8}
       \strng{authorbibnamehash}{c12172ca1efdd945097da9a6100489a8}
       \strng{authornamehash}{c12172ca1efdd945097da9a6100489a8}
       \strng{authorfullhash}{c12172ca1efdd945097da9a6100489a8}
-      \strng{authorfullhashraw}{c12172ca1efdd945097da9a6100489a8}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -100,7 +191,7 @@
       \field{title}{Banyak Penonton Tidak Bertiket Masuk SUGBK saat Timnas Indonesia Vs Jepang: Malah yang Punya Tiket Tidak Dapat Tempat Duduk}
       \field{year}{2024}
     \endentry
-    \entry{laudon2020}{book}{}{}
+    \entry{laudon2020}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2a3d8893ad04ba3c98081349c47e2f6c}{%
            family={Laudon},
@@ -123,12 +214,10 @@
       }
       \strng{namehash}{a99ce1573b42821945806f73f25db5a4}
       \strng{fullhash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{fullhashraw}{a99ce1573b42821945806f73f25db5a4}
       \strng{bibnamehash}{a99ce1573b42821945806f73f25db5a4}
       \strng{authorbibnamehash}{a99ce1573b42821945806f73f25db5a4}
       \strng{authornamehash}{a99ce1573b42821945806f73f25db5a4}
       \strng{authorfullhash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{authorfullhashraw}{a99ce1573b42821945806f73f25db5a4}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
@@ -138,7 +227,7 @@
       \field{title}{Sistem Informasi Manajemen}
       \field{year}{2020}
     \endentry
-    \entry{lubeck2012electronic}{article}{}{}
+    \entry{lubeck2012electronic}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=622baec4eb4a059294705da22a600ac2}{%
            family={Lübeck},
@@ -159,14 +248,12 @@
            giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{33d95f5ffc5b24ad120ec8a28c9ff928}
+      \strng{namehash}{5028388078ea54145649fe2c81245cd0}
       \strng{fullhash}{33d95f5ffc5b24ad120ec8a28c9ff928}
-      \strng{fullhashraw}{33d95f5ffc5b24ad120ec8a28c9ff928}
       \strng{bibnamehash}{33d95f5ffc5b24ad120ec8a28c9ff928}
       \strng{authorbibnamehash}{33d95f5ffc5b24ad120ec8a28c9ff928}
-      \strng{authornamehash}{33d95f5ffc5b24ad120ec8a28c9ff928}
+      \strng{authornamehash}{5028388078ea54145649fe2c81245cd0}
       \strng{authorfullhash}{33d95f5ffc5b24ad120ec8a28c9ff928}
-      \strng{authorfullhashraw}{33d95f5ffc5b24ad120ec8a28c9ff928}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
@@ -185,7 +272,7 @@
       \verb 10.4067/S0718-27242012000100002
       \endverb
     \endentry
-    \entry{Pamela2023}{misc}{}{}
+    \entry{Pamela2023}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d62350fc4aebec5b5619f90eba3bfcfc}{%
            family={Pamela},
@@ -196,12 +283,10 @@
       }
       \strng{namehash}{d62350fc4aebec5b5619f90eba3bfcfc}
       \strng{fullhash}{d62350fc4aebec5b5619f90eba3bfcfc}
-      \strng{fullhashraw}{d62350fc4aebec5b5619f90eba3bfcfc}
       \strng{bibnamehash}{d62350fc4aebec5b5619f90eba3bfcfc}
       \strng{authorbibnamehash}{d62350fc4aebec5b5619f90eba3bfcfc}
       \strng{authornamehash}{d62350fc4aebec5b5619f90eba3bfcfc}
       \strng{authorfullhash}{d62350fc4aebec5b5619f90eba3bfcfc}
-      \strng{authorfullhashraw}{d62350fc4aebec5b5619f90eba3bfcfc}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -213,7 +298,7 @@
       \field{title}{Tiket Konser Coldplay di Jakarta 2023 Dijual Calo Berkali-kali Lipat hingga Rp22 Juta di Marketplace}
       \field{year}{2023}
     \endentry
-    \entry{pressman2019}{book}{}{}
+    \entry{pressman2019}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4d3f81788d99cf425c4b6e0a454baab0}{%
            family={Pressman},
@@ -230,12 +315,10 @@
       }
       \strng{namehash}{4d3f81788d99cf425c4b6e0a454baab0}
       \strng{fullhash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{fullhashraw}{4d3f81788d99cf425c4b6e0a454baab0}
       \strng{bibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
       \strng{authorbibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
       \strng{authornamehash}{4d3f81788d99cf425c4b6e0a454baab0}
       \strng{authorfullhash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{authorfullhashraw}{4d3f81788d99cf425c4b6e0a454baab0}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -244,6 +327,89 @@
       \field{labeltitlesource}{title}
       \field{title}{Rekayasa Perangkat Lunak: Pendekatan Praktisi}
       \field{year}{2019}
+    \endentry
+    \entry{shin2012psychology}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=95cf2ff9aba51ef24d5d9300e38a0b32}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={Dong-Hee},
+           giveni={D\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=adb7a00f4639d1255efdc121ae86a072}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Jaemin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=036b99aa4cabf34b54e879eb800ea58f}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Byeng-Hee},
+           giveni={B\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cd61c1f60730be7ae2e6c4c241560b0c}
+      \strng{fullhash}{d2c276502fe4b793d226e2dcc8dfe522}
+      \strng{bibnamehash}{d2c276502fe4b793d226e2dcc8dfe522}
+      \strng{authorbibnamehash}{d2c276502fe4b793d226e2dcc8dfe522}
+      \strng{authornamehash}{cd61c1f60730be7ae2e6c4c241560b0c}
+      \strng{authorfullhash}{d2c276502fe4b793d226e2dcc8dfe522}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{0747-5632}
+      \field{journaltitle}{Computers in Human Behavior}
+      \field{number}{4}
+      \field{title}{The psychology behind QR codes: User experience perspective}
+      \field{volume}{28}
+      \field{year}{2012}
+      \field{pages}{1417\bibrangedash 1426}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.chb.2012.03.004
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0747563212000702
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0747563212000702
+      \endverb
+      \keyw{QR code,Interactive marketing,Adoption,Mediating effects,Moderating effects}
+    \endentry
+    \entry{tiwari2016introduction}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bc38cf39db60eac0825d8c10d813117d}{%
+           family={Tiwari},
+           familyi={T\bibinitperiod},
+           given={Sumit},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bc38cf39db60eac0825d8c10d813117d}
+      \strng{fullhash}{bc38cf39db60eac0825d8c10d813117d}
+      \strng{bibnamehash}{bc38cf39db60eac0825d8c10d813117d}
+      \strng{authorbibnamehash}{bc38cf39db60eac0825d8c10d813117d}
+      \strng{authornamehash}{bc38cf39db60eac0825d8c10d813117d}
+      \strng{authorfullhash}{bc38cf39db60eac0825d8c10d813117d}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 International Conference on Information Technology (ICIT)}
+      \field{title}{An Introduction to QR Code Technology}
+      \field{year}{2016}
+      \field{pages}{39\bibrangedash 44}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICIT.2016.021
+      \endverb
+      \keyw{Error correction codes;Encoding;Decoding;Timing;Particle separators;Uniform resource locators;Arrays;QR code;Quick Response code;QR code structure;QR Code Encoding;QR Code Decoding}
     \endentry
   \enddatalist
 \endrefsection
