@@ -1,16 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'D:\TA\Repo TA\Eja-ProposalTA\ProposalTA.blg'
-[267] biber-MSWIN64:340> INFO - === 
-[385] Biber.pm:419> INFO - Reading 'D:\TA\Repo TA\Eja-ProposalTA\ProposalTA.bcf'
-[561] Biber.pm:979> INFO - Found 11 citekeys in bib section 0
-[575] Biber.pm:4419> INFO - Processing section 0
-[625] Biber.pm:4610> INFO - Looking for bibtex file 'daftar-pustaka.bib' for section 0
-[696] bibtex.pm:1713> INFO - LaTeX decoding ...
-[737] bibtex.pm:1519> INFO - Found BibTeX data source 'D:\TA\Repo TA\Eja-ProposalTA\daftar-pustaka.bib'
-[870] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[870] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
-[870] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
-[870] Biber.pm:4239> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'indonesian'
-[870] Biber.pm:4245> INFO - No sort tailoring available for locale 'indonesian'
-[935] bbl.pm:660> INFO - Writing 'D:\TA\Repo TA\Eja-ProposalTA\ProposalTA.bbl' with encoding 'UTF-8'
-[940] bbl.pm:763> INFO - Output to D:\TA\Repo TA\Eja-ProposalTA\ProposalTA.bbl
+[325] biber-MSWIN64:340> INFO - === 
+[472] Biber.pm:419> INFO - Reading 'D:\TA\Repo TA\Eja-ProposalTA\ProposalTA.bcf'
+[627] Biber.pm:979> INFO - Found 12 citekeys in bib section 0
+[639] Biber.pm:4419> INFO - Processing section 0
+[687] Biber.pm:4610> INFO - Looking for bibtex file 'daftar-pustaka.bib' for section 0
+[762] bibtex.pm:1713> INFO - LaTeX decoding ...
+[804] bibtex.pm:1519> INFO - Found BibTeX data source 'D:\TA\Repo TA\Eja-ProposalTA\daftar-pustaka.bib'
+[953] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[953] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[953] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
+[953] Biber.pm:4239> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'indonesian'
+[953] Biber.pm:4245> INFO - No sort tailoring available for locale 'indonesian'
+[1039] bbl.pm:660> INFO - Writing 'D:\TA\Repo TA\Eja-ProposalTA\ProposalTA.bbl' with encoding 'UTF-8'
+[1044] bbl.pm:763> INFO - Output to D:\TA\Repo TA\Eja-ProposalTA\ProposalTA.bbl
+[1044] Biber.pm:131> WARN - I didn't find a database entry for 'lee2016security' (section 0)
+[1044] Biber.pm:133> INFO - WARNINGS: 1

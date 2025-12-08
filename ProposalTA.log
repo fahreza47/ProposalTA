@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.17)  3 DEC 2025 19:43
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.17)  8 DEC 2025 13:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1118,7 +1118,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ProposalTA.bbl' found.
- (ProposalTA.bbl)
+ (ProposalTA.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                lee2016security
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 202.
 Package biblatex Info: Reference segment=0 on input line 202.
 File: image/ganesha.jpg Graphic file (type bmp)
@@ -1220,32 +1228,37 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ] (Bab I - Pendahuluan.tex
 Bab I.
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 10.
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 9.
 
 [1
 
 
-] [2]
-Overfull \hbox (1.10281pt too wide) in paragraph at lines 32--33
+]
+
+LaTeX Warning: Citation 'lee2016security' on page 2 undefined on input line 18.
+
+
+[2] [3]
+Overfull \hbox (1.10281pt too wide) in paragraph at lines 30--31
 []\TU/TimesNewRoman(0)/m/n/12 Bagaimana merancang dan mengimplementasikan sebua
 h sistem \TU/TimesNewRoman(0)/m/it/12 e-ticket \TU/TimesNewRoman(0)/m/n/12 yang
 
  []
 
-[3]
-Overfull \hbox (6.2239pt too wide) in paragraph at lines 48--49
+[4]
+Overfull \hbox (6.2239pt too wide) in paragraph at lines 46--47
 []\TU/TimesNewRoman(0)/m/n/12 Implementasi teknis prototipe akan menggunakan ba
 hasa pemrograman Python
  []
 
-[4] [5]
-Overfull \hbox (1.95888pt too wide) in paragraph at lines 79--80
+[5]
+Overfull \hbox (1.95888pt too wide) in paragraph at lines 77--78
 []\TU/TimesNewRoman(0)/m/n/12 Merancang arsitektur sistem, alur proses generasi
  dan validasi QR Code, struk-
  []
 
 
-Overfull \hbox (3.5325pt too wide) in paragraph at lines 83--84
+Overfull \hbox (3.5325pt too wide) in paragraph at lines 81--82
 []\TU/TimesNewRoman(0)/m/n/12 Mengembangkan perangkat lunak prototipe menggunak
 an bahasa pemrogram-
  []
@@ -1309,13 +1322,25 @@ Overfull \hbox (2.75842pt too wide) in paragraph at lines 402--402
 n Luciana Flores Battistella. 2012.
  []
 
+
+Overfull \hbox (4.8658pt too wide) in paragraph at lines 402--402
+[][]\TU/TimesNewRoman(0)/m/n/12 Pamela, Dyah Ayu. 2023. \TU/TimesNewRoman(0)/m/
+it/12 Tiket Konser Coldplay di Jakarta 2023 Dijual Calo Berkali-
+ []
+
 [24
 
 
 ]
-Overfull \hbox (4.8658pt too wide) in paragraph at lines 402--402
-[][]\TU/TimesNewRoman(0)/m/n/12 Pamela, Dyah Ayu. 2023. \TU/TimesNewRoman(0)/m/
-it/12 Tiket Konser Coldplay di Jakarta 2023 Dijual Calo Berkali-
+Overfull \hbox (2.06306pt too wide) in paragraph at lines 402--402
+[][]\TU/TimesNewRoman(0)/m/n/12 Yanuarafi, Arisal. 2023. “  Perbandingan QR Cod
+e Statis dan QR Code Dinamis dalam
+ []
+
+
+Overfull \hbox (13.91933pt too wide) in paragraph at lines 402--402
+\TU/TimesNewRoman(0)/m/n/12 Pengambilan Absen Pegawai di Lingkungan Universitas
+ Bung Hatta”. \TU/TimesNewRoman(0)/m/it/12 Al-Ma’arif:
  []
 
 [25] (ProposalTA.aux)
@@ -1337,12 +1362,12 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31452 strings out of 409617
- 615870 string characters out of 5774012
- 1969642 words of memory out of 5000000
- 53199 multiletter control sequences out of 15000+600000
+ 31453 strings out of 409617
+ 615916 string characters out of 5774012
+ 1969698 words of memory out of 5000000
+ 53200 multiletter control sequences out of 15000+600000
  563466 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,14n,93p,1413b,6503s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,93p,1556b,6503s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on d:/TA\Repo TA\Eja-ProposalTA\ProposalTA.pdf (32 pages).

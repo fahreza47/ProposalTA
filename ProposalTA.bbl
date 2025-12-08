@@ -165,32 +165,6 @@
       \verb 10.1109/COMPSAC.2009.63
       \endverb
     \endentry
-    \entry{Kurniawan2024}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c12172ca1efdd945097da9a6100489a8}{%
-           family={Kurniawan},
-           familyi={K\bibinitperiod},
-           given={Hery},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{c12172ca1efdd945097da9a6100489a8}
-      \strng{fullhash}{c12172ca1efdd945097da9a6100489a8}
-      \strng{bibnamehash}{c12172ca1efdd945097da9a6100489a8}
-      \strng{authorbibnamehash}{c12172ca1efdd945097da9a6100489a8}
-      \strng{authornamehash}{c12172ca1efdd945097da9a6100489a8}
-      \strng{authorfullhash}{c12172ca1efdd945097da9a6100489a8}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.bola.com/indonesia/read/5790333/banyak-penonton-tidak-bertiket-masuk-sugbk-saat-timnas-indonesia-vs-jepang-malah-yang-punya-tiket-tidak-dapat-tempat-duduk}}
-      \field{note}{Diakses pada 29 Oktober 2025}
-      \field{title}{Banyak Penonton Tidak Bertiket Masuk SUGBK saat Timnas Indonesia Vs Jepang: Malah yang Punya Tiket Tidak Dapat Tempat Duduk}
-      \field{year}{2024}
-    \endentry
     \entry{laudon2020}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2a3d8893ad04ba3c98081349c47e2f6c}{%
@@ -411,7 +385,39 @@
       \endverb
       \keyw{Error correction codes;Encoding;Decoding;Timing;Particle separators;Uniform resource locators;Arrays;QR code;Quick Response code;QR code structure;QR Code Encoding;QR Code Decoding}
     \endentry
+    \entry{yanuarafi2023perbandingan}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=39a160f3a59de4fc988c43649320b7ba}{%
+           family={Yanuarafi},
+           familyi={Y\bibinitperiod},
+           given={Arisal},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{39a160f3a59de4fc988c43649320b7ba}
+      \strng{fullhash}{39a160f3a59de4fc988c43649320b7ba}
+      \strng{bibnamehash}{39a160f3a59de4fc988c43649320b7ba}
+      \strng{authorbibnamehash}{39a160f3a59de4fc988c43649320b7ba}
+      \strng{authornamehash}{39a160f3a59de4fc988c43649320b7ba}
+      \strng{authorfullhash}{39a160f3a59de4fc988c43649320b7ba}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{0740-8188}
+      \field{journaltitle}{Al-Ma'arif: Jurnal Ilmu Perpustakaan dan Informasi Islam}
+      \field{number}{2}
+      \field{title}{Perbandingan QR Code Statis dan QR Code Dinamis dalam Pengambilan Absen Pegawai di Lingkungan Universitas Bung Hatta}
+      \field{volume}{3}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.37108/almaarif.v3i2.1289
+      \endverb
+    \endentry
   \enddatalist
+  \missing{lee2016security}
 \endrefsection
 \endinput
 
