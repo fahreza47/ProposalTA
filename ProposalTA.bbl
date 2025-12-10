@@ -56,6 +56,40 @@
       \verb https://www.mdpi.com/1424-8220/25/13/3855
       \endverb
     \endentry
+    \entry{berma2023analisis}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4d30b79eff027a3abe8a41018ab97479}{%
+           family={Berma},
+           familyi={B\bibinitperiod},
+           given={Raienheart\bibnamedelima Boas},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Badan Pembinaan Hukum Nasional (BPHN)}%
+      }
+      \strng{namehash}{4d30b79eff027a3abe8a41018ab97479}
+      \strng{fullhash}{4d30b79eff027a3abe8a41018ab97479}
+      \strng{bibnamehash}{4d30b79eff027a3abe8a41018ab97479}
+      \strng{authorbibnamehash}{4d30b79eff027a3abe8a41018ab97479}
+      \strng{authornamehash}{4d30b79eff027a3abe8a41018ab97479}
+      \strng{authorfullhash}{4d30b79eff027a3abe8a41018ab97479}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Diakses pada 8 Desember 2025}
+      \field{title}{Analisis Kerugian Penonton Konser (Coldplay) Ditinjau Dari Hukum Positif Indonesia}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://rechtsvinding.bphn.go.id/?page=artikel&berita=856
+      \endverb
+      \verb{url}
+      \verb https://rechtsvinding.bphn.go.id/?page=artikel&berita=856
+      \endverb
+    \endentry
     \entry{BPBI}{misc}{}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
@@ -105,6 +139,55 @@
       \range{pages}{6}
       \verb{doi}
       \verb 10.1016/j.jairtraman.2006.09.004
+      \endverb
+    \endentry
+    \entry{diveranta2025jejak}{online}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=cf707f9fa6aa897c9594e653e7ada095}{%
+           family={Diveranta},
+           familyi={D\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3bdd8036780453374efdffc8dd87878}{%
+           family={Ramadhan},
+           familyi={R\bibinitperiod},
+           given={Fajar},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccffbdfebf1ac07ee196a0f9f3d1d681}{%
+           family={Bimantara},
+           familyi={B\bibinitperiod},
+           given={Johanes\bibnamedelima Galuh},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3395b7cfde6211be7243e897942caf88}{%
+           family={Susilo},
+           familyi={S\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5c36cb80dd4a35420670a22124ec9ed7}
+      \strng{fullhash}{37469b311ce6748adcc63aba6ca40fb6}
+      \strng{bibnamehash}{37469b311ce6748adcc63aba6ca40fb6}
+      \strng{authorbibnamehash}{37469b311ce6748adcc63aba6ca40fb6}
+      \strng{authornamehash}{5c36cb80dd4a35420670a22124ec9ed7}
+      \strng{authorfullhash}{37469b311ce6748adcc63aba6ca40fb6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Diakses pada 8 Desember 2025}
+      \field{title}{Jejak Transaksi Penipuan Tiket Konser Disamarkan (5)}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.kompas.id/artikel/jejak-transaksi-penipuan-tiket-konser-disamarkan
+      \endverb
+      \verb{url}
+      \verb https://www.kompas.id/artikel/jejak-transaksi-penipuan-tiket-konser-disamarkan
       \endverb
     \endentry
     \entry{khan2009secure}{inproceedings}{}
@@ -164,6 +247,32 @@
       \verb{doi}
       \verb 10.1109/COMPSAC.2009.63
       \endverb
+    \endentry
+    \entry{Kurniawan2024}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c12172ca1efdd945097da9a6100489a8}{%
+           family={Kurniawan},
+           familyi={K\bibinitperiod},
+           given={Hery},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c12172ca1efdd945097da9a6100489a8}
+      \strng{fullhash}{c12172ca1efdd945097da9a6100489a8}
+      \strng{bibnamehash}{c12172ca1efdd945097da9a6100489a8}
+      \strng{authorbibnamehash}{c12172ca1efdd945097da9a6100489a8}
+      \strng{authornamehash}{c12172ca1efdd945097da9a6100489a8}
+      \strng{authorfullhash}{c12172ca1efdd945097da9a6100489a8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.bola.com/indonesia/read/5790333/banyak-penonton-tidak-bertiket-masuk-sugbk-saat-timnas-indonesia-vs-jepang-malah-yang-punya-tiket-tidak-dapat-tempat-duduk}}
+      \field{note}{Diakses pada 29 Oktober 2025}
+      \field{title}{Banyak Penonton Tidak Bertiket Masuk SUGBK saat Timnas Indonesia Vs Jepang: Malah yang Punya Tiket Tidak Dapat Tempat Duduk}
+      \field{year}{2024}
     \endentry
     \entry{laudon2020}{book}{}
       \name{author}{2}{}{%
@@ -354,6 +463,96 @@
       \endverb
       \keyw{QR code,Interactive marketing,Adoption,Mediating effects,Moderating effects}
     \endentry
+    \entry{sommerville2016software}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=70341b3bfcce7026902f4eb1e4111b58}{%
+           family={Sommerville},
+           familyi={S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Harlow, England}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education Limited}%
+      }
+      \strng{namehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{fullhash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{bibnamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorbibnamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authornamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorfullhash}{70341b3bfcce7026902f4eb1e4111b58}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10}
+      \field{isbn}{978-1-292-09613-1}
+      \field{note}{Global Edition}
+      \field{title}{Software Engineering}
+      \field{year}{2016}
+    \endentry
+    \entry{sung2015security}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=3665899db4e40ec0b173a334b19cc95e}{%
+           family={Sung},
+           familyi={S\bibinitperiod},
+           given={Siwon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4c52c62d50e2c586e32ccd9dd3331b8}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Joonghwan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08f9dccddd82ffc3c721db489a48e3d4}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jinmok},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69f9e67cf1f8c169bc7d90f4cc6bfa97}{%
+           family={Mun},
+           familyi={M\bibinitperiod},
+           given={Jongho},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44f11a2e9bf9979d3d2ae0fe4002e825}{%
+           family={Won},
+           familyi={W\bibinitperiod},
+           given={Dongho},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {AIRCC Publishing Corporation}%
+      }
+      \strng{namehash}{729ce3c0f551129092ce9ee0e9c481ee}
+      \strng{fullhash}{bb6d4ffb59fbc72443408b0f5856d431}
+      \strng{bibnamehash}{bb6d4ffb59fbc72443408b0f5856d431}
+      \strng{authorbibnamehash}{bb6d4ffb59fbc72443408b0f5856d431}
+      \strng{authornamehash}{729ce3c0f551129092ce9ee0e9c481ee}
+      \strng{authorfullhash}{bb6d4ffb59fbc72443408b0f5856d431}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Science \& Information Technology (CS \& IT)}
+      \field{title}{Security analysis of mobile authentication using QR-codes}
+      \field{year}{2015}
+      \field{pages}{151\bibrangedash 160}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.5121/csit.2015.51612
+      \endverb
+    \endentry
     \entry{tiwari2016introduction}{inproceedings}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=bc38cf39db60eac0825d8c10d813117d}{%
@@ -417,7 +616,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{lee2016security}
 \endrefsection
 \endinput
 

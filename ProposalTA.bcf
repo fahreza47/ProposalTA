@@ -4979,13 +4979,21 @@
     <bcf:citekey order="10" intorder="1">yanuarafi2023perbandingan</bcf:citekey>
     <bcf:citekey order="11" intorder="1">yanuarafi2023perbandingan</bcf:citekey>
     <bcf:citekey order="12" intorder="1">yanuarafi2023perbandingan</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">lee2016security</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Pamela2023</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">khan2009secure</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">BPBI</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">laudon2020</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">laudon2020</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">pressman2019</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">sung2015security</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">sung2015security</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">berma2023analisis</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Pamela2023</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Kurniawan2024</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">diveranta2025jejak</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">sung2015security</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">sung2015security</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">sommerville2016software</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">sommerville2016software</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">khan2009secure</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">BPBI</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">laudon2020</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">laudon2020</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">pressman2019</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">
