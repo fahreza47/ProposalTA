@@ -56,6 +56,54 @@
       \verb https://www.mdpi.com/1424-8220/25/13/3855
       \endverb
     \endentry
+    \entry{bafandehkar2013}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9308898ef9a28bbf7cc24facaca0e229}{%
+           family={Bafandehkar},
+           familyi={B\bibinitperiod},
+           given={Mohsen},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cfa6a9d4e60d9edf7f591f48019149d}{%
+           family={Yasin},
+           familyi={Y\bibinitperiod},
+           given={Sharifah\bibnamedelima Md},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0801672f8872f3e4ef377dcfbca13978}{%
+           family={Mahmod},
+           familyi={M\bibinitperiod},
+           given={Ramlan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29c92d9ff0c29110ed9f071c9640cf26}{%
+           family={Hanapi},
+           familyi={H\bibinitperiod},
+           given={Zurina},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{fc314ef17a5be2d38554c5f8148a4aab}
+      \strng{fullhash}{e09f4b87e4b32b1fa2c2e2e1e077ff07}
+      \strng{bibnamehash}{e09f4b87e4b32b1fa2c2e2e1e077ff07}
+      \strng{authorbibnamehash}{e09f4b87e4b32b1fa2c2e2e1e077ff07}
+      \strng{authornamehash}{fc314ef17a5be2d38554c5f8148a4aab}
+      \strng{authorfullhash}{e09f4b87e4b32b1fa2c2e2e1e077ff07}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{IT Convergence and Security 2012}
+      \field{title}{Comparison of ECC and RSA Algorithm in Resource Constrained Devices}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+    \endentry
     \entry{berma2023analisis}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4d30b79eff027a3abe8a41018ab97479}{%
@@ -88,25 +136,6 @@
       \endverb
       \verb{url}
       \verb https://rechtsvinding.bphn.go.id/?page=artikel&berita=856
-      \endverb
-    \endentry
-    \entry{BPBI}{misc}{}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{title}{Buku {Praktis} {Bahasa} {Indonesia} 1/{Kata} - {Wikisumber} bahasa {Indonesia}}
-      \field{urlday}{22}
-      \field{urlmonth}{10}
-      \field{urlyear}{2025}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
-      \endverb
-      \verb{url}
-      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
       \endverb
     \endentry
     \entry{chen2007passenger}{article}{}
@@ -190,65 +219,7 @@
       \verb https://www.kompas.id/artikel/jejak-transaksi-penipuan-tiket-konser-disamarkan
       \endverb
     \endentry
-    \entry{khan2009secure}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=a7cf732e8ac25a3b398152b291128f12}{%
-           family={Khan},
-           familyi={K\bibinitperiod},
-           given={M.\bibnamedelimi Fahim\bibnamedelima Ferdous},
-           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=51c72b71e981a1ebd0a7bd2a0d53ef63}{%
-           family={Takeshi},
-           familyi={T\bibinitperiod},
-           given={Yashiro},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fbf0230128550ebb9f8176e8e071574e}{%
-           family={So},
-           familyi={S\bibinitperiod},
-           given={Ito},
-           giveni={I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=336eef8bea2b3600d9a03b92e56f35b1}{%
-           family={Bessho},
-           familyi={B\bibinitperiod},
-           given={Masahiro},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=696116c350e928649c7ad1d5b3f6946c}{%
-           family={Sakamura},
-           familyi={S\bibinitperiod},
-           given={Ken},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE Computer Society}%
-      }
-      \strng{namehash}{e2d0d1ba97725dc527c8a85b1029faa3}
-      \strng{fullhash}{8bb39b27918f77a984737f38a1884332}
-      \strng{bibnamehash}{8bb39b27918f77a984737f38a1884332}
-      \strng{authorbibnamehash}{8bb39b27918f77a984737f38a1884332}
-      \strng{authornamehash}{e2d0d1ba97725dc527c8a85b1029faa3}
-      \strng{authorfullhash}{8bb39b27918f77a984737f38a1884332}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2009 33rd Annual IEEE International Computer Software and Applications Conference}
-      \field{issn}{0730-3157}
-      \field{title}{A Secure and Flexible Electronic-Ticket System}
-      \field{year}{2009}
-      \field{pages}{421\bibrangedash 426}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/COMPSAC.2009.63
-      \endverb
-    \endentry
-    \entry{Kurniawan2024}{misc}{}
+    \entry{Kurniawan2024}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c12172ca1efdd945097da9a6100489a8}{%
            family={Kurniawan},
@@ -355,7 +326,7 @@
       \verb 10.4067/S0718-27242012000100002
       \endverb
     \endentry
-    \entry{Pamela2023}{misc}{}
+    \entry{Pamela2023}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d62350fc4aebec5b5619f90eba3bfcfc}{%
            family={Pamela},
@@ -495,6 +466,36 @@
       \field{note}{Global Edition}
       \field{title}{Software Engineering}
       \field{year}{2016}
+    \endentry
+    \entry{stallings2022cryptography}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0599c551bf066f66e0e9c44815384cb4}{%
+           family={Stallings},
+           familyi={S\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education Limited}%
+      }
+      \strng{namehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{fullhash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{bibnamehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{authorbibnamehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{authornamehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{authorfullhash}{0599c551bf066f66e0e9c44815384cb4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{8}
+      \field{isbn}{978-1-292-43749-1}
+      \field{note}{Global Edition}
+      \field{title}{Cryptography and Network Security: Principles and Practice}
+      \field{year}{2022}
     \endentry
     \entry{sung2015security}{inproceedings}{}
       \name{author}{5}{}{%

@@ -4,353 +4,264 @@
 \chapter{STUDI LITERATUR}
 \label{chap:studi-literatur}
 \section{Sistem Tiket Elektronik (\textit{E-Ticket})}
-\subsection{Definisi dan Evolusi \textit{E-Ticket}}
-... (Penjelasan mengenai pergeseran dari tiket konvensional ke digital, serta definisi formal dari \textit{e-ticket} berdasarkan literatur akan ditambahkan di sini) ...
-Menurut KBBI, tiket didefinisikan sebagai surat kecil (carik kertas khusus) sebagai tanda telah membayar ongkos dan sebagainya (untuk naik bus, menonton bioskop, dan sebagainya). Tiket adalah dokumen yang berfungsi sebagai bukti hak akses atau tanda pembayaran yang sah untuk menggunakan suatu layanan. Perkembangan teknologi telah membawa perubahan signifikan dalam hal penerbitan tiket. Salah satu inovasi utama adalah munculnya tiket elektronik atau \textit{e-ticket}, yang merupakan versi digital dari tiket konvensional. \textit{E-ticket} merupakan sarana digitalisasi hak berupa \textit{voucher} atau sertifikat yang menjamin pemiliknya dapat mengklaim suatu barang atau jasa \cite{khan2009secure}.
+\label{sec:eticket}
 
+Perkembangan teknologi informasi telah mengubah paradigma layanan di berbagai sektor industri, termasuk dalam manajemen akses dan reservasi melalui sistem tiket elektronik atau \textit{e-ticket}. Subbab ini akan membahas definisi, evolusi, serta karakteristik fundamental dari sistem \textit{e-ticket}.
 
-Paragraf 1: Definisi Fundamental Tiket.
+\subsection{Definisi dan Konsep Dasar}
+Menurut Kamus Besar Bahasa Indonesia (KBBI), tiket atau karcis adalah surat kecil (carik kertas khusus) sebagai tanda telah membayar ongkos dan sebagainya (untuk naik bus, menonton bioskop, dan sebagainya). Tiket merupakan dokumen yang berfungsi sebagai hak akses atau tanda pembayaran yang sah untuk menggunakan suatu layanan. Seiring dengan perkembangan teknologi, terjadi transformasi bentuk tiket konvensional yang berbasis kertas menjadi wujud digital yang tersimpan dalam basis data komputer, yang disebut sebagai \textit{electronic ticket} atau \textit{e-ticket}.
 
-    Isi: Mulailah dari yang paling dasar. Apa itu "tiket" secara konseptual? Ambil definisi formal (misalnya dari KBBI atau literatur akademis) yang menyatakan fungsinya sebagai bukti hak akses, bukti pembayaran, atau kontrak layanan.
+Secara konseptual, \textit{e-ticket} bukan sekadar penggantian media kertas, melainkan sebuah kontrak digital yang merepresentasikan hak kepemilikan (\textit{entitlement}) atas suatu layanan atau produk. Informasi yang sebelumnya tercetak di atas kertas---seperti detail acara, nomor kursi, dan identitas pemegang---kini dikodekan menjadi data digital yang dihubungkan dengan basis data di server pusat. Hal ini memungkinkan proses validasi dilakukan secara \textit{real-time} melalui pencocokan data, bukan sekadar pemeriksaan visual fisik kertas.
 
-    Tujuan Jurnal: Mencari definisi akademis untuk "tiket" dan "sistem pertiketan".
+\subsection{Evolusi dan Transformasi Digital}
+Pergeseran menuju \textit{e-ticket} merupakan bagian dari proses inovasi layanan yang lebih luas. Dalam konteks transportasi publik, \textcite{lubeck2012electronic} menjelaskan bahwa tiket elektronik dikembangkan sebagai evolusi dari sistem kartu pita magnetik dan tiket kertas konvensional. Pengembangan ini didorong oleh kekhawatiran akan inefisiensi dalam manajemen informasi dan kontrol operasi pada sistem terdahulu.
 
-    Kata Kunci Pencarian Jurnal: definition of "ticketing system", fungsi tiket dalam layanan, konsep tiket konvensional.
+Pada fase awal, sistem konvensional seringkali terkendala oleh keterbatasan dalam pelacakan data. Adopsi sistem teknis terkomputerisasi kemudian muncul sebagai solusi untuk meningkatkan efisiensi dan efektivitas operasional. Menurut \textcite{lubeck2012electronic}, implementasi sistem tiket elektronik merupakan bentuk inovasi proses yang merampingkan dan mengkualifikasi operasional dengan mengurangi proses manual sehingga meningkatkan kualitas layanan secara keseluruhan. Transformasi ini mengubah cara pengelolaan informasi karena sistem kini mampu meregistrasi pengguna, mengontrol penjualan kredit, dan menerbitkan laporan manajemen yang akurat untuk pemantauan data.
 
-Paragraf 2: Transisi ke Digital (E-Ticket).
+\subsection{Keunggulan dan Efisiensi Operasional}
+Adopsi luas sistem \textit{e-ticket} didorong oleh berbagai keunggulan signifikan dibandingkan sistem konvensional. \textcite{chen2007passenger} menyoroti bahwa motivasi utama maskapai penerbangan beralih ke \textit{e-ticketing} adalah penghematan biaya distribusi tiket dan biaya penanganan (\textit{handling overheads}). Sistem ini memungkinkan eliminasi tiket kertas, yang berdampak langsung pada pengurangan biaya tenaga kerja, pencetakan, pengiriman, dan akuntansi. Bagi pengguna, manfaat utamanya adalah kenyamanan akibat sifat tiket yang \textit{paperless}, yang secara spesifik menghilangkan risiko kehilangan tiket fisik sebelum perjalanan.
 
-    Isi: Perkenalkan istilah "e-ticket". Jelaskan bahwa ini adalah hasil dari digitalisasi tiket konvensional. Jelaskan kapan dan di industri apa (biasanya penerbangan) ini pertama kali muncul dan menjadi standar.
+Di sisi lain, dalam konteks transportasi darat, \textcite{lubeck2012electronic} menekankan bahwa keuntungan krusial dari \textit{e-ticket} terletak pada peningkatan manajemen informasi dan kontrol. Sistem ini efektif membatasi perdagangan tiket ilegal (\textit{illegal trade}) yang sebelumnya marak terjadi pada tiket fisik, serta mempersulit penyalahgunaan manfaat tiket khusus (seperti tiket pelajar) karena kredit tiket kini bersifat personal dan tidak dapat dipindahtangankan. Selain itu, sistem elektronik juga meningkatkan keamanan dengan mengurangi jumlah uang tunai yang beredar di dalam kendaraan, sehingga mengurangi daya tarik bagi tindak kejahatan seperti perampokan. 
 
-    Tujuan Jurnal: Menemukan sejarah singkat e-ticket dan definisi formalnya.
+\section{Teknologi \textit{Quick Response} (QR) Code}
+\label{sec:qrcode}
 
-    Kata Kunci Pencarian Jurnal: definition of "electronic ticket", history of e-ticketing, evolusi tiket elektronik, e-ticket adoption in airlines.
+\subsection{Sejarah dan Prinsip Kerja}
+\textit{Quick Response Code} (QR Code) adalah jenis kode batang matriks dua dimensi yang dikembangkan oleh Denso Wave pada tahun 1994. Awalnya ditujukan untuk pelacakan inventaris suku cadang kendaraan, teknologi ini kini telah diadopsi secara masif di berbagai sektor mulai dari pemasaran hingga manajemen akses \cite{tiwari2016introduction, shin2012psychology}. \textcite{shin2012psychology} mendefinisikan QR Code sebagai pola persegi yang terdiri dari modul hitam dengan latar belakang putih yang dirancang untuk didekodekan dengan kecepatan tinggi menggunakan perangkat pemindai atau kamera ponsel pintar.
 
-Paragraf 3: Keunggulan E-Ticket.
+Berbeda dengan kode batang (\textit{barcode}) satu dimensi yang hanya menyimpan data secara horizontal, QR Code mengodekan informasi dalam dua arah, yaitu vertikal dan horizontal. Struktur dua dimensi ini memungkinkan QR Code memiliki densitas informasi yang jauh lebih tinggi dan kapasitas penyimpanan yang lebih besar dalam ruang fisik yang lebih kecil dibandingkan pendahulunya \cite{alsuhibany2025innovative}. Kapasitas ini memungkinkan penyimpanan berbagai jenis mode data, termasuk numerik, alfanumerik, biner, hingga karakter Kanji \cite{tiwari2016introduction}, yang menjadikannya medium ideal untuk menyimpan data tiket elektronik yang kompleks.
 
-    Isi: Jelaskan mengapa terjadi pergeseran ke e-ticket. Paparkan keunggulannya dibandingkan tiket kertas: efisiensi biaya (cetak, distribusi), kemudahan bagi pengguna (pembelian online, tidak bisa hilang secara fisik, mudah disimpan), dan ramah lingkungan.
+\subsection{Struktur QR Code}
+Kemampuan QR Code untuk dibaca dengan cepat dan akurat (\textit{high-speed reading}) didukung oleh strukturnya yang unik. Berdasarkan spesifikasi teknis yang dijelaskan oleh \textcite{tiwari2016introduction}, setiap simbol QR Code dibangun dari modul-modul persegi yang disusun dalam \textit{array} persegi reguler. Struktur ini terdiri dari dua bagian utama, yaitu pola fungsi (\textit{function patterns}) dan wilayah pengodean (\textit{encoding region}), yang dikelilingi oleh batas zona tenang (\textit{quiet zone}) di keempat sisinya.
 
-    Tujuan Jurnal: Menemukan penelitian yang menganalisis manfaat dan keunggulan e-ticket. (Jurnal yang Anda temukan sebelumnya, chen2007passenger, sangat cocok di sini).
+Wilayah pengodean (\textit{encoding region}) berisi data yang merepresentasikan informasi versi, informasi format, data konten, dan \textit{codeword} koreksi kesalahan. Sementara itu, pola fungsi adalah bentuk-bentuk spesifik yang ditempatkan di area tertentu untuk memastikan pemindai dapat mengidentifikasi dan mengorientasikan kode dengan benar. Terdapat empat jenis pola fungsi, yaitu \textit{finder pattern}, \textit{separator}, \textit{timing patterns}, dan \textit{alignment patterns}.
 
-    Kata Kunci Pencarian Jurnal: advantages of e-ticketing over paper tickets, manfaat tiket elektronik bagi konsumen, cost-benefit analysis of e-ticketing.
+Komponen visual utama QR Code dapat dilihat pada Gambar \ref{fig:struktur_qrcode}, dan untuk rincian dari \textit{function patterns} dijelaskan sebagai berikut:
 
-\subsection{Peran QR Code dalam Sistem \textit{E-Ticket}}
-... (Penjelasan mengenai mengapa QR Code menjadi teknologi yang dominan untuk implementasi \textit{e-ticket}, mencakup kemudahan penggunaan dan adopsi luas akan ditambahkan di sini) ...
-
-\section{Teknologi \textit{Quick Response (QR) Code}}
-\subsection{Sejarah dan Prinsip Kerja QR Code}
-... (Penjelasan singkat mengenai sejarah penciptaan oleh Denso Wave dan cara kerja dasarnya dalam menyimpan data akan ditambahkan di sini) ...
-
-\subsection{Struktur dan Jenis QR Code}
-... (Pembahasan mengenai komponen teknis QR Code seperti zona tenang, pola pencari, dan kapasitas data. Juga akan dibedakan antara QR Code Statis dan Dinamis dalam konteks pemasaran untuk mengklarifikasi perbedaan dengan konsep TA ini) ...
-
-\section{Keamanan Sistem \textit{E-Ticket}}
-\subsection{Ancaman Keamanan pada \textit{E-Ticket} Berbasis QR Code Statis}
-... (Identifikasi vektor-vektor serangan yang relevan dengan masalah, seperti pemalsuan, duplikasi, dan penyadapan akan ditambahkan di sini) ...
-
-\subsection{Analisis Serangan Umum}
-... (Pemberian definisi teknis dari serangan spesifik yang ingin diatasi, seperti \textit{Replay Attack} untuk masalah \textit{screenshot}, dan \textit{Forgery} untuk masalah pemalsuan tiket akan ditambahkan di sini) ...
-
-\section{Landasan Teori Kriptografi untuk Solusi}
-\subsection{Kriptografi Asimetris (\textit{Public-Key Cryptography})}
-... (Penjelasan mengenai konsep dasar pasangan kunci publik dan privat sebagai fondasi untuk teknologi selanjutnya akan ditambahkan di sini) ...
-
-\subsection{Tanda Tangan Digital (\textit{Digital Signature})}
-... (Penjelasan mendetail mengenai cara kerja Tanda Tangan Digital untuk menjamin otentisitas, integritas, dan nirsangkal. Ini adalah pilar untuk aspek \textbf{Secure}) ...
-
-\subsection{\textit{Time-based One-Time Password} (TOTP)}
-... (Penjelasan mengenai mekanisme TOTP berdasarkan standar RFC 6238, yang menggunakan kunci rahasia bersama dan waktu sebagai faktor. Ini adalah pilar untuk aspek \textbf{Dynamic}) ...
-
-\section{Penelitian Terkait (\textit{State-of-the-Art})}
-\subsection{Tinjauan Sistem Keamanan \textit{E-Ticket} yang Sudah Ada}
-... (Rangkuman penelitian atau implementasi lain yang mencoba mengamankan \textit{e-ticket}, beserta kelebihan dan kekurangannya akan ditambahkan di sini) ...
-
-\subsection{Tinjauan Pemanfaatan Kriptografi pada QR Code}
-... (Rangkuman penelitian lain yang telah menerapkan enkripsi atau Tanda Tangan Digital pada QR Code untuk berbagai kasus penggunaan akan ditambahkan di sini) ...
-
-\subsection{Celah Penelitian (\textit{Research Gap}) dan Posisi Penelitian Ini}
-... (Kesimpulan dari tinjauan sebelumnya yang menunjukkan apa yang belum ditangani oleh penelitian lain, dan menegaskan bahwa sintesis unik antara Tanda Tangan Digital dan TOTP untuk mengatasi ancaman ganda (pemalsuan dan duplikasi \textit{real-time}) pada \textit{e-ticket} adalah kontribusi utama dari Tugas Akhir ini) ...
-
-\section{Penulisan Gambar, Tabel, Rumus, dan Kode}
-\lipsum[1]
-
-\subsection{Gambar}
-Contoh gambar dapat dilihat pada Gambar \ref{gambar:jaringan}. Gambar dan judulnya diposisikan di tengah. Nomor gambar tidak diakhiri tanda titik. Gambar tersebut dibuat menggunakan aplikasi draw.io dan disimpan ke format PNG setelah dengan zoom setting pada angka 300\%. Ukuran gambar yang ditampilkan dapat diatur dengan mengubah nilai \textit{width} dalam sintaks \textit{includegraphics}.
-
-\begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-	\centering
-  \captionsetup{justification=centering}
-    	\includegraphics[width=0.7\textwidth]{image/gambar1.png}
-	\caption{Contoh gambar jaringan}
-	\label{gambar:jaringan}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/struktur_qrcode.png} 
+    \caption{Struktur QR Code \cite{tiwari2016introduction}}
+    \label{fig:struktur_qrcode}
 \end{figure}
 
-Gambar umumnya tidak jelas atau kabur jika gambar tersebut:
-\begin{enumerate}[a.]
-  \item diperoleh dari hasil cropping pada suatu halaman buku atau situs web;
-  \item hasil pembesaran gambar yang gambar aslinya sebenarnya berukuran kecil; atau
-  \item disimpan dalam resolusi kecil
+\begin{enumerate}[a)]
+    \item \textbf{\textit{Finder Pattern}: }
+    Tiga struktur kotak konsentris yang terletak di sudut kiri atas, kanan atas, dan kiri bawah. Pola ini memungkinkan pemindai mendeteksi posisi dan orientasi kode dari segala arah (360 derajat), sehingga pemindaian dapat dilakukan secara omni-direksional.
+    
+    \item \textbf{\textit{Separators}: }
+    Area selebar satu modul berwarna putih (kosong) yang terletak di antara setiap \textit{finder pattern} dan wilayah pengodean (\textit{encoding region}) untuk memisahkan keduanya.
+
+    \item \textbf{\textit{Alignment Pattern}: }
+    Pola yang berfungsi mengoreksi distorsi jika kode dipindai pada permukaan melengkung atau sudut miring.
+    
+    \item \textbf{\textit{Timing Pattern}: }
+    Garis putus-putus yang menghubungkan pola pencari untuk menentukan koordinat modul dan kepadatan simbol.
+    
+    \item \textbf{\textit{Quiet Zone}: }
+    Area margin kosong di sekeliling simbol (minimal selebar 4 modul) yang memisahkan kode dari elemen visual di sekitarnya.
 \end{enumerate}
-Ketidakjelasan gambar ini dapat dilihat pada garis-garis diagram yang tidak tegas dan tulisan-tulisan dalam gambar yang tampak kabur dan kurang jelas terbaca.
 
-Untuk mendapatkan gambar yang tidak kabur (\textit{blur}), langkah-langkah berikut dapat digunakan:
-\begin{enumerate}[(a)]
-\item Gambar yang didapat di suatu pustaka atau referensi sebaiknya digambar ulang, misalnya menggunakan PowerPoint, Canva, Figma, draw.io, atau yang lainnya.
-\item Jika diagram atau ilustrasi digambar menggunakan draw.io, saat gambar disimpan ke format PNG atau JPG (\textit{export as}), lakukan \textit{zoom} ke minimal 300\% (\textit{the default value is} 100\%). 
-\item Jika diagram digambar dengan menggunakan PowerPoint, gambar dapat langsung di-\textit{copy-paste} ke Word.
-\end{enumerate}
+\subsection{Koreksi Kesalahan (\textit{Error Correction})}
+Salah satu keunggulan teknis QR Code yang krusial untuk implementasi \textit{e-ticket} adalah kemampuan koreksi kesalahan menggunakan algoritma Reed-Solomon. Fitur ini memungkinkan data tetap dapat dipulihkan dan dibaca meskipun sebagian area simbol rusak atau kotor \cite{tiwari2016introduction}. Tingkat koreksi kesalahan dibagi menjadi empat level sebagaimana ditampilkan pada Tabel \ref{tab:error_correction}.
 
-\subsection{Tabel}
-Tabel ada dua jenis, yaitu tabel yang bisa termuat dalam satu halaman dan tabel yang sangat panjang sehingga tidak muat dalam satu halaman.
-\subsubsection{Tabel yang Muat dalam Satu Halaman}
-Contoh tabel dapat dilihat pada Tabel \ref{tbl:harga1} dan \ref{tbl:harga2}. Tabel dan judulnya dibuat rata kiri dan judul tabel diletakkan di atas tabel. Usahakan tabel dapat ditulis dalam satu halaman, tidak terpotong ke halaman berikutnya.
-
-\begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-  \begin{tabular}{ | p{2cm} | p{2cm} | p{3cm} |}
-	\hline
-	Nama 	& Satuan 		& Harga \\
-	\hline
-	Buku 	& Exemplar	& 25000 \\
-	Komputer	& Unit		& 2500000 \\
-	Pensil	& Buah		& 118900 \\
-	\hline
-	\end{tabular}
-\caption{Tabel harga bahan pokok}
-\label{tbl:harga1}
+\begin{table}[htbp]
+    \centering
+    \caption{Tingkat Koreksi Kesalahan (\textit{Error Correction Level}) pada QR Code \cite{tiwari2016introduction}}
+    \label{tab:error_correction}
+    \begin{tabular}{clc}
+        \toprule
+        \textbf{Level} & \textbf{Keterangan} & \textbf{Kemampuan Pemulihan Data} \\
+        \midrule
+        L & \textit{Low} (Rendah) & $\approx$ 7\% \\
+        M & \textit{Medium} (Menengah) & $\approx$ 15\% \\
+        Q & \textit{Quartile} (Tinggi) & $\approx$ 25\% \\
+        H & \textit{High} (Sangat Tinggi) & $\approx$ 30\% \\
+        \bottomrule
+    \end{tabular}
 \end{table}
 
+Pemilihan level koreksi kesalahan ini menjadi pertukaran (\textit{trade-off}) antara ketahanan kode dan kapasitas data. Untuk tiket elektronik yang berisiko mengalami kerusakan fisik (jika dicetak) atau gangguan tampilan layar, level M atau Q umumnya direkomendasikan \cite{tiwari2016introduction}.
 
+\subsection{QR Code Statis vs. Dinamis}
+Dalam implementasi sistem informasi, QR Code dikategorikan berdasarkan sifat data yang dikandungnya. Pemahaman terhadap perbedaan ini sangat krusial dalam konteks keamanan tiket.
 
-\begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-	\begin{tabular}{ | l | c | r | }
-	\hline
-	Nama 	& Satuan 		& Harga \\
-	\hline
-	Buku 	& Exemplar	& 25000 \\
-	Komputer	& Unit		& 2500000 \\
-	Pensil	& Buah		& 118900 \\
-	\hline
-	\end{tabular}
-\caption{Tabel harga bahan sekunder}
-\label{tbl:harga2}
-\end{table}
+\begin{enumerate}[a)]
+    \item \textbf{QR Code Statis}\\
+    Informasi dienkodekan secara langsung dan permanen ke dalam pola matriks. Sifatnya yang \textit{fixed information} berarti data tidak dapat diubah setelah kode dibangkitkan. \textcite{yanuarafi2023perbandingan} mencatat bahwa jenis ini memiliki kelemahan keamanan karena pola visualnya yang tetap memudahkan pelaku kejahatan untuk melakukan duplikasi.
+    
+    \item \textbf{QR Code Dinamis (Konvensional)}\\
+    Dalam definisi pemasaran umum, QR dinamis menyimpan sebuah tautan pendek (\textit{short URL}) yang mengarahkan pengguna ke server tujuan. Pola QR tetap sama, namun konten di server bisa diubah. Meskipun fleksibel, pendekatan ini masih rentan terhadap penggandaan jika tautan tersebut tidak dilindungi mekanisme otentikasi tambahan.
 
-% -- Example of importing table from external file --
-\subsubsection{Mengimpor Tabel dari Berkas Eksternal}
+    \item \textbf{QR Code Dinamis Berbasis Waktu (Konteks Pengerjaan Tugas Akhir)}\\
+    Berbeda dengan definisi konvensional, pengerjaan tugas akhir ini mengadopsi konsep dinamis yang muatan data (\textit{payload}) berubah secara periodik menggunakan algoritma berbasis waktu. Hal ini menyebabkan pola visual QR Code berubah total setiap interval waktu tertentu. \textcite{sung2015security} menyoroti pentingnya mekanisme kedaluwarsa (\textit{expiration}) pada QR Code untuk mencegah penggunaan ulang kode yang telah disalin. Dengan pendekatan ini, salinan tiket hasil tangkapan layar (\textit{screenshot}) akan menjadi tidak valid secara otomatis setelah durasi waktu tertentu habis.
+\end{enumerate}
 
-Tabel \ref{tbl:harga3} diimpor dari berkas eksternal \textit{table/tabel1.tex} menggunakan perintah \textit{input}. 
-Dengan demikian, jika tabel tersebut perlu diubah, cukup mengubah pada berkas eksternal tersebut tanpa perlu mengubah pada berkas utama ini.
+\section{Ancaman dan Kerentanan pada Sistem \textit{E-Ticket}}
+\label{sec:keamanan_eticket}
 
-\input table/tabel1.tex
+Dalam konteks keamanan informasi, penting untuk membedakan antara ancaman (\textit{threat}) dan serangan (\textit{attack}). \textbf{Ancaman} merujuk pada potensi kejadian negatif yang dapat merugikan aset sistem, reputasi, atau nilai ekonomi penyedia layanan. Sementara itu, \textbf{serangan} adalah metode atau teknik spesifik yang dieksekusi oleh pelaku kejahatan untuk mengeksploitasi celah keamanan guna merealisasikan ancaman tersebut. Subbab ini akan menguraikan lanskap ancaman dari perspektif bisnis dan operasional, serta menganalisis vektor serangan teknis yang memungkinkan ancaman tersebut terjadi.
 
+\subsection{Identifikasi Ancaman (\textit{Threat Landscape})}
+Ancaman merepresentasikan risiko tingkat tinggi yang dihadapi oleh ekosistem pertiketan. Berdasarkan studi kasus dan literatur terkini, terdapat tiga kategori ancaman utama yang menjadi fokus mitigasi:
 
-% -- Example of long table --
-\subsubsection{Tabel yang Sangat Panjang}
-Jika tabel terlalu panjang sehingga tidak muat dalam satu halaman, gunakan paket 
-\textit{longtable} untuk membuat tabel yang dapat terpotong ke halaman berikutnya, 
-seperti pada Tabel \ref{tbl:longtable1}.
+\begin{enumerate}[a)]
+    \item \textbf{Praktik Percaloan (\textit{Scalping})}\\
+    Ancaman ekonomi yang terjadi ketika tiket diborong oleh calo untuk dijual kembali dengan harga berkali-kali lipat dari harga normalnya yang merusak kewajaran pasar. \textcite{Pamela2023} melaporkan bahwa praktik ini sangat merugikan konsumen secara finansial dan merusak reputasi penyelenggara acara.
+    
+    \item \textbf{Penipuan Tiket (\textit{Fraud})}\\
+    Ancaman kriminal berupa penjualan tiket palsu atau tiket yang tidak valid kepada konsumen. Investigasi \textcite{diveranta2025jejak} mencatat kerugian miliaran rupiah akibat praktik ini, yang mengancam kepercayaan publik terhadap sistem penjualan tiket digital.
+    
+    \item \textbf{Infiltrasi Akses Ilegal}\\
+    Ancaman operasional yang terjadi ketika individu tidak berhak berhasil memasuki area acara. Hal ini tidak hanya merugikan pendapatan, tetapi juga menimbulkan risiko keamanan fisik dan ketidaknyamanan bagi pemegang tiket sah yang kursinya ditempati pihak lain \cite{Kurniawan2024}.
+\end{enumerate}
 
-\begin{longtable}{@{\extracolsep{\fill}} l c r r}
-\caption{Comprehensive Data Table Example}\label{tbl:longtable1} \\
-\toprule
-\textbf{ID} & \textbf{Name} & \textbf{Score} & \textbf{Rank} \\
-\midrule
-\endfirsthead
+\subsection{Analisis Vektor Serangan (\textit{Attack Vectors})}
+Untuk mewujudkan ancaman-ancaman di atas, pelaku kejahatan menggunakan berbagai metode serangan teknis yang mengeksploitasi kelemahan pada QR Code statis. Berikut adalah analisis mengenai metode serangan tersebut:
 
-\caption{Comprehensive Data Table Example (lanjutan)} \\
-\toprule
-\textbf{ID} & \textbf{Name} & \textbf{Score} & \textbf{Rank} \\
-\midrule
-\endhead
+\subsubsection{Serangan Penggandaan (\textit{Cloning Attack})}
+Serangan ini merupakan metode utama untuk melakukan penipuan tiket. Pelaku menyalin citra QR Code yang sah melalui fitur tangkapan layar (\textit{screen capture}) dan mendistribusikannya kepada korban. \textcite{sung2015security} menegaskan bahwa kerentanan utama sistem \textit{mobile} adalah kemudahan menduplikasi tampilan layar, yang disebabkan oleh sistem statis yang gagal membedakan antara citra asli di aplikasi dan citra salinan di galeri foto.
 
-\midrule
-\multicolumn{4}{r}{\textit{Bersambung ke halaman berikutnya}} \\
-%\bottomrule
-\endfoot
+\subsubsection{Serangan Putar Ulang (\textit{Replay Attack})}
+Serangan ini mengeksploitasi validitas data tiket yang tidak memiliki batasan waktu yang ketat. Dalam skenario ini, data tiket yang sah ditangkap (disalin) dan dikirimkan ulang (\textit{replayed}) ke sistem pemindai di waktu atau lokasi berbeda. Tanpa mekanisme kedaluwarsa (\textit{expiration}), tiket yang sama dapat digunakan berulang kali untuk memasukkan banyak orang. \textcite{sung2015security} menyarankan penggunaan kedaluwarsa pada kode untuk membatalkan validitasnya setelah jangka waktu tertentu guna mematahkan serangan ini.
 
-\bottomrule
-\endlastfoot
+\subsubsection{Eksfiltrasi Data (\textit{Data Exfiltration})}
+Serangan ini menargetkan kerahasiaan data pengguna. \textcite{sung2015security} menjelaskan bahwa data kredensial yang disimpan tanpa enkripsi di penyimpanan lokal perangkat rentan dicuri oleh \textit{malware}. Informasi yang dicuri ini kemudian dapat digunakan oleh penyerang untuk merekonstruksi tiket valid atau melakukan pencurian identitas pengguna.
 
-% === Table Data ===
-1 & Alice Smith & 89 & 5 \\
-2 & Bob Johnson & 93 & 3 \\
-3 & Carol Davis & 95 & 2 \\
-4 & Daniel Wilson & 88 & 6 \\
-5 & Eve Thompson & 97 & 1 \\
-6 & Frank Brown & 85 & 7 \\
-7 & Grace Lee & 91 & 4 \\
-8 & Henry Miller & 80 & 9 \\
-9 & Irene Garcia & 83 & 8 \\
-10 & Jack Robinson & 78 & 10 \\
-% Repeat with more rows to make it long
-11 & Kevin Harris & 76 & 11 \\
-12 & Laura Martin & 75 & 12 \\
-13 & Michael Clark & 74 & 13 \\
-14 & Natalie Lewis & 73 & 14 \\
-15 & Olivia Walker & 72 & 15 \\
-16 & Peter Hall & 71 & 16 \\
-17 & Quinn Allen & 70 & 17 \\
-18 & Rachel Young & 69 & 18 \\
-19 & Samuel King & 68 & 19 \\
-20 & Tina Wright & 67 & 20 \\
-21 & Uma Scott & 66 & 21 \\
-22 & Victor Green & 65 & 22 \\
-23 & Wendy Adams & 64 & 23 \\
-24 & Xavier Nelson & 63 & 24 \\
-25 & Yolanda Carter & 62 & 25 \\
-26 & Zachary Perez & 61 & 26 \\
-27 & Amelia Baker & 60 & 27 \\
-28 & Benjamin Rivera & 59 & 28 \\
-29 & Charlotte Rogers & 58 & 29 \\
-30 & David Murphy & 57 & 30 \\
-31 & Ethan Cooper & 56 & 31 \\
-32 & Fiona Reed & 55 & 32 \\
-33 & George Bailey & 54 & 33 \\
-34 & Hannah Cox & 53 & 34 \\
-35 & Isaac Howard & 52 & 35 \\
-36 & Julia Ward & 51 & 36 \\
-37 & Kyle Flores & 50 & 37 \\
-38 & Lily Bell & 49 & 38 \\
-39 & Mason Sanders & 48 & 39 \\
-40 & Nora Patterson & 47 & 40 \\
-41 & Owen Ramirez & 46 & 41 \\
-42 & Penelope Torres & 45 & 42 \\
-43 & Quentin Foster & 44 & 43 \\
-44 & Rebecca Gonzales & 43 & 44 \\
-45 & Sebastian Bryant & 42 & 45 \\
-46 & Taylor Alexander & 41 & 46 \\
-47 & Ursula Russell & 40 & 47 \\
-48 & Vincent Griffin & 39 & 48 \\
-49 & William Diaz & 38 & 49 \\
-50 & Zoe Simmons & 37 & 50 \\
-% (You can easily extend this list to hundreds of rows)
-\end{longtable}
+\section{Landasan Teori Kriptografi untuk Solusi}
+\label{sec:kriptografi}
 
-\subsubsection{Beberapa Contoh Penulisan Rumus atau Persamaan Matematika Menggunakan LaTeX Termasuk Penomorannya}
-Contoh rumus matematika dapat ditulis seperti pada Persamaan \ref{eq:contoh1} di bawah ini. 
-Penomoran persamaan diletakkan di sebelah kanan, dan rumus ditulis dalam mode \textit{display math}.
+Solusi keamanan yang diusulkan dalam penelitian ini, yaitu \textit{Dynamic Secure QR Code}, dibangun di atas fondasi algoritma kriptografi modern. Subbab ini akan menguraikan konsep teoretis dari teknologi kriptografi yang digunakan, meliputi kriptografi asimetris sebagai kerangka kerja utama, tanda tangan digital untuk menjamin aspek nirsangkal, serta algoritma \textit{Time-based One-Time Password} (TOTP) sebagai mekanisme pembaruan kode secara dinamis.
+
+\subsection{Kriptografi Asimetris (\textit{Public-Key Cryptography})}
+Kriptografi asimetris, atau sering disebut kriptografi kunci publik, merupakan konsep fundamental dalam keamanan informasi modern yang diperkenalkan untuk mengatasi kelemahan distribusi kunci pada kriptografi simetris. \textcite{stallings2022cryptography} menjelaskan bahwa skema ini menggunakan dua kunci berbeda yang saling berkaitan secara matematis, yaitu kunci publik dan kunci privat.
+
+\textcite{stallings2022cryptography} menjelaskan, skema enkripsi kunci publik terdiri dari enam komponen utama yang saling berinteraksi, sebagaimana diilustrasikan pada Gambar \ref{fig:skema_pkc}. Komponen-komponen tersebut adalah:
+
+\begin{enumerate}[a)]
+    \item \textbf{\textit{Plaintext}:} Ini adalah pesan atau data asli yang dapat dibaca (\textit{readable}) yang dimasukkan ke dalam algoritma sebagai input.
+    \item \textbf{Algoritma Enkripsi:} Algoritma yang melakukan berbagai transformasi matematis terhadap \textit{plaintext} untuk mengubahnya menjadi bentuk yang tidak dapat dibaca.
+    \item \textbf{Kunci Publik dan Privat:} Sepasang kunci yang telah dipilih sedemikian rupa sehingga jika salah satu digunakan untuk enkripsi, maka kunci pasangannya digunakan untuk dekripsi. Transformasi pasti yang dilakukan oleh algoritma bergantung pada kunci publik atau privat yang diberikan sebagai input.
+    \item \textbf{\textit{Ciphertext}:} Pesan terenkripsi atau teracak yang dihasilkan sebagai output. \textit{Ciphertext} bergantung pada \textit{plaintext} dan kunci yang digunakan. Untuk pesan yang sama, dua kunci yang berbeda akan menghasilkan dua \textit{ciphertext} yang berbeda.
+    \item \textbf{Algoritma Dekripsi:} Algoritma yang menerima \textit{ciphertext} dan kunci pasangan yang cocok (kunci privat jika dienkripsi dengan publik, atau sebaliknya), lalu menghasilkan kembali \textit{plaintext} asli.
+\end{enumerate}
+
+\begin{figure}[t]
+    \centering
+    % --- Sub-gambar A (Posisi Atas) ---
+    \begin{subfigure}[b]{\textwidth} 
+        \centering
+        \includegraphics[width=\textwidth]{image/encrypt_1.png} 
+        \caption{Enkripsi Kunci Publik (Kerahasiaan)}
+        \label{fig:enkripsi_publik}
+    \end{subfigure}
+    
+    \vspace{1cm} 
+    
+    % --- Sub-gambar B (Posisi Bawah) ---
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image/encrypt_2.png}
+        \caption{Enkripsi Kunci Privat (Autentikasi)}
+        \label{fig:enkripsi_privat}
+    \end{subfigure}
+    
+    \caption{Skema Enkripsi Kunci Publik \cite{stallings2022cryptography}}
+    \label{fig:skema_pkc}
+\end{figure}
+
+Mekanisme kerja sistem ini didasarkan pada fungsi satu arah (\textit{one-way function}). Dalam skenario menjaga kerahasiaan (\textit{confidentiality}), pengirim menggunakan kunci publik penerima untuk mengenkripsi pesan, dan hanya penerima yang memiliki kunci privat pasangannya yang dapat mendekripsi pesan tersebut (Gambar \ref{fig:enkripsi_publik}). Sebaliknya, dalam skenario autentikasi, kunci privat digunakan untuk mengenkripsi (menandatangani) pesan, yang kemudian dapat diverifikasi oleh siapa saja menggunakan kunci publik (Gambar \ref{fig:enkripsi_privat}).
+
+Pada pengerjaan tugas akhir ini, secara spesifik akan memanfaatkan algoritma \textit{Elliptic Curve Cryptography} (ECC). Berbeda dengan algoritma RSA yang mendasarkan keamanannya pada faktorisasi bilangan prima besar, ECC mendasarkan keamanannya pada masalah logaritma diskrit kurva eliptik (\textit{Elliptic Curve Discrete Logarithm Problem}). Keunggulan utama ECC adalah efisiensi sumber daya yang dijelaskan \textcite{bafandehkar2013} dalam studi perbandingannya, menunjukkan bahwa ECC mampu memberikan tingkat keamanan yang setara dengan RSA namun dengan ukuran kunci yang jauh lebih kecil. Sebagai ilustrasi, kunci ECC sebesar 160-bit menawarkan tingkat keamanan yang setara dengan kunci RSA 1024-bit. Karakteristik ini menjadikan ECC sangat ideal untuk diimplementasikan pada perangkat dengan sumber daya komputasi terbatas seperti ponsel pintar dalam sistem \textit{e-ticket}.
+
+\subsection{Tanda Tangan Digital (\textit{Digital Signature})}
+Tanda tangan digital adalah mekanisme kriptografi yang berfungsi sebagai analog digital dari tanda tangan tulisan tangan, namun dengan tingkat keamanan yang jauh lebih tinggi karena melekat secara matematis pada dokumen yang ditandatangani. Menurut \textcite{stallings2022cryptography}, tanda tangan digital memberikan tiga jaminan keamanan utama: autentikasi sumber (memastikan pengirim adalah pihak yang sah), integritas data (memastikan data tidak diubah sejak ditandatangani), dan nirsangkal (\textit{non-repudiation}) (pengirim tidak dapat menyangkal telah mengirim pesan tersebut).
+
+Proses pembuatan tanda tangan digital melibatkan penggunaan fungsi \textit{hash} dan kunci privat pengirim. Data atau pesan (\textit{message}) terlebih dahulu diproses melalui fungsi \textit{hash} untuk menghasilkan nilai ringkasan (\textit{digest}) yang unik. Nilai \textit{hash} ini kemudian dienkripsi menggunakan kunci privat pengirim untuk membentuk tanda tangan digital. Pada sisi penerima (verifikator), proses validasi dilakukan dengan mendekripsi tanda tangan menggunakan kunci publik pengirim untuk mendapatkan nilai \textit{hash} asli, dan membandingkannya dengan nilai \textit{hash} yang dihitung ulang dari data yang diterima. Jika kedua nilai tersebut identik, maka integritas dan keaslian data terjamin. Dalam penelitian ini, algoritma yang digunakan adalah \textit{Elliptic Curve Digital Signature Algorithm} (ECDSA), yang merupakan varian dari DSA yang beroperasi pada grup kurva eliptik.
+
+\subsection{\textit{Time-based One-Time Password} (TOTP)}
+Untuk mencapai karakteristik dinamis pada sistem \textit{e-ticket}, penelitian ini mengadopsi algoritma \textit{Time-based One-Time Password} (TOTP). TOTP merupakan pengembangan dari algoritma \textit{HMAC-based One-Time Password} (HOTP) yang didefinisikan dalam standar IETF RFC 4226. HOTP membangkitkan kata sandi sekali pakai berdasarkan penghitung kejadian (\textit{event counter}) yang disinkronisasi antara klien dan server. Rumus dasar HOTP didefinisikan sebagai berikut:
+
 \begin{equation}
-E = mc^2
-\label{eq:contoh1}
+    HOTP(K, C) = Truncate(HMAC\text{-}SHA\text{-}1(K, C))
 \end{equation}
 
-Contoh lain penulisan rumus matematika yang lebih kompleks dapat ditulis seperti pada Persamaan \ref{eq:rumus2}.
+Keterangan:
+\begin{itemize}
+    \item $K$ adalah kunci rahasia bersama (\textit{shared secret key}).
+    \item $C$ adalah nilai pencacah (\textit{counter}).
+    \item $HMAC\text{-}SHA\text{-}1$ adalah fungsi \textit{keyed-hash message authentication code}.
+\end{itemize}
 
-\begin{align}
-f(x) &= ax^2 + bx + c \\
-f'(x) &= \frac{d}{dx}(ax^2 + bx + c) \notag \\ % tidak menampilkan nomor pada baris ini
-      &= 2ax + b \label{eq:rumus2}
-\end{align}
+Namun, HOTP memiliki kelemahan potensial berupa desinkronisasi jika tombol pembangkit ditekan berulang kali tanpa validasi ke server. Untuk mengatasi hal ini, diperkenalkan TOTP melalui standar RFC 6238. TOTP menggantikan nilai pencacah ($C$) dengan nilai waktu terkini. Algoritma ini menggunakan interval waktu (\textit{time step}) sebagai faktor pengubah, sehingga kode yang dihasilkan akan valid hanya dalam jendela waktu tertentu (misalnya 30 detik).
 
-Jika rumus terlalu panjang untuk ditulis dalam satu baris, gunakan lingkungan \textit{multline} seperti pada Persamaan \ref{eq:rumus3} di bawah ini.
-\begin{multline} 
-y = a_0 + a_1x + a_2x^2 + a_3x^3 + a_4x^4 + a_5x^5 + a_6x^6 + a_7x^7 \\
-    + a_8x^8 + a_9x^9 + a_{10}x^{10} \label{eq:rumus3}
-\end{multline}
+Perhitungan nilai langkah waktu ($T$) dalam TOTP dirumuskan sebagai berikut:
 
-Jika ada penurunan rumus yang terdiri dari beberapa baris, namun tidak memerlukan penomoran pada setiap baris, gunakan lingkungan \textit{align*}, misalnya:
+\begin{equation}
+    T = \lfloor \frac{CurrentTime - T0}{X} \rfloor
+\end{equation}
 
-\begin{align*} 
-S &= \sum_{i=1}^{n} i^2 \\
-  &= 1^2 + 2^2 + 3^2 + \cdots + n^2 \\
-  &= \frac{n(n + 1)(2n + 1)}{6}
-\intertext{Contoh lainnya adalah rumus untuk mencari nilai rata-rata fungsi $f(x)$ pada interval $[p, q]$:}
-\bar{f} &= \frac{1}{q - p} \int_{p}^{q} f(x) \, dx \\
-        &= \frac{1}{q - p} \int_{p}^{q} (ax^2 + bx + c) \, dx \\
-        &= \frac{1}{q - p} \left[ \frac{a}{3}x^3 + \frac{b}{2}x^2 + cx \right]_p^q \\
-        &= \frac{a(q^3 - p^3)}{3(q - p)} + \frac{b(q^2 - p^2)}{2(q - p)} + c \label{eq:rumus4}
-\end{align*}
+Keterangan:
+\begin{itemize}
+    \item $CurrentTime$ adalah waktu saat ini dalam detik (biasanya format \textit{Unix epoch}).
+    \item $T0$ adalah waktu awal penghitungan (biasanya 0).
+    \item $X$ adalah durasi langkah waktu (\textit{time step}), yang secara \textit{default} adalah 30 detik.
+\end{itemize}
 
+Dengan demikian, nilai TOTP dibangkitkan dengan memasukkan nilai $T$ ke dalam fungsi HOTP:
 
+\begin{equation}
+    TOTP = HOTP(K, T)
+\end{equation}
 
-\subsection{Algoritma, Pseudocode, atau Kode}
-Contoh penulisan algoritma atau pseudocode dapat ditulis seperti pada Kode \ref{alg:contoh1} di bawah ini. 
-Gunakan paket \textit{listings} untuk menulis source code dalam bahasa pemrograman tertentu, seperti pada Kode \ref{lst:contoh1}. 
+Penggunaan TOTP menjamin bahwa \textit{payload} QR Code akan selalu berubah secara periodik mengikuti waktu server, sehingga memitigasi risiko serangan putar ulang (\textit{replay attack}) akibat penggunaan tiket hasil tangkapan layar yang telah kedaluwarsa.
 
+\section{Penelitian Terkait}
+\label{sec:penelitian_terkait}
 
-% -- Example of pseudocode and source code listing --
-% -- Gunakan minipage agar listing tidak terpotong ke halaman berikutnya --
-\begin{minipage}{\textwidth} 
-\begin{lstlisting}[frame=lines, captionpos=t, caption={Contoh pseudocode}, label={alg:contoh1}]
-ALGORITHM HelloWorld
-   PRINT "Hello, World!"
-END ALGORITHM
-\end{lstlisting}
-\end{minipage}
+Pengembangan sistem keamanan berbasis QR Code telah menjadi subjek penelitian yang aktif dalam beberapa tahun terakhir seiring dengan meningkatnya ancaman digital. Subbab ini meninjau secara mendalam beberapa penelitian terdahulu yang relevan untuk memetakan posisi dan kontribusi penelitian ini. Tinjauan dilakukan terhadap tiga perspektif utama, yaitu: (1) mekanisme anti-pemalsuan pada media fisik, (2) analisis kerentanan pada autentikasi seluler, dan (3) studi implementasi QR Code dinamis.
 
-\begin{minipage}{\textwidth}
-\begin{lstlisting}[language=Python, frame=single, caption={Contoh source code Python}, captionpos=t, label={lst:contoh1}]
-def hello_world():
-    print("Hello, World!")       
-hello_world()
-\end{lstlisting}
-\end{minipage}
+\subsection{Sistem QR Code Anti-Pemalsuan Berbasis \textit{Watermarking} dan CNN \cite{alsuhibany2025innovative}}
+Dalam studi ini, \textcite{alsuhibany2025innovative} mengembangkan sistem untuk memitigasi ancaman substitusi kode batang (\textit{barcode substitution fraud}) dan serangan pencetakan ulang (\textit{reprinting attack}) yang sering terjadi pada label produk dan dokumen fisik. \textcite{alsuhibany2025innovative} mengidentifikasi bahwa QR Code standar tidak memiliki fitur keamanan inheren, sehingga pelaku kejahatan dapat dengan mudah menyalin atau mengganti kode asli dengan kode palsu untuk memanipulasi informasi produk. Hal ini tidak hanya menyebabkan kerugian finansial, tetapi juga merusak kepercayaan konsumen sehingga memerlukan pengawasan manual yang lebih ketat.
 
+Untuk mengatasi masalah tersebut, penelitian ini mengusulkan pendekatan keamanan dua lapis. Lapisan pertama adalah mekanisme \textit{tamper-proof generation} menggunakan teknik \textit{digital watermarking} pada domain spasial. Teknik ini menyisipkan pola keamanan unik (yang berbeda untuk setiap pasar) ke dalam citra QR Code menggunakan metode modifikasi \textit{Least Significant Bit} (LSB). Penulis mengklaim bahwa metode ini dipilih karena kesederhanaannya dan ketahanannya terhadap distorsi umum seperti pencetakan dan pemindaian ulang. Lapisan kedua adalah mekanisme verifikasi berbasis kecerdasan buatan (\textit{Artificial Intelligence}) menggunakan \textit{Convolutional Neural Network} (CNN). Model tersebut dilatih untuk mendeteksi perbedaan mikroskopis atau degradasi kualitas (\textit{noise}) yang membedakan antara QR Code asli dan hasil cetak ulang (\textit{reprinted}).
 
-\section{Beberapa Kesalahan Penulisan yang Sering Terjadi}
-\subsection{Penggunaan Kata "di mana" atau "dimana"}
-Banyak yang menuliskan kata "di mana" atau "dimana" sebagai pengganti kata "which" dalam bahasa Inggris. 
-Padahal, penggunaan kata "di mana" atau "dimana" tidak tepat dalam konteks tersebut. Demikian juga untuk kata serupa, misalnya "yang mana".
-Kata "di mana" atau "dimana" ini harus diganti dengan kata lain, seperti "dengan", "tempat", "yang", dan sebagainya tergantung kalimatnya.
-Penjelasan lengkap dapat dilihat pada \autocite{BPBI}.
+Meskipun metode ini terbukti efektif dalam mendeteksi pemalsuan pada media fisik, pendekatannya memiliki keterbatasan jika diterapkan pada tiket digital berbasis layar ponsel. Dalam ekosistem \textit{e-ticket}, ancaman utama adalah duplikasi melalui tangkapan layar (\textit{screenshot}) yang menghasilkan salinan digital identik secara bit-per-bit, tanpa degradasi fisik yang dapat dideteksi oleh model CNN tersebut. Oleh karena itu, solusi berbasis analisis citra statis seperti yang ditawarkan Alsuhibany perlu dilengkapi dengan mekanisme dinamis (perubahan konten) untuk mematahkan validitas salinan digital tersebut.
 
-\subsection{Penggunaan Kata "sedangkan" dan "sehingga"}
+\subsection{Analisis Kerentanan Autentikasi Seluler Berbasis QR Code \cite{sung2015security}}
+Penelitian yang dilakukan oleh \textcite{sung2015security} menyajikan analisis keamanan komprehensif terhadap sistem autentikasi yang menggunakan QR Code pada perangkat seluler. Berbeda dengan pandangan umum yang menganggap QR Code aman, penelitian ini mengungkap berbagai vektor serangan kritis, khususnya yang terjadi pada sisi klien (\textit{client-side}).
 
-\begin{table}[t]
-  \begin{tabular}{|c|l|l|}
-  \hline
-  Kata & Salah & Benar \\ \hline
-  sedangkan & \begin{tabular}[c]{@{}c@{}}Sedangkan sistem lama masih\\ digunakan oleh banyak pengguna.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Sistem lama masih digunakan\\ oleh banyak pengguna,\\ sedangkan sistem baru belum siap.\end{tabular} \\ \hline
-  sehingga & \begin{tabular}[c]{@{}c@{}}Sehingga sistem lama masih\\ digunakan oleh banyak pengguna.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Sistem lama masih digunakan\\ oleh banyak pengguna sehingga\\ sistem baru belum siap.\end{tabular} \\ \hline
-  \end{tabular}
-  \caption{Contoh penggunaan kata "sedangkan" dan "sehingga"}
-  \label{tbl:sedangkan_sehingga}
+\textcite{sung2015security} mengklasifikasikan kerentanan tersebut ke dalam beberapa kategori utama. Pertama, kerentanan penggandaan (\textit{cloning}), adalah ketika QR Code mudah disalin melalui fitur tangkapan layar (\textit{screen capture}) karena sistem tidak dapat membedakan citra asli di aplikasi dengan citra salinan. Kedua, serangan putar ulang (\textit{replay attack}) yang terjadi ketika kode valid digunakan kembali di luar waktu yang diizinkan. Ketiga, eksfiltrasi data (\textit{stored data exfiltration}), yaitu risiko pencurian data kredensial yang tersimpan di memori lokal perangkat oleh aplikasi berbahaya (\textit{malware}) jika tidak dilindungi oleh enkripsi yang memadai. Selain itu, penelitian ini juga membahas ancaman lain seperti penyadapan pesan jaringan (\textit{network eavesdropping}) dan pengungkapan algoritma internal melalui teknik rekayasa balik (\textit{reverse engineering}).
+
+Sebagai usulan mitigasi terhadap implementasi perangkat lunak, \textcite{sung2015security} mengusulkan kerangka kerja implementasi aman (\textit{secure implementation}) yang mencakup beberapa lapisan pertahanan. Rekomendasi utamanya meliputi penerapan mekanisme kedaluwarsa (\textit{expiration}) untuk mencegah serangan putar ulang, enkripsi data penyimpanan untuk mencegah eksfiltrasi, serta pengaburan kode (\textit{code obfuscation}) untuk mempersulit analisis algoritma oleh penyerang. Penelitian tugas akhir ini akan mengadopsi beberapa rekomendasi tersebut dengan cara mengimplementasikan algoritma TOTP untuk manajemen kedaluwarsa otomatis dan enkripsi asimetris pada \textit{payload} tiket guna melindungi data dari risiko eksfiltrasi dan manipulasi.
+
+\subsection{Studi Komparasi QR Code Statis dan Dinamis \cite{yanuarafi2023perbandingan}}
+Dalam konteks implementasi sistem autentikasi kehadiran, \textcite{yanuarafi2023perbandingan} melakukan studi komparatif antara penggunaan QR Code statis dan dinamis pada sistem presensi pegawai di lingkungan universitas. Penelitian ini dilatarbelakangi oleh maraknya kecurangan presensi yang terjadi akibat kelemahan sistem statis, yang terjadi akibat kode identitas yang bersifat tetap mudah disalin dan dibagikan kepada rekan kerja untuk melakukan presensi palsu (``titip absen").
+
+Hasil penelitian menunjukkan bahwa QR Code dinamis memiliki keunggulan signifikan dalam aspek keamanan dibandingkan varian statis. Dengan mekanisme perubahan kode secara berkala, celah keamanan berupa penggunaan ulang kode (\textit{reuse}) atau penggandaan kode statis dapat diminimalisasi secara efektif. \textcite{yanuarafi2023perbandingan} menyimpulkan bahwa meskipun implementasi sistem dinamis membutuhkan sumber daya komputasi yang lebih besar, tingkat akurasi dan keamanan data yang dihasilkan jauh lebih tinggi, menjadikannya standar yang direkomendasikan untuk sistem yang membutuhkan manajemen absensi yang baik.
+
+Meskipun penelitian ini berhasil membuktikan keunggulan konsep dinamis, fokus utamanya terletak pada fungsionalitas aplikasi presensi dan pencegahan berbagi kode secara sederhana. Penelitian tersebut belum membahas mekanisme perlindungan integritas data secara kriptografis, seperti penggunaan tanda tangan digital (\textit{digital signature}), untuk menjamin bahwa data dinamis yang dihasilkan benar-benar berasal dari otoritas yang sah dan tidak dimanipulasi oleh pihak ketiga selama proses transmisi. Celah inilah yang akan dilengkapi oleh penelitian Tugas Akhir ini melalui arsitektur \textit{Dynamic Secure QR Code}.
+
+\subsection{Posisi Penelitian dan Kontribusi}
+Berdasarkan tinjauan literatur di atas, dapat dipetakan bahwa penelitian-penelitian terdahulu umumnya berfokus pada salah satu aspek keamanan secara terpisah. Belum banyak ditemukan sistem yang mengintegrasikan mekanisme pertahanan secara holistik untuk menjawab tiga kebutuhan utama keamanan tiket, yaitu: (1) Aspek dinamis untuk mencegah serangan penggandaan, (2) aspek kerahasiaan untuk melindungi data privasi pengguna, dan (3) aspek integritas untuk menjamin keaslian penerbit tiket.
+
+Penelitian ini bertujuan mengisi celah penelitian (\textit{research gap}) tersebut dengan mengusulkan arsitektur \textit{Dynamic Secure QR Code}. Kontribusi utama penelitian ini adalah penggabungan algoritma TOTP, enkripsi asimetris (ECC) yang efisien untuk perangkat seluler \cite{bafandehkar2013}, dan tanda tangan digital dalam satu sistem yang padu. Perbandingan posisi penelitian ini dengan penelitian terkait dapat dilihat pada Tabel \ref{tab:state_of_the_art}.
+
+\begin{table}[H]
+    \caption{Perbandingan Fitur Keamanan Penelitian Terkait dengan Penelitian yang Diusulkan}
+    \label{tab:state_of_the_art}
+    \centering
+    \begin{tabularx}{\textwidth}{ l >{\raggedright\arraybackslash}X c c c }
+        \toprule
+        \textbf{Peneliti} & \textbf{Fokus} \newline \textbf{Penelitian} & \textbf{Dinamis} & \textbf{Rahasia} & \textbf{Integritas} \\
+        \midrule
+        \textcite{sung2015security} & Analisis kerentanan autentikasi \textit{mobile} & Saran & Saran & - \\
+        \addlinespace
+        \textcite{alsuhibany2025innovative} & \textit{Watermarking} digital pada media cetak & Tidak & Tidak & Ya \\
+        \addlinespace
+        \textcite{yanuarafi2023perbandingan} & Perbandingan presensi statis vs dinamis & Ya & Tidak & - \\
+        \addlinespace
+        \textbf{Penelitian Ini} & \textbf{Sistem \textit{E-Ticket} (TOTP + Enkripsi + TTD)} & \textbf{Ya} & \textbf{Ya} & \textbf{Ya} \\
+        \bottomrule
+    \end{tabularx}
 \end{table}
-
-Kata "sedangkan" dan "sehingga" adalah kata hubung atau konjungsi. 
-Konjungsi adalah kata atau ungkapan yang menghubungkan satuan bahasa 
-(kata, frasa, klausa, dan kalimat). 
-Konjungsi dapat dibagi menjadi konjungsi intrakalimat dan antarkalimat.  
-Kata "sedangkan" menghubungkan dua klausa yang bersifat kontrasif, 
-sedangkan "sehingga" menghubungkan dua klausa yang bersifat kausal. 
-Dalam ragam formal, kata hubung “sedangkan” dan “sehingga” hanya dapat digunakan 
-sebagai konjungsi intrakalimat sehingga kedua konjungsi itu \textbf{tidak dapat diletakkan pada awal kalimat}.
-Selain itu, penggunaan kata "sedangkan" harus didahului oleh koma (,), sedangkan kata "sehingga" tidak perlu didahului oleh koma (,).
-Contoh penggunaan yang benar dan salah dapat dilihat pada Tabel \ref{tbl:sedangkan_sehingga}.
-
-
-\subsection{Penggunaan Istilah yang Tidak Baku}
-Ada beberapa istilah yang sering digunakan dalam pembicaraan sehari-hari, tetapi tidak baku dalam penulisan ilmiah.
-Beberapa istilah tersebut antara lain:
-\begin{enumerate}
-  \item analisa $\rightarrow$ analisis
-  \item eksisting atau existing $\rightarrow$ yang ada atau saat ini
-  \item bisnis proses $\rightarrow$ proses bisnis
-  \item user $\rightarrow$ pengguna
-  \item system $\rightarrow$ sistem
-  \item database $\rightarrow$ basis data
-  \item aktifitas $\rightarrow$ aktivitas
-  \item efektifitas $\rightarrow$ efektivitas
-  \item sosial media $\rightarrow$ media sosial
-\end{enumerate}
-
-\subsection{Pemisah Desimal dan Ribuan}
-Tanda pemisah desimal dalam bahasa Indonesia adalah tanda koma, contoh:
-\begin{enumerate}
-  \item (Salah) Akurasi naik menjadi 50.6\% 
-  \item (Benar) Akurasi naik menjadi 50,6\% 
-\end{enumerate}
-
-\subsection{Daftar atau \textit{List}}
-Ada beberapa aturan penulisan daftar atau \textit{list} yang perlu diperhatikan, antara lain:
-\begin{enumerate}[a)]
-\item Jika memungkinkan, hindari penggunaan “bullet points” atau sejenisnya. Sebaiknya, gunakan angka (1, 2, 3, ...) atau huruf (a, b, c, …). Dengan demikian, pembaca dapat dengan mudah melihat jumlah \textit{item} atau \textit{list}. 
-\item Jika dalam daftar hanya ada satu item, tidak perlu menggunakan nomor urut.
-\item Penjelasan atau deskripsi suatu item sebaiknya menyatu dengan judul item tersebut, tidak berbeda halaman. Contoh yang salah: judul item ada di halaman 10, namun deskripsinya di halaman 11. Sebaiknya pindahkan judul tersebut ke halaman 11.
-\item Jika penjelasan atau deskripsi suatu item cukup panjang, misalnya lebih dari 1 halaman atau terdiri atas beberapa paragraf, sebaiknya setiap item tersebut dijadikan judul subbab, kecuali jika level subbab sudah mencapai level 4. 
-\end{enumerate}
-
-\subsection{Penggunaan Kata "masing-masing" dan "setiap"}
-Kata “masing-masing” digunakan di belakang kata yang diterangkan, misalnya 
-"Setiap proses menggunakan algoritma masing-masing". Kata “tiap-tiap” atau “setiap”
-ditempatkan di depan kata yang diterangkan, misalnya
-"Setiap proses menggunakan algoritma tertentu".
