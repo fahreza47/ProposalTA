@@ -134,7 +134,15 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.3.2}Analisis Vektor Serangan (\textit {Attack Vectors})}{13}{subsection.2.3.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.3.2}Analisis Vektor Serangan (\textit {Attack Vectors})}{14}{subsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {II.3.2.1}Serangan Penggandaan (\textit {Cloning Attack})}{14}{subsubsection.2.3.2.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
@@ -150,8 +158,8 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.4}Landasan Teori Kriptografi untuk Solusi}{14}{section.2.4}%
-\contentsline {subsection}{\numberline {II.4.1}Kriptografi Asimetris (\textit {Public-Key Cryptography})}{14}{subsection.2.4.1}%
+\contentsline {section}{\numberline {II.4}Landasan Teori Kriptografi untuk Solusi}{15}{section.2.4}%
+\contentsline {subsection}{\numberline {II.4.1}Kriptografi Asimetris (\textit {Public-Key Cryptography})}{15}{subsection.2.4.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -166,31 +174,27 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.2}Tanda Tangan Digital (\textit {Digital Signature})}{16}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {II.4.2}Tanda Tangan Digital (\textit {Digital Signature})}{17}{subsection.2.4.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \contentsline {subsection}{\numberline {II.4.3}\textit {Time-based One-Time Password} (TOTP)}{17}{subsection.2.4.3}%
-\contentsline {section}{\numberline {II.5}Penelitian Terkait}{18}{section.2.5}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.5.1}Sistem QR Code Anti-Pemalsuan Berbasis \textit {Watermarking} dan CNN \blx@tocontentsinit {0}\parencite {alsuhibany2025innovative}}{18}{subsection.2.5.1}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.5}Mekanisme Sinkronisasi Data dan Penyimpanan Lokal}{18}{section.2.5}%
+\contentsline {subsection}{\numberline {II.5.1}Manajemen \textit {Cache} Lokal}{19}{subsection.2.5.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.5.2}Sinkronisasi Asinkron (\textit {Batching})}{19}{subsection.2.5.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.5.2}Analisis Kerentanan Autentikasi Seluler Berbasis QR Code \blx@tocontentsinit {0}\parencite {sung2015security}}{19}{subsection.2.5.2}%
+\contentsline {section}{\numberline {II.6}Penelitian Terkait}{19}{section.2.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.6.1}Sistem QR Code Anti-Pemalsuan Berbasis \textit {Watermarking} dan CNN \blx@tocontentsinit {0}\parencite {alsuhibany2025innovative}}{19}{subsection.2.6.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -201,16 +205,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.5.3}Studi Komparasi QR Code Statis dan Dinamis \blx@tocontentsinit {0}\parencite {yanuarafi2023perbandingan}}{20}{subsection.2.5.3}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.5.4}Posisi Penelitian dan Kontribusi}{21}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {II.6.2}Analisis Kerentanan Autentikasi Seluler Berbasis QR Code \blx@tocontentsinit {0}\parencite {sung2015security}}{20}{subsection.2.6.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -225,23 +220,45 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{22}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{22}{section.3.1}%
+\contentsline {subsection}{\numberline {II.6.3}Studi Komparasi QR Code Statis dan Dinamis \blx@tocontentsinit {0}\parencite {yanuarafi2023perbandingan}}{21}{subsection.2.6.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{22}{section.3.2}%
-\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{22}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{23}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{23}{subsection.3.2.3}%
-\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{23}{section.3.3}%
-\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{23}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{23}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{25}{chapter.4}%
-\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{26}{chapter.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.6.4}Posisi Penelitian dan Kontribusi}{22}{subsection.2.6.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{24}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{24}{section.3.1}%
+\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{26}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{26}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{27}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Non-fungsional}{28}{subsection.3.2.3}%
+\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{29}{section.3.3}%
+\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{32}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{34}{chapter.4}%
+\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{35}{chapter.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 

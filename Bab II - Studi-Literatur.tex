@@ -11,7 +11,7 @@ Perkembangan teknologi informasi telah mengubah paradigma layanan di berbagai se
 \subsection{Definisi dan Konsep Dasar}
 Menurut Kamus Besar Bahasa Indonesia (KBBI), tiket atau karcis adalah surat kecil (carik kertas khusus) sebagai tanda telah membayar ongkos dan sebagainya (untuk naik bus, menonton bioskop, dan sebagainya). Tiket merupakan dokumen yang berfungsi sebagai hak akses atau tanda pembayaran yang sah untuk menggunakan suatu layanan. Seiring dengan perkembangan teknologi, terjadi transformasi bentuk tiket konvensional yang berbasis kertas menjadi wujud digital yang tersimpan dalam basis data komputer, yang disebut sebagai \textit{electronic ticket} atau \textit{e-ticket}.
 
-Secara konseptual, \textit{e-ticket} bukan sekadar penggantian media kertas, melainkan sebuah kontrak digital yang merepresentasikan hak kepemilikan (\textit{entitlement}) atas suatu layanan atau produk. Informasi yang sebelumnya tercetak di atas kertas---seperti detail acara, nomor kursi, dan identitas pemegang---kini dikodekan menjadi data digital yang dihubungkan dengan basis data di server pusat. Hal ini memungkinkan proses validasi dilakukan secara \textit{real-time} melalui pencocokan data, bukan sekadar pemeriksaan visual fisik kertas.
+Secara konseptual, \textit{e-ticket} bukan sekadar penggantian media kertas, melainkan sebuah kontrak digital yang merepresentasikan hak kepemilikan atas suatu layanan atau produk. Informasi yang sebelumnya tercetak di atas kertas seperti detail acara, nomor kursi, dan identitas pemegang, kini dikodekan menjadi data digital yang dihubungkan dengan basis data di server pusat. Hal ini memungkinkan proses validasi dilakukan secara \textit{real-time} melalui pencocokan data, bukan sekadar pemeriksaan visual fisik kertas.
 
 \subsection{Evolusi dan Transformasi Digital}
 Pergeseran menuju \textit{e-ticket} merupakan bagian dari proses inovasi layanan yang lebih luas. Dalam konteks transportasi publik, \textcite{lubeck2012electronic} menjelaskan bahwa tiket elektronik dikembangkan sebagai evolusi dari sistem kartu pita magnetik dan tiket kertas konvensional. Pengembangan ini didorong oleh kekhawatiran akan inefisiensi dalam manajemen informasi dan kontrol operasi pada sistem terdahulu.
@@ -67,66 +67,65 @@ Salah satu keunggulan teknis QR Code yang krusial untuk implementasi \textit{e-t
 
 \begin{table}[htbp]
     \centering
-    \caption{Tingkat Koreksi Kesalahan (\textit{Error Correction Level}) pada QR Code \cite{tiwari2016introduction}}
+    \caption{Tingkat Koreksi Kesalahan (\textit{Error Correction Level}) pada kode QR \cite{tiwari2016introduction}}
     \label{tab:error_correction}
-    \begin{tabular}{clc}
-        \toprule
+    % Menggunakan tabularx dengan garis vertikal (|) untuk membuat grid
+    \begin{tabularx}{\textwidth}{| c | >{\raggedright\arraybackslash}X | c |}
+        \hline
         \textbf{Level} & \textbf{Keterangan} & \textbf{Kemampuan Pemulihan Data} \\
-        \midrule
+        \hline
         L & \textit{Low} (Rendah) & $\approx$ 7\% \\
+        \hline
         M & \textit{Medium} (Menengah) & $\approx$ 15\% \\
+        \hline
         Q & \textit{Quartile} (Tinggi) & $\approx$ 25\% \\
+        \hline
         H & \textit{High} (Sangat Tinggi) & $\approx$ 30\% \\
-        \bottomrule
-    \end{tabular}
+        \hline
+    \end{tabularx}
 \end{table}
 
-Pemilihan level koreksi kesalahan ini menjadi pertukaran (\textit{trade-off}) antara ketahanan kode dan kapasitas data. Untuk tiket elektronik yang berisiko mengalami kerusakan fisik (jika dicetak) atau gangguan tampilan layar, level M atau Q umumnya direkomendasikan \cite{tiwari2016introduction}.
+Pemilihan level koreksi kesalahan ini menjadi pertukaran (\textit{trade-off}) antara ketahanan kode dan kapasitas data. Level M atau Q umumnya direkomendasikan untuk tiket elektronik yang berisiko mengalami kerusakan fisik (jika dicetak) atau gangguan tampilan layar \cite{tiwari2016introduction}.
 
 \subsection{QR Code Statis vs. Dinamis}
-Dalam implementasi sistem informasi, QR Code dikategorikan berdasarkan sifat data yang dikandungnya. Pemahaman terhadap perbedaan ini sangat krusial dalam konteks keamanan tiket.
+Dalam implementasi sistem informasi, kode QR dikategorikan berdasarkan sifat data yang dikandungnya. Pemahaman terhadap perbedaan ini sangat penting dalam konteks keamanan tiket.
 
 \begin{enumerate}[a)]
-    \item \textbf{QR Code Statis}\\
-    Informasi dienkodekan secara langsung dan permanen ke dalam pola matriks. Sifatnya yang \textit{fixed information} berarti data tidak dapat diubah setelah kode dibangkitkan. \textcite{yanuarafi2023perbandingan} mencatat bahwa jenis ini memiliki kelemahan keamanan karena pola visualnya yang tetap memudahkan pelaku kejahatan untuk melakukan duplikasi.
+    \item Kode QR Statis: Informasi dienkodekan secara langsung dan permanen ke dalam pola matriks. Sifatnya yang \textit{fixed information} berarti data tidak dapat diubah setelah kode dibangkitkan. \textcite{yanuarafi2023perbandingan} mencatat bahwa jenis ini memiliki kelemahan keamanan karena pola visualnya yang tetap memudahkan pelaku kejahatan untuk melakukan duplikasi.
     
-    \item \textbf{QR Code Dinamis (Konvensional)}\\
-    Dalam definisi pemasaran umum, QR dinamis menyimpan sebuah tautan pendek (\textit{short URL}) yang mengarahkan pengguna ke server tujuan. Pola QR tetap sama, namun konten di server bisa diubah. Meskipun fleksibel, pendekatan ini masih rentan terhadap penggandaan jika tautan tersebut tidak dilindungi mekanisme otentikasi tambahan.
+    \item Kode QR Dinamis (Umum): Dalam definisi pemasaran umum, kode QR dinamis menyimpan sebuah tautan pendek (\textit{short URL}) yang mengarahkan pengguna ke server tujuan. Pola QR tetap sama, namun konten di server bisa diubah. Meskipun fleksibel, pendekatan ini masih rentan terhadap penggandaan jika tautan tersebut tidak dilindungi mekanisme otentikasi tambahan.
 
-    \item \textbf{QR Code Dinamis Berbasis Waktu (Konteks Pengerjaan Tugas Akhir)}\\
-    Berbeda dengan definisi konvensional, pengerjaan tugas akhir ini mengadopsi konsep dinamis yang muatan data (\textit{payload}) berubah secara periodik menggunakan algoritma berbasis waktu. Hal ini menyebabkan pola visual QR Code berubah total setiap interval waktu tertentu. \textcite{sung2015security} menyoroti pentingnya mekanisme kedaluwarsa (\textit{expiration}) pada QR Code untuk mencegah penggunaan ulang kode yang telah disalin. Dengan pendekatan ini, salinan tiket hasil tangkapan layar (\textit{screenshot}) akan menjadi tidak valid secara otomatis setelah durasi waktu tertentu habis.
+    \item Kode QR Dinamis Berbasis Waktu (Konteks Pengerjaan Tugas Akhir): Berbeda dengan definisi pada umumnya, pengerjaan tugas akhir ini mengadopsi konsep dinamis yang muatan data (\textit{payload}) berubah secara periodik menggunakan algoritma berbasis waktu. Hal ini menyebabkan pola visual kode QR berubah total setiap interval waktu tertentu. \textcite{sung2015security} menyoroti pentingnya mekanisme kedaluwarsa (\textit{expiration}) pada kode QR untuk mencegah penggunaan ulang kode yang telah disalin. Dengan pendekatan ini, salinan tiket hasil tangkapan layar (\textit{screenshot}) akan menjadi tidak valid secara otomatis setelah durasi waktu tertentu habis.
 \end{enumerate}
 
 \section{Ancaman dan Kerentanan pada Sistem \textit{E-Ticket}}
 \label{sec:keamanan_eticket}
 
-Dalam konteks keamanan informasi, penting untuk membedakan antara ancaman (\textit{threat}) dan serangan (\textit{attack}). \textbf{Ancaman} merujuk pada potensi kejadian negatif yang dapat merugikan aset sistem, reputasi, atau nilai ekonomi penyedia layanan. Sementara itu, \textbf{serangan} adalah metode atau teknik spesifik yang dieksekusi oleh pelaku kejahatan untuk mengeksploitasi celah keamanan guna merealisasikan ancaman tersebut. Subbab ini akan menguraikan lanskap ancaman dari perspektif bisnis dan operasional, serta menganalisis vektor serangan teknis yang memungkinkan ancaman tersebut terjadi.
+Dalam konteks keamanan informasi, penting untuk membedakan antara ancaman (\textit{threat}) dan serangan (\textit{attack}). Ancaman merujuk pada potensi kejadian negatif yang dapat merugikan aset sistem, reputasi, atau nilai ekonomi penyedia layanan. Sementara itu, serangan adalah metode atau teknik spesifik yang dieksekusi oleh pelaku kejahatan untuk mengeksploitasi celah keamanan guna merealisasikan ancaman tersebut. Subbab ini akan menguraikan lanskap ancaman dari perspektif bisnis dan operasional, serta menganalisis vektor serangan teknis yang memungkinkan ancaman tersebut terjadi.
 
 \subsection{Identifikasi Ancaman (\textit{Threat Landscape})}
-Ancaman merepresentasikan risiko tingkat tinggi yang dihadapi oleh ekosistem pertiketan. Berdasarkan studi kasus dan literatur terkini, terdapat tiga kategori ancaman utama yang menjadi fokus mitigasi:
+Ancaman merepresentasikan risiko tingkat tinggi yang dihadapi oleh ekosistem pertiketan. Berdasarkan studi kasus dan literatur terkini, terdapat empat kategori ancaman utama yang menjadi fokus mitigasi:
 
 \begin{enumerate}[a)]
-    \item \textbf{Praktik Percaloan (\textit{Scalping})}\\
-    Ancaman ekonomi yang terjadi ketika tiket diborong oleh calo untuk dijual kembali dengan harga berkali-kali lipat dari harga normalnya yang merusak kewajaran pasar. \textcite{Pamela2023} melaporkan bahwa praktik ini sangat merugikan konsumen secara finansial dan merusak reputasi penyelenggara acara.
-    
-    \item \textbf{Penipuan Tiket (\textit{Fraud})}\\
-    Ancaman kriminal berupa penjualan tiket palsu atau tiket yang tidak valid kepada konsumen. Investigasi \textcite{diveranta2025jejak} mencatat kerugian miliaran rupiah akibat praktik ini, yang mengancam kepercayaan publik terhadap sistem penjualan tiket digital.
-    
-    \item \textbf{Infiltrasi Akses Ilegal}\\
-    Ancaman operasional yang terjadi ketika individu tidak berhak berhasil memasuki area acara. Hal ini tidak hanya merugikan pendapatan, tetapi juga menimbulkan risiko keamanan fisik dan ketidaknyamanan bagi pemegang tiket sah yang kursinya ditempati pihak lain \cite{Kurniawan2024}.
+    \item Praktik Percaloan (\textit{Scalping}): Calo atau makelar menurut Kamus Besar Bahasa Indonesia (KBBI) adalah orang yang menjadi perantara dan memberikan jasanya untuk menguruskan sesuatu berdasarkan upah. Ini adalah ancaman ekonomi yang terjadi ketika seseorang menjual kembali tiket yang dibelinya, namun dengan harga berkali-kali lipat dari harga normalnya yang merusak kewajaran pasar. \textcite{Pamela2023} melaporkan bahwa praktik ini sangat merugikan konsumen secara finansial dan merusak reputasi penyelenggara acara. Untuk memitigasi ancaman ini, diperlukan mekanisme validasi yang menjamin bahwa tiket yang ditampilkan adalah versi terbaru dan valid pada saat pemindaian, bukan salinan yang telah kedaluwarsa.
+        
+    \item Penipuan Tiket (\textit{Fraud}): Ancaman kriminal berupa penjualan tiket palsu atau tiket yang tidak valid kepada konsumen. Investigasi \textcite{diveranta2025jejak} mencatat kerugian miliaran rupiah akibat praktik ini, yang mengancam kepercayaan publik terhadap sistem penjualan tiket digital.
+
+    \item Infiltrasi Akses Ilegal: Ancaman operasional yang terjadi ketika individu tidak berhak berhasil memasuki area acara. Hal ini tidak hanya merugikan pendapatan, tetapi juga menimbulkan risiko keamanan fisik dan ketidaknyamanan bagi pemegang tiket sah yang kursinya ditempati pihak lain \cite{Kurniawan2024}.
+
+    \item Ancaman Kegagalan Titik Tunggal (\textit{Single Point of Failure}): Ancaman sistemik yang muncul ketika infrastruktur jaringan atau server pusat mengalami gangguan. \textcite{lever2013single} mendefinisikan \textit{Single Point of Failure} (SPoF) dalam sistem yang terintegrasi sebagai komponen kritis yang jika gagal, akan menyebabkan kegagalan operasional seluruh sistem karena terhambatnya transmisi data. Dalam konteks arsitektur server, \textcite{jafarnejad2017load} menegaskan bahwa ketergantungan pada \textit{node} pengendali terpusat (\textit{centralized}) menciptakan risiko SPoF yang tinggi; jika \textit{node} pusat tersebut mengalami gangguan atau kelebihan beban (\textit{overload}), maka seluruh layanan akan terhenti total. Hal ini sangat relevan dengan risiko kelumpuhan validasi tiket di gerbang masuk saat terjadi gangguan jaringan massal.
 \end{enumerate}
 
 \subsection{Analisis Vektor Serangan (\textit{Attack Vectors})}
 Untuk mewujudkan ancaman-ancaman di atas, pelaku kejahatan menggunakan berbagai metode serangan teknis yang mengeksploitasi kelemahan pada QR Code statis. Berikut adalah analisis mengenai metode serangan tersebut:
 
-\subsubsection{Serangan Penggandaan (\textit{Cloning Attack})}
-Serangan ini merupakan metode utama untuk melakukan penipuan tiket. Pelaku menyalin citra QR Code yang sah melalui fitur tangkapan layar (\textit{screen capture}) dan mendistribusikannya kepada korban. \textcite{sung2015security} menegaskan bahwa kerentanan utama sistem \textit{mobile} adalah kemudahan menduplikasi tampilan layar, yang disebabkan oleh sistem statis yang gagal membedakan antara citra asli di aplikasi dan citra salinan di galeri foto.
+\begin{enumerate}[a)]
+    \item Serangan Penggandaan (\textit{Cloning Attack}): Serangan ini merupakan metode utama untuk melakukan penipuan tiket. Pelaku menyalin citra QR Code yang sah melalui fitur tangkapan layar (\textit{screen capture}) dan mendistribusikannya kepada korban. \textcite{sung2015security} menegaskan bahwa kerentanan utama sistem \textit{mobile} adalah kemudahan menduplikasi tampilan layar, yang disebabkan oleh sistem statis yang gagal membedakan antara citra asli di aplikasi dan citra salinan di galeri foto.
+    
+    \item Serangan Putar Ulang (\textit{Replay Attack}): Serangan ini mengeksploitasi validitas data tiket yang tidak memiliki batasan waktu yang ketat. Dalam skenario ini, data tiket yang sah ditangkap (disalin) dan dikirimkan ulang (\textit{replayed}) ke sistem pemindai di waktu atau lokasi berbeda. Tanpa mekanisme kedaluwarsa (\textit{expiration}), tiket yang sama dapat digunakan berulang kali untuk memasukkan banyak orang. \textcite{sung2015security} menyarankan penggunaan kedaluwarsa pada kode untuk membatalkan validitasnya setelah jangka waktu tertentu guna mematahkan serangan ini.
 
-\subsubsection{Serangan Putar Ulang (\textit{Replay Attack})}
-Serangan ini mengeksploitasi validitas data tiket yang tidak memiliki batasan waktu yang ketat. Dalam skenario ini, data tiket yang sah ditangkap (disalin) dan dikirimkan ulang (\textit{replayed}) ke sistem pemindai di waktu atau lokasi berbeda. Tanpa mekanisme kedaluwarsa (\textit{expiration}), tiket yang sama dapat digunakan berulang kali untuk memasukkan banyak orang. \textcite{sung2015security} menyarankan penggunaan kedaluwarsa pada kode untuk membatalkan validitasnya setelah jangka waktu tertentu guna mematahkan serangan ini.
-
-\subsubsection{Eksfiltrasi Data (\textit{Data Exfiltration})}
-Serangan ini menargetkan kerahasiaan data pengguna. \textcite{sung2015security} menjelaskan bahwa data kredensial yang disimpan tanpa enkripsi di penyimpanan lokal perangkat rentan dicuri oleh \textit{malware}. Informasi yang dicuri ini kemudian dapat digunakan oleh penyerang untuk merekonstruksi tiket valid atau melakukan pencurian identitas pengguna.
+    \item Eksfiltrasi Data (\textit{Data Exfiltration}): Serangan ini menargetkan kerahasiaan data pengguna. \textcite{sung2015security} menjelaskan bahwa data kredensial yang disimpan tanpa enkripsi di penyimpanan lokal perangkat rentan dicuri oleh \textit{malware}. Informasi yang dicuri ini kemudian dapat digunakan oleh penyerang untuk merekonstruksi tiket valid atau melakukan pencurian identitas pengguna.
+\end{enumerate}
 
 \section{Landasan Teori Kriptografi untuk Solusi}
 \label{sec:kriptografi}
@@ -214,7 +213,19 @@ Dengan demikian, nilai TOTP dibangkitkan dengan memasukkan nilai $T$ ke dalam fu
     TOTP = HOTP(K, T)
 \end{equation}
 
-Penggunaan TOTP menjamin bahwa \textit{payload} QR Code akan selalu berubah secara periodik mengikuti waktu server, sehingga memitigasi risiko serangan putar ulang (\textit{replay attack}) akibat penggunaan tiket hasil tangkapan layar yang telah kedaluwarsa.
+Penggunaan TOTP menjamin bahwa \textit{payload} kode QR akan selalu berubah secara periodik mengikuti waktu server sehingga memitigasi risiko serangan penggandaan tiket (\textit{cloning attack}) dan serangan putar ulang (\textit{replay attack}) akibat penggunaan tiket hasil tangkapan layar yang telah kedaluwarsa.
+
+\section{Mekanisme Sinkronisasi Data dan Penyimpanan Lokal}
+\label{sec:batching_caching}
+
+Untuk memitigasi risiko kegagalan jaringan dan meningkatkan kinerja sistem pada lingkungan dengan konektivitas terbatas, penelitian ini menerapkan mekanisme pengelolaan data hibrida.
+
+\subsection{Manajemen \textit{Cache} Lokal}
+Penyimpanan sementara atau \textit{caching} adalah teknik fundamental untuk efisiensi data. \textcite{tang2006benefit} menyatakan bahwa \textit{caching} data secara lokal pada node jaringan dapat secara signifikan meningkatkan efisiensi akses informasi dengan mengurangi latensi akses dan penggunaan \textit{bandwidth} jaringan. Dalam konteks validasi tiket, \textit{cache} lokal pada alat pemindai berfungsi menyimpan data kredensial tiket yang telah diverifikasi atau data kunci publik yang diperlukan sehingga memungkinkan proses validasi tetap berjalan instan (\textit{low latency}) tanpa ketergantungan penuh pada koneksi internet setiap saat.
+
+\subsection{Sinkronisasi Asinkron (\textit{Batching})}
+Selain penyimpanan lokal, efisiensi pengiriman data ke server pusat juga menjadi perhatian utama. \textcite{ramachandra2015program} menjelaskan bahwa pengiriman permintaan data secara asinkron dan terkelompok (\textit{batched}) dapat meningkatkan kinerja aplikasi secara signifikan dibandingkan pengiriman sinkron satu per satu. Teknik ini memungkinkan aplikasi untuk menumpuk log transaksi (seperti status \textit{check-in}) di sisi klien dan mengirimkannya ke server secara kolektif saat koneksi tersedia atau dalam interval waktu tertentu. Pendekatan ini mengurangi penundaan (\textit{delay}) akibat putaran jaringan (\textit{network round-trips}) yang berulang dan memastikan antrean pengunjung tidak terhambat oleh proses sinkronisasi data.
+% =================================================
 
 \section{Penelitian Terkait}
 \label{sec:penelitian_terkait}

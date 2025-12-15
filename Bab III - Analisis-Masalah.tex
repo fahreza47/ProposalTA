@@ -6,19 +6,189 @@
 % ============================================================================================
 \chapter{ANALISIS MASALAH}
 \label{chap:analisis-masalah}
+
 \section{Analisis Kondisi Saat Ini}
-Menurut \textcite{laudon2020}, gambarkan terlebih dahulu model konseptual sistem yang ada saat ini. Model konseptual ini berisi berbagai komponen atau subsitem dan interaksi antarsubsistem tersebut. Setelah itu, berikan penjelasan tentang masalah yang ada pada sistem tersebut. Paragraf berikut berisi contoh penjabaran masalah sistem informasi fasilitas kesehatan untuk pasien \autocite{pressman2019}. 
+Berdasarkan tinjauan terhadap sistem pertiketan elektronik konvensional yang umum digunakan saat ini (seperti pada studi kasus konser musik dan pertandingan olahraga), model proses bisnis yang berjalan masih mengandalkan arsitektur kode QR statis. Model konseptual dari sistem yang berjalan, beserta titik-titik kerentanan yang teridentifikasi dalam alur distribusi dan validasi tiket, digambarkan pada Gambar \ref{fig:current_system_flow}.
+
+\begin{figure}[htbp]
+    \centering
+    % Pastikan nama file sesuai dengan yang kamu simpan (jpg/png)
+    \includegraphics[width=\textwidth, keepaspectratio]{image/TA-model_konseptual.png}
+    \caption{Model Konseptual dan Titik Kerentanan Sistem \textit{E-Ticket} Konvensional}
+    \label{fig:current_system_flow}
+\end{figure}
+
+Sebagaimana diilustrasikan pada Gambar \ref{fig:current_system_flow}, proses dimulai ketika pengguna asli membeli tiket dari sistem server. Tiket yang dibangkitkan kemudian dikirim dan disimpan ke dalam penyimpanan lokal perangkat pengguna dalam format berkas statis (seperti gambar atau PDF). Sifat data yang statis dan tersimpan secara lokal ini menciptakan celah keamanan yang digambarkan melalui tiga vektor ancaman utama pada diagram:
+
+\begin{enumerate}
+    \item Distribusi Tiket Tidak Terkendali (Praktik Percaloan): 
+    Seperti terlihat pada alur panah merah bagian atas diagram, ketiadaan mekanisme validasi berbasis waktu (\textit{time-based validation}) memungkinkan pengguna asli untuk mendistribusikan satu tiket kepada banyak pihak lain hanya dengan menyalin citra kode QR. Karena kode tersebut berlaku tanpa batas waktu hingga dipindai (statis), tiket dapat digandakan dan dijual kembali dengan mudah tanpa terikat pada sesi aplikasi pengguna yang sah. Hal ini menyuburkan praktik percaloan, yaitu ketika tiket dijual dengan harga yang melambung tinggi tanpa kendali penyelenggara resmi sehingga merusak ekosistem penjualan tiket yang sehat.
+    
+    \item Ancaman Penggandaan (\textit{Cloning Attack}) dan Penolakan Layanan: Celah pada penyimpanan lokal memungkinkan pihak ilegal mengambil alih tiket melalui tangkapan layar (\textit{screenshot}). Hal ini menciptakan kondisi ``balapan" ke para pemilik tiket yang identik, untuk diverifikasikan pada alat pemindai. Sebagaimana ditunjukkan pada alur validasi diagram, jika pihak ilegal berhasil memindai tiket lebih awal, maka alat pemindai akan mencatat tiket sebagai ``Sudah Digunakan". Akibatnya, pengguna asli yang datang belakangan akan mengalami penolakan akses (\textit{Denial of Service}), meskipun memiliki tiket yang sah secara pembelian.
+    
+    \item Kebocoran Data Pribadi (\textit{Data Exfiltration}): 
+    Penyimpanan tiket statis tanpa enkripsi pada penyimpanan lokal membuka peluang terjadinya eksfiltrasi data. Informasi sensitif pengguna yang melekat pada tiket (seperti nama, nomor ponsel, atau identitas penting lainnya) dapat dengan mudah terbaca apabila dokumen \textit{e-ticket} tersebut jatuh ke tangan pihak tidak bertanggung jawab, sebagaimana digambarkan pada blok ``Data Pengguna Asli Bocor".
+\end{enumerate}
+
+Kondisi ini menegaskan bahwa sistem saat ini belum memenuhi prinsip keamanan CIA Triad (\textit{Confidentiality, Integrity, Availability}) yang memadai untuk menangani transaksi tiket bernilai tinggi.
+
 \section{Analisis Kebutuhan}
-\lipsum[4]
+Tahap analisis kebutuhan bertujuan untuk mendefinisikan spesifikasi sistem yang harus dipenuhi guna mengatasi permasalahan yang telah diidentifikasi pada model sistem saat ini. Analisis ini dibagi menjadi identifikasi masalah pengguna, kebutuhan fungsional, dan kebutuhan non-fungsional.
+
 \subsection{Identifikasi Masalah Pengguna}
-\lipsum[5]
+Berdasarkan analisis kondisi saat ini, terdapat beberapa permasalahan kritis yang dihadapi oleh pemangku kepentingan utama, yaitu penyelenggara acara (\textit{event organizer}) dan pengguna (pemegang tiket yang sah). Masalah-masalah tersebut diuraikan sebagai berikut:
+
+\begin{enumerate}
+    \item Distribusi Tiket Tidak Terkendali: Pada sistem saat ini, tiket yang telah dibeli dapat dipindahtangankan atau diperjualbelikan kembali dengan sangat mudah melalui pengiriman citra digital (tangkapan layar). Akar masalahnya adalah sifat statis dari visualisasi kode QR, yang informasi validitas tiketnya melekat permanen pada citra tanpa batasan waktu tayang. Akibatnya, sistem tidak dapat membedakan antara pemegang tiket asli yang mengakses melalui aplikasi resmi dengan pihak lain yang hanya bermodalkan tangkapan layar, sehingga menyuburkan praktik percaloan dan merugikan konsumen akibat harga jual yang dimanipulasi.
+    
+    \item Penolakan Layanan akibat Penggandaan (\textit{Denial of Service}): Pemegang tiket yang sah berisiko gagal memasuki area acara jika tiket mereka telah digandakan (\textit{cloning}) dan digunakan lebih dulu oleh pihak lain. Dalam sistem QR statis, alat pemindai tidak dapat membedakan mana pemilik asli dan mana pembawa salinan. Kondisi ini menciptakan ``kompetisi'' (\textit{race condition}) di pintu masuk; siapa yang memindai lebih dulu akan diterima, sedangkan yang datang belakangan—meskipun pemilik sah—akan tertolak sistem karena status tiket dianggap sudah terpakai.
+    
+    \item Masalah Privasi Data: Pengguna menghadapi risiko keamanan data karena informasi pribadi (seperti NIK, Nama, dan Detail Pesanan) yang melekat pada tiket digital tersimpan dalam format teks asli (\textit{plaintext}). Tanpa enkripsi, data ini rentan dicuri (\textit{data exfiltration}) dan disalahgunakan untuk rekayasa sosial atau penipuan.
+    
+    \item Ketergantungan Koneksi dan Titik Kegagalan Tunggal: Proses pemindaian tiket konvensional umumnya bergantung penuh pada koneksi internet ke server pusat untuk memverifikasi setiap kali pemindaian (\textit{online verification}). Ketergantungan ini menciptakan risiko Titik Kegagalan Tunggal (\textit{Single Point of Failure}). Risiko ini muncul apabila terputusnya koneksi server, baik karena gangguan infrastruktur ataupun akibat saturasi jaringan seluler (banjir trafik), yang menyebabkan seluruh proses pemindaian di gerbang terhenti total sehingga terjadinya kekacauan antrean dan operasional.
+\end{enumerate}
+
 \subsection{Kebutuhan Fungsional}
-\lipsum[6]
-\subsection{Kebutuhan Nonfungsional}
-\lipsum[7]
+Kebutuhan fungsional mendefinisikan layanan atau fitur spesifik yang harus disediakan oleh sistem untuk menjawab masalah pengguna di atas. Rincian kebutuhan fungsional sistem \textit{Dynamic Secure QR Code} dijabarkan pada Tabel \ref{tab:functional_req}.
+
+% Perhatikan definisi kolom menggunakan garis vertikal (|)
+% | l | p{4.5cm} | p{8cm} |
+\begin{longtable}{|l|p{4.5cm}|p{7.5cm}|}
+    \caption{Daftar Kebutuhan Fungsional Sistem}\label{tab:functional_req} \\
+    \hline
+    \textbf{Kode} & \textbf{Kebutuhan Fungsional} & \textbf{Deskripsi} \\
+    \hline
+    \endfirsthead
+    
+    \caption[]{Daftar Kebutuhan Fungsional Sistem (lanjutan)} \\
+    \hline
+    \textbf{Kode} & \textbf{Kebutuhan Fungsional} & \textbf{Deskripsi} \\
+    \hline
+    \endhead
+    
+    \hline
+    \multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+    \endfoot
+    
+    \hline
+    \endlastfoot
+    
+    FR-01 & Penerbitan \textit{E-ticket} & Sistem (Server) dapat menerbitkan tiket elektronik baru yang berisi identitas pengguna, kunci rahasia (\textit{secret key}), dan tanda tangan digital, lalu mendistribusikannya secara aman ke perangkat pengguna sebagai inisialisasi awal. \\
+    \hline
+    FR-02 & Pembangkitan kode QR Dinamis & Sistem (Aplikasi Pengguna) dapat memvisualisasikan tiket dalam bentuk kode QR dinamis yang muatan datanya diperbarui otomatis setiap interval waktu tertentu (misalnya 30 detik) berdasarkan token dinamis. \\
+    \hline
+    FR-03 & Enkripsi \textit{Payload} & Sistem dapat mengenkripsi informasi sensitif pengguna di dalam muatan kode QR menggunakan algoritma kriptografi (misalnya ECC) sehingga data tidak dapat dibaca secara langsung dalam format teks biasa (\textit{plaintext}) oleh pihak tidak berwenang. \\
+    \hline
+    FR-04 & Integritas Data Tiket & Sistem dapat menyertakan mekanisme penandatanganan digital pada data identitas tiket untuk menjamin keaslian penerbit dan memastikan informasi detail tiket tidak dimodifikasi, yang dapat diverifikasi meskipun dalam kondisi \textit{offline}. \\
+    \hline
+    FR-05 & Verifikasi Keaslian dan Dekripsi Tiket & Aplikasi pemindai (\textit{Scanner}) dapat memverifikasi tanda tangan digital dan mendekripsi muatan tiket secara lokal tanpa membutuhkan koneksi internet ke server pusat. \\
+    \hline
+    FR-06 & Validasi Token Waktu & Aplikasi pemindai dapat memverifikasi kebenaran token dinamis yang dibawa pengguna dengan menyertakan mekanisme toleransi sinkronisasi waktu, guna mengantisipasi perbedaan jam internal antara perangkat pengguna dan alat pemindai (\textit{clock drift}). \\
+    \hline
+    FR-07 & Manajemen \textit{Cache} Lokal & Aplikasi pemindai memiliki penyimpanan sementara (\textit{local cache}) untuk mencatat ID tiket yang baru saja dipindai guna mencegah serangan penggandaan instan (\textit{replay/cloning attack}) di gerbang yang sama saat mode \textit{offline}. \\
+    \hline
+    FR-08 & Sinkronisasi Asinkron (\textit{Batching}) & Sistem mendukung pengiriman data log kehadiran secara berkala (\textit{batching}) dari pemindai ke server pusat di latar belakang (\textit{background process}) untuk efisiensi lalu lintas jaringan. \\
+    \hline
+
+\end{longtable}
+
+\subsection{Kebutuhan Non-fungsional}
+Kebutuhan non-fungsional mendefinisikan atribut kualitas, batasan operasional, dan standar kinerja yang harus dipenuhi sistem. Rincian kebutuhan non-fungsional dijabarkan pada Tabel \ref{tab:non_functional_req}.
+
+\begin{longtable}{|l|p{4.5cm}|p{7.5cm}|}
+    \caption{Daftar Kebutuhan Non-fungsional Sistem}\label{tab:non_functional_req} \\
+    \hline
+    \textbf{Kode} & \textbf{Parameter} & \textbf{Deskripsi} \\
+    \hline
+    \endfirsthead
+    
+    \caption[]{Daftar Kebutuhan Non-fungsional Sistem (lanjutan)} \\
+    \hline
+    \textbf{Kode} & \textbf{Parameter} & \textbf{Deskripsi} \\
+    \hline
+    \endhead
+    
+    \hline
+    \multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+    \endfoot
+    
+    \hline
+    \endlastfoot
+
+    NFR-01 & Keamanan (\textit{Security}) & Sistem harus menerapkan algoritma kriptografi pada muatan (\textit{payload}) kode QR untuk menjamin kerahasiaan data privasi pengguna serta memastikan integritas tiket terhadap upaya pemalsuan maupun serangan komputasi. \\
+    \hline
+    NFR-02 & Kinerja (\textit{Performance}) & Proses pembangkitan kode QR di sisi pengguna dan proses verifikasi kriptografi di sisi pemindai harus dapat diselesaikan dalam waktu kurang dari 2 detik demi kelancaran antrean (latensi rendah). \\
+    \hline
+    NFR-03 & Ketersediaan (\textit{Availability}) & Fitur validasi tiket utama (pembangkitan token dinamis, verifikasi tanda tangan digital, dan dekripsi \textit{payload}) harus memiliki tingkat ketersediaan tinggi dan tetap berfungsi penuh dalam mode \textit{offline} (tanpa koneksi internet). \\
+    \hline
+    NFR-04 & Kompatibilitas (\textit{Compatibility}) & Sistem harus kompatibel dengan perangkat seluler lintas platform (Android dan iOS) serta tidak mensyaratkan ketersediaan perangkat keras khusus selain kamera dan layar standar, guna menjamin aksesibilitas luas. \\
+    \hline
+    
+\end{longtable} 
 
 \section{Analisis Pemilihan Solusi}
+Berdasarkan identifikasi masalah yang kompleks, yaitu kebutuhan akan keamanan tinggi (anti-pemalsuan) yang berbenturan dengan kebutuhan operasional (ketersediaan sistem saat jaringan padat), diperlukan analisis mendalam untuk menentukan pendekatan solusi terbaik. Bagian ini akan menguraikan berbagai alternatif solusi yang mungkin diterapkan, mulai dari pendekatan visual sederhana hingga pendekatan berbasis perangkat keras, kemudian mengevaluasinya berdasarkan metrik yang terukur.
+
 \subsection{Alternatif Solusi}
-\lipsum[8]
+Terdapat empat kandidat solusi (alternatif) yang diidentifikasi dapat menjawab sebagian atau seluruh permasalahan sistem pertiketan saat ini. Evaluasi setiap alternatif adalah sebagai berikut:
+
+\begin{enumerate}
+    % ITEM 1
+    \item Alt-01: Validasi Tambahan Untuk \textit{E-ticket} secara Visual (\textit{Watermarking}): Alternatif solusi pertama menggunakakan pendekatan visual dengan memberi \textit{watermarking} pada kode QR. Pendekatan ini menyelesaikan masalah penggandaan dengan menambahkan elemen visual pada desain tiket yang unik---membedakannya dari visual kode QR biasa sehingga petugas dapat mengenali keasliannya secara manual. Elemen visual yang ditambahkan dapat berupa latar belakang khusus, logo, atau gambar animasi/GIF (\textit{Graphic Interchange Format}) yang sulit ditiru. Elemen visual yang diterapkan pada kode QR, akan dinamis berdasarkan rentang waktu tertentu (misalnya berganti setiap jam) sehingga menambah tingkat kesulitan dalam meniru desain tiket. Dengan demikian, meskipun kode QR dapat disalin, elemen visual tambahan akan menjadi indikator penentu keaslian tiket sehingga mencegah \textit{cloning} dan pemalsuan tiket. Keunggulan yang paling menonjol dari pendekatan ini adalah biaya implementasi yang relatif rendah dan tidak memerlukan teknologi canggih. Namun, kelemahan utamanya adalah efektivitasnya, yang tidak dapat mengatasi sepenuhnya ancaman penggandaan melalui rekaman layar (\textit{screen recording}). Selain itu, alternatif solusi ini rentan terhadap kesalahan manusia (\textit{human error}) karena \textit{watermark} harus diperiksa secara manual oleh petugas. Dalam proses verifikasi visual di gerbang masuk, risiko \textit{human error} dapat mengakibatkan tiket palsu lolos verifikasi jika petugas tidak teliti. Oleh karena itu, meskipun pendekatan ini menambah lapisan keamanan, namun tidak cukup kuat untuk menghadapi ancaman modern yang semakin canggih. \\
+
+    % ITEM 2
+    \item Alt-02: Validasi Tiket Berbasis Perangkat Keras (NFC/RFID): Alternatif kedua menawarkan perubahan fundamental dari validasi berbasis optik (kamera) menjadi validasi berbasis frekuensi radio menggunakan teknologi \textit{Near Field Communication} (NFC). Dalam skema ini, data tiket tidak lagi ditampilkan di layar, melainkan disimpan secara aman di dalam elemen aman (\textit{Secure Element}) atau emulasi kartu pada perangkat seluler pengguna. Mekanisme validasi dilakukan dengan cara menempelkan perangkat pengguna ke gerbang masuk (\textit{tap-to-enter}), yang memungkinkan pertukaran kunci kriptografi secara instan antar-perangkat keras. Keunggulan utama pendekatan ini adalah tingkat keamanan yang sangat tinggi, karena tiket terikat pada perangkat keras (\textit{hardware-bound}) sehingga hampir mustahil untuk dikloning atau dipindahkan sembarangan. Selain itu, kecepatan proses validasi NFC jauh lebih unggul (kurang dari 0,5 detik) dibandingkan pemindaian visual, yang sangat efektif mengurai antrean. Meskipun demikian, solusi ini memiliki kendala pada aspek kompatibilitas dan biaya. Tidak semua perangkat seluler pengguna, terutama pada segmen \textit{low-end} atau \textit{entry-level} di Indonesia, dilengkapi dengan fitur NFC. Mewajibkan penggunaan NFC akan membatasi akses layanan bagi sebagian besar pengguna (\textit{exclusionary}). Selain itu, biaya pengadaan infrastruktur gerbang berbasis NFC jauh lebih mahal dibandingkan pemindai optik standar, sehingga kurang efisien dari sisi investasi penyelenggara.\\
+
+    % ITEM 3
+    \item Alt-03: QR Code Dinamis Terpusat (\textit{Online Token}): Pendekatan ketiga mempertahankan penggunaan kode QR, namun mengubah sifat muatan datanya menjadi dinamis dengan kontrol penuh di sisi server pusat. Dalam mekanisme ini, aplikasi pengguna tidak menyimpan data tiket secara statis, melainkan harus melakukan permintaan (\textit{request}) ke server melalui API (\textit{Application Programming Interface}) setiap kali tiket hendak ditampilkan. Server kemudian membangkitkan token QR baru yang hanya berlaku dalam durasi tertentu (misalnya 10 detik) dan mengirimkannya kembali ke aplikasi. Solusi ini sangat efektif menanggulangi masalah tiket statis karena setiap kode QR bersifat sekali pakai atau berdurasi pendek sehingga tangkapan layar lama menjadi tidak berguna. Namun, ketergantungan penuh terhadap koneksi internet menjadi kelemahan kritis dari solusi ini. Dalam skenario acara berskala besar dengan puluhan ribu pengunjung, saturasi jaringan seluler adalah kejadian yang hampir pasti terjadi. Jika perangkat pengguna atau alat pemindai gagal terhubung ke server akibat sinyal buruk, tiket tidak dapat dimuat atau divalidasi. Hal ini menciptakan risiko Titik Kegagalan Tunggal (\textit{Single Point of Failure}) yang dapat menyebabkan kelumpuhan operasional total di pintu masuk, memicu penumpukan massa dan potensi kerusuhan.\\
+
+    % ITEM 4
+    \item Alt-04: Kode QR Dinamis Hibrida (Usulan): Alternatif keempat, yang menjadi usulan dalam penelitian ini, menggabungkan keamanan token dinamis dengan keandalan operasional sistem (\textit{offline}). Berbeda dengan Alt-03, logika pembangkitan token dipindahkan ke sisi perangkat pengguna (\textit{client-side}) menggunakan algoritma \textit{Time-based One-Time Password} (TOTP) yang menjadikan kode QR berubah secara berkala berdasarkan waktu lokal perangkat. Untuk menjamin keamanan data, muatan kode QR dilengkapi dengan tanda tangan digital (\textit{digital signature}) dan enkripsi asimetris. Keunggulan strategis dari pendekatan ini adalah eliminasi ketergantungan terhadap koneksi internet saat proses validasi berlangsung. Alat pemindai dapat memverifikasi keaslian tiket secara lokal menggunakan algoritma kriptografi tanpa perlu menghubungi server pusat sehingga sistem tetap berjalan lancar meskipun jaringan seluler di lokasi acara mengalami gangguan. Meskipun implementasinya memiliki tantangan kompleksitas yang lebih tinggi—khususnya dalam manajemen kunci kriptografi dan sinkronisasi waktu—solusi ini menawarkan keseimbangan terbaik antara keamanan (\textit{anti-cloning}) dan ketersediaan layanan (\textit{availability}) yang krusial untuk operasional acara berskala besar.
+\end{enumerate}
+
 \subsection{Analisis Penentuan Solusi}
-\lipsum[9]
+Untuk menentukan solusi yang paling optimal, keempat alternatif di atas dievaluasi menggunakan empat parameter yang diturunkan dari analisis kebutuhan sistem:
+
+\begin{enumerate}
+    \item Keamanan (\textit{Security}): Kemampuan sistem menahan serangan penggandaan (\textit{cloning}), pemalsuan data, dan pencurian identitas. Bobot penilaian ini adalah yang tertinggi mengingat maraknya kasus penipuan tiket.
+    \item Ketersediaan (\textit{Availability}): Kemampuan sistem untuk tetap beroperasi secara fungsional (dapat dibuka dan dipindai) dalam kondisi infrastruktur jaringan yang buruk atau terputus (\textit{offline/blackout}).
+    \item Kompatibilitas (\textit{Accessibility}): Tingkat dukungan terhadap ragam perangkat pengguna. Solusi tidak boleh membatasi akses hanya pada pengguna ponsel kelas atas (\textit{flagship}).
+    \item Efisiensi Operasional: Kecepatan proses validasi di gerbang untuk mencegah penumpukan antrean (\textit{bottleneck}).
+\end{enumerate}
+
+Berdasarkan parameter tersebut, berikut adalah analisis perbandingan antar kandidat solusi:
+
+\textbf{Alt-01 (Visual \textit{Watermarking})} dinilai tidak memadai dari sisi Keamanan karena teknik manipulasi visual (rekaman layar) saat ini sudah sangat canggih dan sulit dibedakan oleh mata telanjang petugas (\textit{human error}). Selain itu, ketergantungan pada pemeriksaan manual sangat menurunkan efisiensi operasional.
+
+\textbf{Alt-02 (NFC)} menawarkan skor keamanan dan efisiensi tertinggi karena validasi terjadi secara instan antar-perangkat keras. Namun, solusi ini memiliki kendala pada aspek Kompatibilitas. Mewajibkan fitur NFC akan menghalangi sebagian besar pengguna dengan perangkat menengah ke bawah untuk mengakses tiket mereka, yang bertentangan dengan prinsip inklusivitas layanan publik.
+
+\textbf{Alt-03 (QR Online)} merupakan standar industri saat ini yang cukup aman. Namun, solusi ini memiliki risiko nilai ketersediaan yang sangat buruk (\textit{Critical Risk}). Dalam skenario kerumunan massal, saturasi jaringan seluler adalah kejadian yang hampir pasti. Jika sistem bergantung pada koneksi server untuk mendapatkan tiket, risiko kegagalan sistem total sangat tinggi, yang dapat memicu kerusuhan di lokasi acara.
+
+\textbf{Alt-04 (Hybrid/Usulan)} menawarkan keseimbangan terbaik. Meskipun kompleksitas pengembangannya lebih tinggi, pendekatan ini mencapai nilai Keamanan yang setara dengan Alt-03 (melalui TOTP dan Enkripsi) namun dengan nilai ketersediaan (\textit{availability}) yang jauh lebih tinggi karena kemampuan operasi \textit{offline}. Kompatibilitas juga terjaga karena tetap menggunakan antarmuka optik (layar dan kamera) yang tersedia di semua ponsel pintar.
+
+Rangkuman evaluasi tersebut disajikan dalam Matriks Keputusan pada Tabel \ref{tab:decision_matrix}.
+
+\begin{table}[H]
+    \caption{Matriks Keputusan Pemilihan Solusi Sistem \textit{E-Ticket}}
+    \label{tab:decision_matrix}
+    \centering
+    % Penjelasan Kolom:
+    % | l | : Kolom kiri rata kiri (untuk Kriteria) dengan garis pembatas
+    % | >{\centering\arraybackslash}X | : 4 Kolom sisanya rata tengah, lebar otomatis seimbang
+    \begin{tabularx}{\textwidth}{| l | >{\centering\arraybackslash}X | >{\centering\arraybackslash}X | >{\centering\arraybackslash}X | >{\centering\arraybackslash}X |}
+        \hline
+        \textbf{Kriteria} & \textbf{Alt-01} & \textbf{Alt-02} & \textbf{Alt-03} & \textbf{Alt-04} \\
+         & (Visual) & (NFC) & (Online) & (Hybrid) \\
+        \hline
+        \textbf{Keamanan} & Buruk & Sangat Baik & Baik & \textbf{Baik} \\
+        \hline
+        \textbf{Ketersediaan} & Sangat Baik & Sangat Baik & Buruk & \textbf{Sangat Baik} \\
+        \hline
+        \textbf{Kompatibilitas} & Sangat Baik & Buruk & Baik & \textbf{Baik} \\
+        \hline
+        \textbf{Efisiensi} & Buruk & Sangat Baik & Sedang & \textbf{Baik} \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+Berdasarkan analisis di atas, penelitian ini memutuskan untuk mengadopsi \textbf{Alt-04 (Kode QR Dinamis Hibrida)}. Keputusan ini diambil karena Alt-04 adalah satu-satunya solusi yang mampu memitigasi risiko keamanan (\textit{anti-cloning}) tanpa mengorbankan ketersediaan layanan saat kondisi jaringan buruk, serta tetap dapat diakses oleh mayoritas perangkat pengguna. Pendekatan ini diharapkan dapat memberikan solusi komprehensif terhadap permasalahan yang dihadapi sistem pertiketan elektronik saat ini, sekaligus memenuhi kebutuhan fungsional dan non-fungsional yang telah diidentifikasi sebelumnya.
