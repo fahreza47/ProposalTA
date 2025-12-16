@@ -56,7 +56,9 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {figure}{\numberline {I.1}{\ignorespaces Alur Metodologi Penelitian Model Waterfall}}{6}{figure.caption.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {figure}{\numberline {I.1}{\ignorespaces Alur Metodologi Penelitian Model Waterfall}}{7}{figure.caption.3}%
 \addvspace {10\p@ }
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
@@ -90,7 +92,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {figure}{\numberline {II.1}{\ignorespaces Struktur QR Code \blx@tocontentsinit {0}\parencite {tiwari2016introduction}}}{11}{figure.caption.4}%
+\contentsline {figure}{\numberline {II.1}{\ignorespaces Struktur Kode QR \blx@tocontentsinit {0}\parencite {tiwari2016introduction}}}{12}{figure.caption.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -145,9 +147,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {figure}{\numberline {II.2}{\ignorespaces Skema Enkripsi Kunci Publik \blx@tocontentsinit {0}\parencite {stallings2022cryptography}}}{16}{figure.caption.6}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {figure}{\numberline {II.2}{\ignorespaces Skema Enkripsi Kunci Publik \blx@tocontentsinit {0}\parencite {stallings2022cryptography}}}{17}{figure.caption.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -213,9 +213,16 @@
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {III.1}{\ignorespaces Model Konseptual dan Titik Kerentanan Sistem \textit {E-Ticket} Konvensional}}{24}{figure.caption.8}%
+\contentsline {figure}{\numberline {III.1}{\ignorespaces Model Konseptual dan Titik Kerentanan Sistem \textit {E-Ticket} Konvensional}}{25}{figure.caption.8}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {IV.1}{\ignorespaces Model Konseptual Sistem Saat Ini}}{36}{figure.caption.10}%
+\contentsline {figure}{\numberline {IV.2}{\ignorespaces Model Konseptual Sistem Usulan}}{37}{figure.caption.11}%
+\contentsline {figure}{\numberline {IV.3}{\ignorespaces Flowchart Proses Validasi Tiket Stateless}}{40}{figure.caption.13}%
 \addvspace {10\p@ }
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 

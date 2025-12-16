@@ -56,18 +56,20 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {I.2}Rumusan Masalah}{4}{section.1.2}%
-\contentsline {section}{\numberline {I.3}Tujuan}{4}{section.1.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {I.2}Rumusan Masalah}{5}{section.1.2}%
+\contentsline {section}{\numberline {I.3}Tujuan Penelitian}{5}{section.1.3}%
 \contentsline {section}{\numberline {I.4}Batasan Masalah}{5}{section.1.4}%
-\contentsline {section}{\numberline {I.5}Metodologi}{5}{section.1.5}%
+\contentsline {section}{\numberline {I.5}Metodologi}{6}{section.1.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {chapter}{\numberline {II}STUDI LITERATUR}{8}{chapter.2}%
-\contentsline {section}{\numberline {II.1}Sistem Tiket Elektronik (\textit {E-Ticket})}{8}{section.2.1}%
-\contentsline {subsection}{\numberline {II.1.1}Definisi dan Konsep Dasar}{8}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {II.1.2}Evolusi dan Transformasi Digital}{8}{subsection.2.1.2}%
+\contentsline {chapter}{\numberline {II}STUDI LITERATUR}{9}{chapter.2}%
+\contentsline {section}{\numberline {II.1}Sistem Tiket Elektronik (\textit {E-Ticket})}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {II.1.1}Definisi dan Konsep Dasar}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {II.1.2}Evolusi dan Transformasi Digital}{9}{subsection.2.1.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -76,7 +78,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.1.3}Keunggulan dan Efisiensi Operasional}{9}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {II.1.3}Keunggulan dan Efisiensi Operasional}{10}{subsection.2.1.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -85,8 +87,8 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.2}Teknologi \textit {Quick Response} (QR) Code}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {II.2.1}Sejarah dan Prinsip Kerja}{10}{subsection.2.2.1}%
+\contentsline {section}{\numberline {II.2}Teknologi \textit {Quick Response} kode (QR)}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {II.2.1}Sejarah dan Prinsip Kerja}{11}{subsection.2.2.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -99,21 +101,21 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.2.2}Struktur QR Code}{10}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {II.2.2}Struktur Kode QR}{11}{subsection.2.2.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.2.3}Koreksi Kesalahan (\textit {Error Correction})}{11}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {II.2.3}Koreksi Kesalahan (\textit {Error Correction})}{12}{subsection.2.2.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.2.4}QR Code Statis vs. Dinamis}{12}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {II.2.4}Kode QR Statis vs. Dinamis}{13}{subsection.2.2.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -122,8 +124,8 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.3}Ancaman dan Kerentanan pada Sistem \textit {E-Ticket}}{13}{section.2.3}%
-\contentsline {subsection}{\numberline {II.3.1}Identifikasi Ancaman (\textit {Threat Landscape})}{13}{subsection.2.3.1}%
+\contentsline {section}{\numberline {II.3}Ancaman dan Kerentanan pada Sistem \textit {E-Ticket}}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {II.3.1}Identifikasi Ancaman (\textit {Threat Landscape})}{14}{subsection.2.3.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -142,24 +144,21 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.3.2}Analisis Vektor Serangan (\textit {Attack Vectors})}{14}{subsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {II.3.2.1}Serangan Penggandaan (\textit {Cloning Attack})}{14}{subsubsection.2.3.2.1}%
+\contentsline {subsection}{\numberline {II.3.2}Analisis Vektor Serangan (\textit {Attack Vectors})}{15}{subsection.2.3.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {II.3.2.2}Serangan Putar Ulang (\textit {Replay Attack})}{14}{subsubsection.2.3.2.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {II.3.2.3}Eksfiltrasi Data (\textit {Data Exfiltration})}{14}{subsubsection.2.3.2.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.4}Landasan Teori Kriptografi untuk Solusi}{15}{section.2.4}%
-\contentsline {subsection}{\numberline {II.4.1}Kriptografi Asimetris (\textit {Public-Key Cryptography})}{15}{subsection.2.4.1}%
+\contentsline {section}{\numberline {II.4}Landasan Teori Kriptografi untuk Solusi}{16}{section.2.4}%
+\contentsline {subsection}{\numberline {II.4.1}Kriptografi Asimetris (\textit {Public-Key Cryptography})}{16}{subsection.2.4.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -174,27 +173,28 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.2}Tanda Tangan Digital (\textit {Digital Signature})}{17}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {II.4.2}Tanda Tangan Digital (\textit {Digital Signature})}{18}{subsection.2.4.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.3}\textit {Time-based One-Time Password} (TOTP)}{17}{subsection.2.4.3}%
-\contentsline {section}{\numberline {II.5}Mekanisme Sinkronisasi Data dan Penyimpanan Lokal}{18}{section.2.5}%
-\contentsline {subsection}{\numberline {II.5.1}Manajemen \textit {Cache} Lokal}{19}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {II.4.3}HMAC dan Derivasi Kunci (\textit {Key Derivation})}{18}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {II.4.4}\textit {Time-based One-Time Password} (TOTP)}{19}{subsection.2.4.4}%
+\contentsline {section}{\numberline {II.5}Mekanisme Sinkronisasi Data dan Penyimpanan Lokal}{20}{section.2.5}%
+\contentsline {subsection}{\numberline {II.5.1}Manajemen \textit {Cache} Lokal}{20}{subsection.2.5.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.5.2}Sinkronisasi Asinkron (\textit {Batching})}{19}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {II.5.2}Sinkronisasi Asinkron (\textit {Batching})}{21}{subsection.2.5.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.6}Penelitian Terkait}{19}{section.2.6}%
+\contentsline {section}{\numberline {II.6}Penelitian Terkait}{21}{section.2.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.6.1}Sistem QR Code Anti-Pemalsuan Berbasis \textit {Watermarking} dan CNN \blx@tocontentsinit {0}\parencite {alsuhibany2025innovative}}{19}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {II.6.1}Sistem kode QR Anti-Pemalsuan Berbasis \textit {Watermarking} dan CNN \blx@tocontentsinit {0}\parencite {alsuhibany2025innovative}}{21}{subsection.2.6.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -205,7 +205,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.6.2}Analisis Kerentanan Autentikasi Seluler Berbasis QR Code \blx@tocontentsinit {0}\parencite {sung2015security}}{20}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {II.6.2}Analisis Kerentanan Autentikasi Seluler Berbasis kode QR \blx@tocontentsinit {0}\parencite {sung2015security}}{22}{subsection.2.6.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -220,7 +220,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.6.3}Studi Komparasi QR Code Statis dan Dinamis \blx@tocontentsinit {0}\parencite {yanuarafi2023perbandingan}}{21}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {II.6.3}Studi Komparasi kode QR Statis dan Dinamis \blx@tocontentsinit {0}\parencite {yanuarafi2023perbandingan}}{23}{subsection.2.6.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -229,7 +229,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.6.4}Posisi Penelitian dan Kontribusi}{22}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {II.6.4}Posisi Penelitian dan Kontribusi}{23}{subsection.2.6.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -242,19 +242,28 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{24}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{24}{section.3.1}%
-\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{26}{section.3.2}%
-\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{26}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{27}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Non-fungsional}{28}{subsection.3.2.3}%
-\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{29}{section.3.3}%
+\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{25}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{25}{section.3.1}%
+\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{27}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{27}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{28}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Non-fungsional}{29}{subsection.3.2.3}%
+\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{30}{section.3.3}%
 \contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{30}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{32}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{34}{chapter.4}%
-\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{35}{chapter.5}%
+\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{33}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{35}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}Desain Konsep Solusi}{35}{section.4.1}%
+\contentsline {subsection}{\numberline {IV.1.1}Model Konseptual Sistem Saat Ini}{35}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {IV.1.2}Model Konseptual Sistem Usulan}{36}{subsection.4.1.2}%
+\contentsline {section}{\numberline {IV.2}Analisis Perbandingan Sistem}{37}{section.4.2}%
+\contentsline {section}{\numberline {IV.3}Perancangan Alur Proses Sistem}{38}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}Alur Pembangkitan Tiket (Sisi Klien)}{39}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {IV.3.2}Alur Validasi Tiket (Sisi Pemindai)}{39}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{41}{chapter.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 

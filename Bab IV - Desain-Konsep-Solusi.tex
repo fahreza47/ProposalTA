@@ -3,7 +3,126 @@
 % ==========================================
 \chapter{DESAIN KONSEP SOLUSI}
 \label{chap:desain-konsep-solusi}
-Ilustrasikan desain konsep solusi dalam bentuk model konseptual dan penjelasan secara ringkas, 
-beserta perbedaannya dengan sistem saat ini. Ilustrasi harus dapat dibandingkan (\textit{before} and \textit{after}). 
-Karena masih berupa proposal, bab ini hanya berisi gambar desain konsep solusi tersebut dan 
-penjelasan perbandingannya dengan gambar sistem yang ada saat ini (yang tergambar di awal Bab \ref{chap:analisis-masalah}).
+Bab ini memaparkan rancangan konsep solusi yang diusulkan untuk mengatasi permasalahan keamanan pada sistem \textit{e-ticketing} yang telah diidentifikasi sebelumnya. Pemaparan dilakukan dengan membandingkan model konseptual sistem yang berjalan saat ini dengan model sistem usulan yang menerapkan teknologi \textit{Dynamic Secure QR Code}. Perbandingan ini bertujuan untuk mempertegas perbedaan arsitektur keamanan dan alur data antara kedua sistem.
+
+\section{Desain Konsep Solusi}
+\label{sec:desain_solusi}
+
+Desain konsep solusi digambarkan melalui model konseptual yang memetakan interaksi antara pengguna, perangkat, dan server, serta bagaimana data tiket dikelola. Bagian ini dibagi menjadi dua perspektif: model sistem saat ini (\textit{as-is}) dan model sistem usulan (\textit{to-be}).
+
+\subsection{Model Konseptual Sistem Saat Ini}
+Model sistem saat ini, sebagaimana diilustrasikan pada Gambar \ref{fig:model_saat_ini}, menunjukkan alur distribusi tiket yang berbasis pada berkas (\textit{file}) statis. Pada model ini, server mengirimkan tiket dalam bentuk gambar kode QR statis atau berkas PDF kepada pengguna. Pengguna kemudian menyimpan berkas tersebut ke dalam penyimpanan lokal perangkat. Kelemahan mendasar dari model ini adalah sifat tiket yang permanen dan mudah dipindahtangankan.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{image/TA-model_konseptual.png}
+    \caption{Model Konseptual Sistem Saat Ini}
+    \label{fig:model_saat_ini}
+\end{figure}
+
+Seperti terlihat pada Gambar \ref{fig:model_saat_ini}, celah keamanan muncul karena tidak adanya batasan validitas waktu pada gambar tiket, yang memungkinkan terjadinya praktik percaloan, \textit{cloning attack} melalui tangkapan layar (\textit{screenshot}), hingga kebocoran data pengguna asli jika berkas tersebut jatuh ke pihak ilegal. Validasi hanya bergantung pada sinkronisasi \textit{online} dengan server pusat tanpa memverifikasi ``kesegaran" data tiket.
+
+\subsection{Model Konseptual Sistem Usulan}
+Model sistem usulan dirancang untuk menutup celah keamanan tersebut dengan mengubah paradigma perangkat pengguna, dari ``penyimpanan tiket" menjadi ``pembangkitan tiket". Ilustrasi model usulan dapat dilihat pada Gambar \ref{fig:model_usulan}. Pada model usulan ini, setelah penerbitan tiket pertama kali, server tidak lagi mengirimkan gambar tiket agar pengguna mendapatkan tiket terbaru berdasarkan token dinamis. Pada model ini, diberikan hak akses yang memungkinkan aplikasi pengguna melakukan pembangkitan ulang (\textit{regenerate}) tiket secara mandiri setiap rentang waktu tertentu (dinamis). Proses ini digambarkan dengan alur \textit{looping} pada perangkat pengguna.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{image/TA-model_konseptual_to-be.png}
+    \caption{Model Konseptual Sistem Usulan}
+    \label{fig:model_usulan}
+\end{figure}
+
+Sistem usulan ini secara efektif memutus ancaman sistem lama melalui mekanisme berikut:
+\begin{enumerate}[a)]
+    \item Praktik Percaloan: Menjadi sulit dilakukan karena tiket terus berubah, sehingga menyulitkan penjualan kembali tiket.
+    \item \textit{Anti-Screenshot}: Tindak kejahatan melalui tangkapan layar dapat digagalkan karena gambar tiket akan kedaluwarsa dalam hitungan detik.
+    \item Keamanan Data: Risiko eksfiltrasi data (\textit{Data Exfiltration}) dimitigasi melalui prinsip \textit{Data Minimization}, yaitu dengan mengatur \textit{payload} kode QR hanya memuat data teknis non-sensitif sehingga tidak ada informasi pribadi yang dapat dicuri.
+    \item Validasi: Alat pemindai dapat melakukan validasi secara lebih fleksibel, didukung dengan mekanisme sinkronisasi asinkron (\textit{batching}) yang lebih efisien.
+\end{enumerate}
+
+\section{Analisis Perbandingan Sistem}
+\label{sec:analisis_perbandingan}
+
+Berdasarkan kedua model konseptual di atas, analisis perbandingan antara sistem saat ini dengan solusi yang diusulkan dapat dirangkum dalam aspek-aspek berikut:
+\begin{enumerate}
+    \item Mekanisme Pembangkitan Data (\textit{Data Generation}): Sistem saat ini menggunakan mekanisme \textit{Generate Once}, yaitu kode QR dibangkitkan sekali oleh server dan berlaku selamanya. Sebaliknya, sistem usulan menerapkan mekanisme \textit{Continuous Generation}, yaitu dengan mekanisme aplikasi klien membangkitkan kode baru secara berkala berdasarkan algoritma waktu (\textit{Time-Based}) dan kunci rahasia, sebagaimana ditunjukkan oleh indikator \textit{loop} pada model usulan.
+    
+    \item Integritas dan Validitas Tiket: Pada sistem lama, validitas tiket hanya bergantung pada ID tiket. Jika ID tersebut belum dipindai, maka tiket dianggap sah, tanpa mempedulikan siapa yang memegangnya. Pada sistem usulan, validitas diperketat dengan penambahan variabel waktu dan tanda tangan digital. Hal ini memastikan bahwa tiket yang dipindai adalah tiket yang dibangkitkan secara \textit{real-time} oleh aplikasi resmi, bukan hasil duplikasi atau \textit{replay attack}.
+
+    \item Mitigasi Risiko Keamanan: Seperti yang ditunjukkan oleh tanda silang merah pada model usulan (Gambar \ref{fig:model_usulan}), sistem baru secara desain memblokir vektor serangan umum:
+    \begin{enumerate}[a)]
+        \item Pencurian Tiket: Dicegah karena tidak ada berkas gambar statis yang tersimpan di galeri pengguna yang bisa dicuri.
+        \item Penggandaan: Dicegah melalui mekanisme kedaluwarsa yang cepat, membuat salinan tiket menjadi tidak berguna (\textit{Denial of Service} bagi pihak ilegal).
+    \end{enumerate}
+\end{enumerate}
+
+Berdasarkan analisis terhadap mekanisme pembangkitan, validitas, dan mitigasi risiko di atas, terlihat jelas adanya pergeseran paradigma keamanan dari sistem konvensional menuju sistem yang diusulkan. Untuk mempermudah pemahaman mengenai signifikansi perubahan tersebut, ringkasan komparatif antara karakteristik sistem saat ini (\textit{As-Is}) dengan sistem usulan (\textit{To-Be}) disajikan secara terstruktur pada Tabel \ref{tab:perbandingan_sistem}. Perbandingan ini menyoroti perbedaan fundamental pada aspek bentuk tiket, masa berlaku, hingga ketergantungan terhadap infrastruktur jaringan.
+
+\begin{table}[htbp]
+    \caption{Perbandingan Sistem Saat Ini dan Sistem Usulan}
+    \label{tab:perbandingan_sistem}
+    \centering
+    \begin{tabular}{|p{3cm}|p{5cm}|p{5cm}|}
+        \hline
+        \textbf{Kriteria} & \textbf{Sistem Saat Ini (\textit{As-Is})} & \textbf{Sistem Usulan (\textit{To-Be})} \\
+        \hline
+        Bentuk Tiket & Berkas statis (Gambar/PDF) yang dikirim dan disimpan di perangkat. & Kode dinamis yang dibangkitkan ulang (\textit{regenerated}) pada aplikasi. \\
+        \hline
+        Masa Berlaku Visual & Permanen (selama tiket belum dipindai). & Terbatas waktu (\textit{Time-based}, misal: 30 detik) mengikuti algoritma TOTP. \\
+        \hline
+        Ketahanan terhadap Penggandaan & Rentan terhadap penyebaran berkas dan tangkapan layar (\textit{screenshot}). & Tahan terhadap \textit{screenshot} karena kode visual akan kedaluwarsa dengan cepat. \\
+        \hline
+        Mekanisme Validasi & Validasi tunggal berbasis ID tiket ke \textit{database} pusat. & Validasi berlapis: Verifikasi ID, Tanda Tangan Digital, dan Validasi Kebaruan Tiket. \\
+        \hline
+        Ketergantungan Konektivitas & Tinggi (memerlukan sinkronisasi \textit{online} penuh saat pemindaian). & Fleksibel (mendukung validasi \textit{offline} parsial melalui verifikasi kriptografi di sisi pemindai). \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Perancangan Alur Proses Sistem}
+\label{sec:perancangan_alur}
+
+Perancangan alur proses berfokus pada mekanisme pembangkitan tiket dan validasi \textit{stateless} (nirkewarganegaraan) yang memungkinkan verifikasi dilakukan secara \textit{offline} tanpa mengorbankan keamanan. Sistem menerapkan pendekatan \textit{Hybrid Verification} yang menggabungkan Tanda Tangan Digital (untuk integritas data statis) dan TOTP (untuk validitas waktu dinamis).
+
+\subsection{Alur Pembangkitan Tiket (Sisi Klien)}
+Berbeda dengan pendekatan enkripsi penuh, sistem ini menerapkan prinsip \textit{Data Minimization}. Hanya data teknis non-sensitif yang dimasukkan ke dalam \textit{payload} tiket, sementara data pribadi pengguna tetap tersimpan aman di server. Alur logika pembangkitan tiket pada aplikasi pengguna digambarkan pada Gambar \ref{fig:flowchart_generasi}.
+
+% Sisipkan ini setelah poin 4 (Visualisasi QR) di subbab 4.3.1
+\begin{figure}[htbp]
+    \centering
+    % Kamu perlu buat gambar flowchart proses generate di HP User
+    \includegraphics[width=0.6\textwidth]{image/TA-flowchart-generasi.png} 
+    \caption{Flowchart Proses Pembangkitan Tiket di Sisi Klien}
+    \label{fig:flowchart_generasi}
+\end{figure}
+
+Mekanisme pembangkitan tiket yang dijelaskan pada diagram meliputi langkah-langkah berikut:
+\begin{enumerate}
+    \item Inisiasi Data: Saat pembelian berhasil, server menyusun \textit{payload} data yang hanya berisi informasi non-sensitif (ID Tiket, Jenis Tiket, dan Metadata Area). Data identitas pribadi pengguna (PII) tetap disimpan di server dan tidak disertakan dalam \textit{payload}.
+    \item Signing \& Key Distribution: Server menandatangani \textit{payload} tersebut menggunakan Kunci Privat Server (untuk integritas). Server juga menurunkan kunci rahasia unik pengguna (\texttt{user\_secret}) dari \texttt{MASTER\_SECRET} menggunakan fungsi \textit{Key Derivation} (HMAC). Kunci unik dan tanda tangan digital dikirim ke aplikasi pengguna.
+    \item Pembangkitan TOTP Lokal: Setiap 30 detik, aplikasi pengguna menghitung kode TOTP menggunakan \texttt{user\_secret} yang tersimpan aman di perangkat.
+    \item Visualisasi QR: Aplikasi menggabungkan \textit{Payload} (Statis), Tanda Tangan Digital, dan Kode TOTP (Dinamis) ke dalam satu format QR Code untuk ditampilkan.
+\end{enumerate}
+
+\subsection{Alur Validasi Tiket (Sisi Pemindai)}
+Proses validasi dirancang agar dapat berjalan tanpa koneksi internet (\textit{offline-first}) dengan memanfaatkan skema \textit{Key Derivation}. Alur logika validasi pada alat pemindai digambarkan pada Gambar \ref{fig:flowchart_validasi}.
+
+\begin{figure}[htbp]
+    \centering
+    % Masukkan diagram Flowchart Validasi Baru di sini
+    \includegraphics[width=0.8\textwidth]{image/TA-flowchart-validasi.png}
+    \caption{Flowchart Proses Validasi Tiket Stateless}
+    \label{fig:flowchart_validasi}
+\end{figure}
+
+Mekanisme validasi mencakup langkah-langkah berikut:
+\begin{enumerate}
+    \item \textit{Parsing} dan Verifikasi Integritas: Pemindai membaca QR Code dan memisahkan data menjadi \textit{Payload}, \textit{Signature}, dan TOTP. Pemindai memverifikasi Tanda Tangan Digital menggunakan Kunci Publik Server yang tersimpan di aplikasi. Jika tanda tangan tidak cocok, tiket ditolak (terindikasi dimodifikasi).
+    \item Derivasi Kunci Mandiri (\textit{Key Derivation}): Jika integritas valid, pemindai melakukan perhitungan ulang kunci rahasia pengguna secara mandiri menggunakan rumus:
+    \begin{equation}
+        User\_Secret = HMAC(MASTER\_SECRET, Ticket\_ID)
+    \end{equation}
+    Hal ini memungkinkan pemindai mengetahui kunci rahasia pengguna tanpa perlu menyimpan basis data kunci seluruh pengguna.
+    \item Validasi Waktu (TOTP): Menggunakan \texttt{User\_Secret} hasil derivasi dan waktu internal pemindai, sistem menghitung nilai TOTP yang valid saat itu. Jika nilai TOTP pada QR cocok dengan hasil hitungan, maka tiket dinyatakan asli (\textit{fresh}) dan bukan hasil tangkapan layar lama.
+    \item Pencegahan Penggunaan Ganda: ID Tiket dicatat dalam penyimpanan lokal (\textit{Local Cache}) pemindai untuk mencegah \textit{replay attack} atau penggunaan berulang dalam sesi yang sama.
+\end{enumerate}

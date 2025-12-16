@@ -56,6 +56,28 @@
       \verb https://www.mdpi.com/1424-8220/25/13/3855
       \endverb
     \endentry
+    \entry{aws2017summary}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Laporan Insiden Teknis}
+      \field{title}{Summary of the Amazon S3 Service Disruption in the Northern Virginia (US-EAST-1) Region}
+      \field{year}{2017}
+    \endentry
     \entry{bafandehkar2013}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=9308898ef9a28bbf7cc24facaca0e229}{%
@@ -287,6 +309,32 @@
       \field{note}{Diakses pada 29 Oktober 2025}
       \field{title}{Banyak Penonton Tidak Bertiket Masuk SUGBK saat Timnas Indonesia Vs Jepang: Malah yang Punya Tiket Tidak Dapat Tempat Duduk}
       \field{year}{2024}
+    \endentry
+    \entry{cockroach2023taylor}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=be50ba3053b430919d5547c35738057e}{%
+           family={Labs},
+           familyi={L\bibinitperiod},
+           given={Cockroach},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{be50ba3053b430919d5547c35738057e}
+      \strng{fullhash}{be50ba3053b430919d5547c35738057e}
+      \strng{bibnamehash}{be50ba3053b430919d5547c35738057e}
+      \strng{authorbibnamehash}{be50ba3053b430919d5547c35738057e}
+      \strng{authornamehash}{be50ba3053b430919d5547c35738057e}
+      \strng{authorfullhash}{be50ba3053b430919d5547c35738057e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.cockroachlabs.com/blog/taylor-swift-ticketmaster-meltdown/}}
+      \field{note}{Diakses: 2025}
+      \field{title}{Technical takeaways from the Taylor Swift/Ticketmaster meltdown}
+      \field{year}{2023}
     \endentry
     \entry{lever2013single}{inproceedings}{}
       \name{author}{3}{}{%

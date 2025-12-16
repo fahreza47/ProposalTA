@@ -56,6 +56,28 @@
       \verb https://www.mdpi.com/1424-8220/25/13/3855
       \endverb
     \endentry
+    \entry{aws2017summary}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Laporan Insiden Teknis}
+      \field{title}{Summary of the Amazon S3 Service Disruption in the Northern Virginia (US-EAST-1) Region}
+      \field{year}{2017}
+    \endentry
     \entry{bafandehkar2013}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=9308898ef9a28bbf7cc24facaca0e229}{%
@@ -219,6 +241,49 @@
       \verb https://www.kompas.id/artikel/jejak-transaksi-penipuan-tiket-konser-disamarkan
       \endverb
     \endentry
+    \entry{jafarnejad2017load}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bb6ef280cda0bfdfc1a754fc97a65bff}{%
+           family={Ghomi},
+           familyi={G\bibinitperiod},
+           given={Einollah\bibnamedelima Jafarnejad},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1e40e1e4431c904a5969d532f0d9826}{%
+           family={Rahmani},
+           familyi={R\bibinitperiod},
+           given={Amir\bibnamedelima Masoud},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e466591951605d5ab270a078a6e8d0f7}{%
+           family={Qader},
+           familyi={Q\bibinitperiod},
+           given={Nooruldeen\bibnamedelima Nasih},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{340159a781f5a0ec45fb56f4ace5fe4c}
+      \strng{fullhash}{1ad647d770ee3cc0954a29a33cd63d68}
+      \strng{bibnamehash}{1ad647d770ee3cc0954a29a33cd63d68}
+      \strng{authorbibnamehash}{1ad647d770ee3cc0954a29a33cd63d68}
+      \strng{authornamehash}{340159a781f5a0ec45fb56f4ace5fe4c}
+      \strng{authorfullhash}{1ad647d770ee3cc0954a29a33cd63d68}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Network and Computer Applications}
+      \field{title}{Load-balancing algorithms in cloud computing: A survey}
+      \field{volume}{88}
+      \field{year}{2017}
+      \field{pages}{50\bibrangedash 71}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jnca.2017.04.007
+      \endverb
+    \endentry
     \entry{Kurniawan2024}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c12172ca1efdd945097da9a6100489a8}{%
@@ -245,41 +310,70 @@
       \field{title}{Banyak Penonton Tidak Bertiket Masuk SUGBK saat Timnas Indonesia Vs Jepang: Malah yang Punya Tiket Tidak Dapat Tempat Duduk}
       \field{year}{2024}
     \endentry
-    \entry{laudon2020}{book}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2a3d8893ad04ba3c98081349c47e2f6c}{%
-           family={Laudon},
+    \entry{cockroach2023taylor}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=be50ba3053b430919d5547c35738057e}{%
+           family={Labs},
            familyi={L\bibinitperiod},
-           given={Kenneth\bibnamedelima C.},
-           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7104f050b378ef23f0bc36c2b73e5ea2}{%
-           family={Laudon},
-           familyi={L\bibinitperiod},
-           given={Jane\bibnamedelima P.},
-           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Cockroach},
+           giveni={C\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Jakarta}%
-      }
-      \list{publisher}{1}{%
-        {Pearson Education}%
-      }
-      \strng{namehash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{fullhash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{bibnamehash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{authorbibnamehash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{authornamehash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{authorfullhash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{namehash}{be50ba3053b430919d5547c35738057e}
+      \strng{fullhash}{be50ba3053b430919d5547c35738057e}
+      \strng{bibnamehash}{be50ba3053b430919d5547c35738057e}
+      \strng{authorbibnamehash}{be50ba3053b430919d5547c35738057e}
+      \strng{authornamehash}{be50ba3053b430919d5547c35738057e}
+      \strng{authorfullhash}{be50ba3053b430919d5547c35738057e}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Sistem Informasi Manajemen}
-      \field{year}{2020}
+      \field{howpublished}{\url{https://www.cockroachlabs.com/blog/taylor-swift-ticketmaster-meltdown/}}
+      \field{note}{Diakses: 2025}
+      \field{title}{Technical takeaways from the Taylor Swift/Ticketmaster meltdown}
+      \field{year}{2023}
+    \endentry
+    \entry{lever2013single}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cb40e83264256ce6834d0e763284687c}{%
+           family={Lever},
+           familyi={L\bibinitperiod},
+           given={Kirsty\bibnamedelima E},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f24e4c2a572f64a2d7d86a98cff2e87b}{%
+           family={Merabti},
+           familyi={M\bibinitperiod},
+           given={Madjid},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d565dedc8c5dc86ba6c15210a4d9ba65}{%
+           family={Kifayat},
+           familyi={K\bibinitperiod},
+           given={Kashif},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a7680d35cf7c7b0bca2c11c7d97517b5}
+      \strng{fullhash}{1be15a5e7cd2bb975f7521ca95b5329d}
+      \strng{bibnamehash}{1be15a5e7cd2bb975f7521ca95b5329d}
+      \strng{authorbibnamehash}{1be15a5e7cd2bb975f7521ca95b5329d}
+      \strng{authornamehash}{a7680d35cf7c7b0bca2c11c7d97517b5}
+      \strng{authorfullhash}{1be15a5e7cd2bb975f7521ca95b5329d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 14th Annual Post Graduate Symposium on the Convergence of Telecommunications, Networking and Broadcasting (PGNet)}
+      \field{title}{Single points of failure within systems-of-systems}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
     \endentry
     \entry{lubeck2012electronic}{article}{}
       \name{author}{3}{}{%
@@ -352,35 +446,56 @@
       \field{title}{Tiket Konser Coldplay di Jakarta 2023 Dijual Calo Berkali-kali Lipat hingga Rp22 Juta di Marketplace}
       \field{year}{2023}
     \endentry
-    \entry{pressman2019}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4d3f81788d99cf425c4b6e0a454baab0}{%
-           family={Pressman},
-           familyi={P\bibinitperiod},
-           given={Roger\bibnamedelima S.},
-           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+    \entry{ramachandra2015program}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=806c7d90583b6692024a9390309e2415}{%
+           family={Ramachandra},
+           familyi={R\bibinitperiod},
+           given={Karthik},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a1772badb4973b522c3055276ab0c9c4}{%
+           family={Chavan},
+           familyi={C\bibinitperiod},
+           given={Mahendra},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16bcc5106c928aad08f248351ee03bd7}{%
+           family={Guravannavar},
+           familyi={G\bibinitperiod},
+           given={Ravindra},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61d6a2d7215571ff54eadda8d36a2d58}{%
+           family={Sudarshan},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Yogyakarta}%
-      }
-      \list{publisher}{1}{%
-        {McGraw-Hill Education}%
-      }
-      \strng{namehash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{fullhash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{bibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{authorbibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{authornamehash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{authorfullhash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \strng{namehash}{3ec2fe97caeffdbf5bdb6a963cce4400}
+      \strng{fullhash}{a5fc8660c8ab3efbcc3e2cf9cf09dc9d}
+      \strng{bibnamehash}{a5fc8660c8ab3efbcc3e2cf9cf09dc9d}
+      \strng{authorbibnamehash}{a5fc8660c8ab3efbcc3e2cf9cf09dc9d}
+      \strng{authornamehash}{3ec2fe97caeffdbf5bdb6a963cce4400}
+      \strng{authorfullhash}{a5fc8660c8ab3efbcc3e2cf9cf09dc9d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Rekayasa Perangkat Lunak: Pendekatan Praktisi}
-      \field{year}{2019}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{number}{2}
+      \field{title}{Program Transformations for Asynchronous and Batched Query Submission}
+      \field{volume}{27}
+      \field{year}{2015}
+      \field{pages}{531\bibrangedash 544}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TKDE.2014.2334302
+      \endverb
+      \keyw{Databases;Web services;Optimization;Electronic mail;Delays;Time factors;Runtime;Query optimization;program analysis;program transformation}
     \endentry
     \entry{shin2012psychology}{article}{}
       \name{author}{3}{}{%
@@ -553,6 +668,49 @@
       \verb{doi}
       \verb 10.5121/csit.2015.51612
       \endverb
+    \endentry
+    \entry{tang2006benefit}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=873019c79a0f3cddb4fc1ca5e24bf341}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e33f6bd9b6246a0889cfa91b72bcfbb8}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Himanshu},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6496ab1152f6176833d0c89cc43ff2b}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Samir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3108a0a3a1620ae7ba53c73435fc81d9}
+      \strng{fullhash}{0bb4e4ddd1176ca8df79a9cf1bc5975e}
+      \strng{bibnamehash}{0bb4e4ddd1176ca8df79a9cf1bc5975e}
+      \strng{authorbibnamehash}{0bb4e4ddd1176ca8df79a9cf1bc5975e}
+      \strng{authornamehash}{3108a0a3a1620ae7ba53c73435fc81d9}
+      \strng{authorfullhash}{0bb4e4ddd1176ca8df79a9cf1bc5975e}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2006 IEEE International Conference on Network Protocols}
+      \field{title}{Benefit-based Data Caching in Ad Hoc Networks}
+      \field{year}{2006}
+      \field{pages}{208\bibrangedash 217}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICNP.2006.320214
+      \endverb
+      \keyw{Ad hoc networks;Approximation algorithms;Distributed algorithms;Mobile ad hoc networks;Delay;Bandwidth;Algorithm design and analysis;Cost function;Polynomials;Measurement}
     \endentry
     \entry{tiwari2016introduction}{inproceedings}{}
       \name{author}{1}{}{%

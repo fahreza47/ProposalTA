@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.17)  16 DEC 2025 01:23
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.17)  17 DEC 2025 01:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1169,7 +1169,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [2
 
-])
+]
+Overfull \hbox (1.60182pt too wide) in paragraph at lines 208--208
+ [] [][][]\TU/TimesNewRoman(0)/m/n/12 Analisis Kerentanan Autentikasi Seluler B
+erbasis kode QR ([][]Sung dkk. 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `ProposalTA.toc'.
 
@@ -1248,26 +1254,21 @@ Package biblatex-chicago Warning: Empty Ibidem citation on input line 9.
 [1
 
 
-] [2]
-
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 19.
-
-[3] [4]
-Overfull \hbox (0.88016pt too wide) in paragraph at lines 48--49
-[]\TU/TimesNewRoman(0)/m/n/12 Implementasi teknis prototipe akan dikembangkan m
-enggunakan bahasa pem-
+] [2] [3] [4]
+Overfull \hbox (3.77078pt too wide) in paragraph at lines 33--34
+[]\TU/TimesNewRoman(0)/m/n/12 Bagaimana merancang arsitektur sistem \TU/TimesNe
+wRoman(0)/m/it/12 e-ticket \TU/TimesNewRoman(0)/m/n/12 berbasis token dinamis (
+\TU/TimesNewRoman(0)/m/it/12 Dyna-
  []
 
+[5] [6]
 File: image/waterfall.png Graphic file (type bmp)
 <image/waterfall.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5] [6]) (Bab II - Studi-Literatur.tex [7]
+ [7]) (Bab II - Studi-Literatur.tex [8]
 Bab II.
-[8
+[9
 
-] [9]
+] [10]
 File: image/struktur_qrcode.png Graphic file (type bmp)
 <image/struktur_qrcode.png>
 
@@ -1277,7 +1278,7 @@ Package biblatex-chicago Warning: Empty Ibidem citation on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10]
+[11]
 
 Package biblatex-chicago Warning: Empty Ibidem citation on input line 66.
 
@@ -1287,41 +1288,44 @@ Package biblatex-chicago Warning: Empty Ibidem citation on input line 70.
 
 Package biblatex-chicago Warning: Empty Ibidem citation on input line 88.
 
-[11] [12] [13] [14]
-Overfull \hbox (5.52469pt too wide) in paragraph at lines 139--140
+[12] [13] [14]
+Overfull \hbox (1.06375pt too wide) in paragraph at lines 129--130
+[]\TU/TimesNewRoman(0)/m/n/12 Rekayasa Balik (\TU/TimesNewRoman(0)/m/it/12 Reve
+rse Engineering\TU/TimesNewRoman(0)/m/n/12 ): Serangan ini menargetkan logika a
+pli-
+ []
+
+[15]
+Overfull \hbox (5.52469pt too wide) in paragraph at lines 138--139
 \TU/TimesNewRoman(0)/m/n/12 sep fundamental dalam keamanan informasi modern yan
 g diperkenalkan untuk meng-
  []
 
+[16]
 File: image/encrypt_1.png Graphic file (type bmp)
 <image/encrypt_1.png>
 File: image/encrypt_2.png Graphic file (type bmp)
 <image/encrypt_2.png>
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 171.
 
-[15] [16] [17] [18]
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 170.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parencite' on input line 238.
-
-[19]
+[17] [18] [19] [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parencite' on input line 245.
+(hyperref)                removing `\parencite' on input line 248.
 
-[20]
-Overfull \hbox (1.7493pt too wide) in paragraph at lines 250--251
-[]\TU/TimesNewRoman(0)/m/n/12 mengusulkan kerangka kerja implementasi aman (\TU
-/TimesNewRoman(0)/m/it/12 secure implementation\TU/TimesNewRoman(0)/m/n/12 ) ya
-ng men-
- []
-
+[21]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parencite' on input line 252.
+(hyperref)                removing `\parencite' on input line 255.
 
-[21]) (Bab III - Analisis-Masalah.tex [22] [23]
+[22]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\parencite' on input line 262.
+
+[23]) (Bab III - Analisis-Masalah.tex [24]
 Bab III.
 
 Overfull \hbox (2.8743pt too wide) in paragraph at lines 11--12
@@ -1331,9 +1335,9 @@ ktronik konvensional yang umum
 
 File: image/TA-model_konseptual.png Graphic file (type bmp)
 <image/TA-model_konseptual.png>
-[24
+[25
 
-] [25] [26]
+] [26] [27]
 Overfull \hbox (11.36829pt too wide) in alignment at lines 56--61
  [] [] [] 
  []
@@ -1359,11 +1363,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--78
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
-[]|\TU/TimesNewRoman(0)/m/n/12 Verifikasi Keaslian dan
- []
-
-
 Underfull \hbox (badness 1496) in paragraph at lines 88--89
 []|\TU/TimesNewRoman(0)/m/n/12 Aplikasi pemindai memiliki penyimpanan
  []
@@ -1383,7 +1382,7 @@ Overfull \hbox (11.36829pt too wide) in alignment at lines 74--93
  [] [] [] 
  []
 
-[27]
+[28]
 Overfull \hbox (20.0343pt too wide) in alignment at lines 98--103
  [] [] [] 
  []
@@ -1404,6 +1403,11 @@ Overfull \hbox (20.0343pt too wide) in alignment at lines 113--116
  []
 
 
+Underfull \hbox (badness 1325) in paragraph at lines 122--123
+[]|\TU/TimesNewRoman(0)/m/n/12 Fitur validasi tiket utama harus memiliki
+ []
+
+
 Underfull \hbox (badness 2486) in paragraph at lines 124--124
 []|\TU/TimesNewRoman(0)/m/n/12 Kompatibilitas (\TU/TimesNewRoman(0)/m/it/12 Com
 pati-
@@ -1414,30 +1418,86 @@ Overfull \hbox (20.0343pt too wide) in alignment at lines 116--127
  [] [] [] 
  []
 
-[28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-[31] [32]) (Bab IV - Desain-Konsep-Solusi.tex [33]
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+[32] [33]) (Bab IV - Desain-Konsep-Solusi.tex [34]
 Bab IV.
-) (Bab V - Rencana-Selanjutnya.tex [34
+File: image/TA-model_konseptual.png Graphic file (type bmp)
+<image/TA-model_konseptual.png>
+[35
 
 ]
-Bab V.
-) [35
+File: image/TA-model_konseptual_to-be.png Graphic file (type bmp)
+<image/TA-model_konseptual_to-be.png>
+ [36] [37]
+Overfull \hbox (11.29068pt too wide) in paragraph at lines 55--56
+[]\TU/TimesNewRoman(0)/m/n/12 Penggandaan: Dicegah melalui mekanisme kedaluwars
+a yang cepat, mem-
+ []
 
-] [36
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+\TU/TimesNewRoman(0)/m/n/12 kitkan ulang (\TU/TimesNewRoman(0)/m/it/12 regenera
+ted\TU/TimesNewRoman(0)/m/n/12 )
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 71--71
+[]|\TU/TimesNewRoman(0)/m/n/12 Permanen (selama tiket be-
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 73--73
+\TU/TimesNewRoman(0)/m/n/12 berkas dan tangkapan layar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+[]|\TU/TimesNewRoman(0)/m/n/12 Tahan terhadap \TU/TimesNewRoman(0)/m/it/12 scre
+enshot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\TU/TimesNewRoman(0)/m/n/12 karena kode visual akan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]|\TU/TimesNewRoman(0)/m/n/12 Ketergantungan
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 77--77
+[]|\TU/TimesNewRoman(0)/m/n/12 Tinggi (memerlukan sinkro-
+ []
+
+
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 65--80
+ [][] 
+ []
+
+[38]
+File: image/TA-model_konseptual_to-be.png Graphic file (type bmp)
+<image/TA-model_konseptual_to-be.png>
+ [39]) (Bab V - Rencana-Selanjutnya.tex [40]
+Bab V.
+) [41
+
+] [42
 
 
 ]
@@ -1452,7 +1512,7 @@ Overfull \hbox (7.72517pt too wide) in paragraph at lines 404--404
 y di Jakarta 2023 Dijual Calo Berkali-
  []
 
-[37]
+[43]
 Overfull \hbox (2.06306pt too wide) in paragraph at lines 404--404
 [][]\TU/TimesNewRoman(0)/m/n/12 Yanuarafi, Arisal. 2023. “  Perbandingan QR Cod
 e Statis dan QR Code Dinamis dalam
@@ -1468,7 +1528,7 @@ Overfull \hbox (13.91933pt too wide) in paragraph at lines 404--404
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 384.
 See the caption package documentation for explanation.
 
-[38] (ProposalTA.aux)
+[44] (ProposalTA.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1478,7 +1538,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: 8CDD082365A165387D67335434297520;10186.
+(rerunfilecheck)             Checksum: C559B741C850FAD03C74605E80E9F4A3;11264.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -1487,12 +1547,12 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31519 strings out of 409617
- 619096 string characters out of 5774012
- 1966170 words of memory out of 5000000
- 53270 multiletter control sequences out of 15000+600000
- 563282 words of font info for 81 fonts, out of 8000000 for 9000
+ 31549 strings out of 409617
+ 620020 string characters out of 5774012
+ 1967988 words of memory out of 5000000
+ 53297 multiletter control sequences out of 15000+600000
+ 563290 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,10n,93p,2246b,7911s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,10n,93p,1815b,7911s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:/TA\Repo TA\Eja-ProposalTA\ProposalTA.pdf (45 pages).
+Output written on d:/TA\Repo TA\Eja-ProposalTA\ProposalTA.pdf (51 pages).
