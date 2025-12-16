@@ -97,7 +97,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {table}{\numberline {II.1}{\ignorespaces Tingkat Koreksi Kesalahan (\textit {Error Correction Level}) pada kode QR \blx@tocontentsinit {0}\parencite {tiwari2016introduction}}}{13}{table.caption.5}%
+\contentsline {table}{\numberline {II.1}{\ignorespaces Tingkat Koreksi Kesalahan (\textit {Error Correction Level}) pada kode QR \blx@tocontentsinit {0}\parencite {tiwari2016introduction}}}{13}{table.caption.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -198,7 +198,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {table}{\numberline {II.2}{\ignorespaces Perbandingan Fitur Keamanan Penelitian Terkait dengan Penelitian yang Diusulkan}}{24}{table.caption.7}%
+\contentsline {table}{\numberline {II.2}{\ignorespaces Perbandingan Fitur Keamanan Penelitian Terkait dengan Penelitian yang Diusulkan}}{24}{table.caption.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -214,10 +214,13 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {III.1}{\ignorespaces Daftar Kebutuhan Fungsional Sistem}}{28}{table.3.1}%
 \contentsline {table}{\numberline {III.2}{\ignorespaces Daftar Kebutuhan Non-fungsional Sistem}}{30}{table.3.2}%
-\contentsline {table}{\numberline {III.3}{\ignorespaces Matriks Keputusan Pemilihan Solusi Sistem \textit {E-Ticket}}}{34}{table.caption.9}%
+\contentsline {table}{\numberline {III.3}{\ignorespaces Matriks Keputusan Pemilihan Solusi Sistem \textit {E-Ticket}}}{34}{table.caption.8}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {IV.1}{\ignorespaces Perbandingan Sistem Saat Ini dan Sistem Usulan}}{38}{table.caption.12}%
+\contentsline {table}{\numberline {IV.1}{\ignorespaces Perbandingan Sistem Saat Ini dan Sistem Usulan}}{39}{table.caption.11}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {V.1}{\ignorespaces Spesifikasi Lingkungan Pengembangan dan Alat}}{42}{table.5.1}%
+\contentsline {table}{\numberline {V.2}{\ignorespaces Rencana Verifikasi Unit (Unit Testing)}}{44}{table.5.2}%
+\contentsline {table}{\numberline {V.3}{\ignorespaces Rencana Skenario Pengujian Fungsional}}{45}{table.5.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 

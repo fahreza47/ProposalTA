@@ -3,9 +3,140 @@
 % ==========================================
 \chapter{RENCANA SELANJUTNYA}
 \label{chap:rencana-selanjutnya}
-Jelaskan secara detail langkah-langkah rencana selanjutnya, hal-hal yang diperlukan atau akan disiapkan, dan risiko dan mitigasinya, yang meliputi:
+
+Bab ini menguraikan peta jalan (\textit{roadmap}) realisasi sistem \textit{Dynamic Secure QR Code} dari tahap perancangan menuju tahap implementasi nyata. Rencana ini mencakup kebutuhan sumber daya teknis, strategi pengujian untuk memvalidasi hipotesis keamanan, serta analisis mitigasi risiko untuk menjamin keberhasilan penyelesaian Tugas Akhir dalam kurun waktu pengembangan yang tersedia.
+
+\section{Rencana Implementasi}
+Implementasi sistem akan difokuskan pada pembangunan prototipe fungsional (\textit{Proof of Concept}) yang mencakup dua komponen utama: sisi peladen (\textit{Backend}) untuk logika kriptografi pusat dan sisi klien (\textit{Mobile App}) untuk antarmuka pengguna dan pemindai.
+
+\subsection{Lingkungan Pengembangan dan Alat}
+Berdasarkan ketersediaan sumber daya saat ini, spesifikasi lingkungan kerja yang digunakan dirangkum dalam Tabel \ref{tab:lingkungan_pengembangan}.
+
+\begin{longtable}{|p{2cm}|p{3cm}|p{7.5cm}|}
+    \caption{Spesifikasi Lingkungan Pengembangan dan Alat} \label{tab:lingkungan_pengembangan} \\
+    
+    \hline
+    \textbf{Kategori} & \textbf{Komponen} & \textbf{Spesifikasi / Keterangan} \\ 
+    \hline
+    \endfirsthead
+    
+    \caption[]{Spesifikasi Lingkungan Pengembangan dan Alat (Lanjutan)} \\
+    \hline
+    \textbf{Kategori} & \textbf{Komponen} & \textbf{Spesifikasi / Keterangan} \\ 
+    \hline
+    \endhead
+    
+    \hline 
+    \multicolumn{3}{r}{\textit{Berlanjut ke halaman berikutnya...}} \\ 
+    \endfoot
+    
+    \endlastfoot
+    
+    \textbf{Perangkat Keras} & Komputer Pengembang & Laptop HP Probook 440 G8 (Intel Core i5-1135G7, RAM 16GB, Windows 11 Home). \\
+    \cline{2-3}
+     & Perangkat Uji (\textit{Device}) & Dua unit ponsel pintar Android (Satu sebagai \textit{User Generator}, satu sebagai \textit{Scanner/Validator}). \\
+    \hline
+    
+    \textbf{Perangkat Lunak} & Backend Server & Python dengan kerangka kerja \textbf{FastAPI} (Kinerja tinggi dan dokumentasi otomatis). \\
+    \cline{2-3}
+     & Database Platform & \textbf{Supabase} (PostgreSQL) sebagai layanan \textit{Database-as-a-Service}. \\
+    \cline{2-3}
+     & Mobile Application & \textbf{React Native} dengan platform \textbf{Expo} (Integrasi kamera dan UI). \\
+    \cline{2-3}
+     & Modul Kriptografi & \texttt{pyotp} (TOTP RFC 6238), \texttt{cryptography} (Digital Signature), \texttt{hashlib/hmac} (Key Derivation). \\
+    \cline{2-3}
+     & Tools Pendukung & Visual Studio Code, Postman (API Testing), dan Git. \\
+    \hline
+\end{longtable}
+
+\subsection{Konfigurasi dan Topologi}
+
+Implementasi sistem pada tahap awal akan dilakukan menggunakan topologi jaringan lokal (\textit{Local Area Network}). Dalam skema ini, server FastAPI akan dijalankan pada komputer pengembang (\textit{localhost}) yang bertindak sebagai pusat pemrosesan logika. Komputer pengembang dan perangkat ponsel pintar (klien) akan dihubungkan ke dalam satu jaringan Wi-Fi yang sama agar dapat saling berkomunikasi.
+
+Proses pengembangan akan dibagi menjadi dua fase simulasi topologi. Fase pertama adalah pengembangan aktif, yaitu aplikasi pada ponsel terhubung langsung ke server lokal melalui \textit{tunnelling} atau IP lokal untuk pertukaran data secara \textit{real-time}. Fase kedua adalah simulasi kondisi nyata, yaitu ketika perangkat pemindai akan dikondisikan dalam mode ``Pesawat" atau tanpa internet. Hal ini dilakukan untuk membuktikan bahwa mekanisme derivasi kunci dan validasi kriptografi tetap dapat berjalan secara mandiri (\textit{offline}) tanpa bergantung pada koneksi terus-menerus ke server pusat.
+
+\subsection{Estimasi Biaya}
+Mengingat luaran penelitian ini adalah prototipe perangkat lunak, struktur biaya sangat efisien karena memanfaatkan layanan gratis (\textit{free plan}) dari Supabase untuk basis data dan perangkat keras pribadi yang sudah tersedia. Biaya operasional utama dialokasikan hanya untuk konektivitas internet selama proses pengembangan.
+
+\section{Desain Pengujian dan Evaluasi}
+Pengujian bertujuan untuk memverifikasi bahwa logika \textit{Key Derivation} dan \textit{Stateless Validation} berjalan sesuai rancangan di Bab IV serta memenuhi kebutuhan fungsional sistem.
+
+\subsection{Metode Verifikasi (Unit Testing)}
+Verifikasi dilakukan secara modular pada kode Python (Backend) untuk memastikan fungsi matematis bekerja dengan benar sebelum diintegrasikan ke aplikasi. Rincian metode verifikasi dapat dilihat pada Tabel \ref{tab:metode_verifikasi}.
+
+\begin{longtable}{|p{3.5cm}|p{9cm}|}
+    \caption{Rencana Verifikasi Unit (Unit Testing)} \label{tab:metode_verifikasi} \\
+    
+    \hline
+    \textbf{Unit Uji} & \textbf{Tujuan dan Prosedur Verifikasi} \\ 
+    \hline
+    \endfirsthead
+    
+    \caption[]{Rencana Verifikasi Unit (Unit Testing) (Lanjutan)} \\
+    \hline
+    \textbf{Unit Uji} & \textbf{Tujuan dan Prosedur Verifikasi} \\ 
+    \hline
+    \endhead
+    
+    \hline 
+    \multicolumn{2}{r}{\textit{Berlanjut ke halaman berikutnya...}} \\ 
+    \endfoot
+
+    \endlastfoot
+    
+    Uji Derivasi Kunci & Memastikan fungsi HMAC pada Python menghasilkan \textit{string} kunci yang konsisten dan deterministik untuk setiap ID tiket yang unik. \\
+    \hline
+    Uji Pembangkitan TOTP & Memastikan pustaka \texttt{pyotp} mampu menghasilkan token 6 digit yang valid sesuai dengan \textit{timestamp} saat ini dan jendela waktu yang ditentukan. \\
+    \hline
+    Uji Tanda Tangan Digital & Memastikan mekanisme verifikasi tanda tangan (\textit{Digital Signature}) berfungsi dengan benar, yaitu menerima data asli yang valid dan menolak data yang telah dimodifikasi (integritas data), meskipun perubahan hanya sebesar 1 byte. \\
+    \hline
+\end{longtable}
+
+\subsection{Metode Validasi (Functional Testing)}
+Validasi dilakukan menggunakan metode \textit{Black Box Testing} melalui aplikasi React Native untuk membuktikan keandalan sistem di lapangan. Skenario uji utama meliputi:
+
+\begin{longtable}{|p{3.5cm}|p{6cm}|p{3.5cm}|}
+    \caption{Rencana Skenario Pengujian Fungsional} \label{tab:rencana_pengujian} \\
+    
+    \hline
+    \textbf{Skenario} & \textbf{Prosedur Uji} & \textbf{Hasil yang Diharapkan} \\ 
+    \hline
+    \endfirsthead
+    
+    \caption[]{Rencana Skenario Pengujian Fungsional (Lanjutan)} \\
+    \hline
+    \textbf{Skenario} & \textbf{Prosedur Uji} & \textbf{Hasil yang Diharapkan} \\ 
+    \hline
+    \endhead
+    
+    \hline 
+    \multicolumn{3}{r}{\textit{Berlanjut ke halaman berikutnya...}} \\ 
+    \endfoot
+
+    \endlastfoot
+    
+    Validasi Normal & Memindai tiket valid dalam jendela waktu 30 detik yang tepat saat koneksi tersedia. & Akses Diterima. \\
+    \hline
+    Validasi Offline & Mematikan koneksi internet pada HP Pemindai, lalu memindai tiket valid. & Akses Diterima (Membuktikan fitur \textit{Key Derivation} bekerja tanpa server). \\
+    \hline
+    Uji Kedaluwarsa & Mengambil \textit{screenshot} tiket, menunggu 1 menit, lalu memindai hasil \textit{screenshot} tersebut. & Akses Ditolak (Token Expired/Invalid). \\
+    \hline
+    Uji Replay/Duplikasi & Memindai tiket yang sama dua kali berturut-turut pada pemindai yang sama dalam waktu singkat. & Akses Ditolak pada percobaan kedua (Terdeteksi di \textit{Local Cache} aplikasi). \\
+    \hline
+    Uji Integritas & Memodifikasi \textit{payload} QR Code (misal: mengganti ID Tiket secara manual pada generator QR pihak ketiga) lalu memindainya. & Akses Ditolak (Signature Invalid). \\
+    \hline
+\end{longtable}
+
+\subsection{Evaluasi Kinerja}
+Selain fungsi keamanan, kinerja sistem akan dievaluasi berdasarkan responsivitas aplikasi. Target capaian adalah proses validasi di sisi pemindai (mulai dari pembacaan kamera hingga keputusan Buka/Tutup) harus terjadi di bawah 2 detik agar layak digunakan secara operasional.
+
+\section{Analisis Risiko dan Mitigasi}
+Dalam pelaksanaan penelitian ini, teridentifikasi beberapa risiko teknis yang dapat menghambat pencapaian tujuan. Analisis risiko beserta strategi mitigasinya dijabarkan sebagai berikut:
+
 \begin{enumerate}
-\item	Rencana implementasi, termasuk alat dan bahan yang diperlukan, lingkungan, konfigurasi, biaya, dan sebagainya.
-\item	Desain pengujian dan evaluasi, misalnya metode verifikasi dan validasi.
-\item	Analisis risiko dan mitigasi, misalnya tindakan selanjutnya jika ada yang tidak berjalan sesuai rencana.
+    \item Risiko Desinkronisasi Waktu (\textit{Clock Drift}): Mengingat validasi dilakukan secara \textit{offline}, perangkat pemindai sepenuhnya bergantung pada referensi jam internalnya. Risiko muncul apabila terdapat perbedaan waktu yang signifikan antara jam pada perangkat pemindai dan perangkat pengguna, yang dapat mengakibatkan tiket valid dianggap kedaluwarsa oleh sistem. Sebagai strategi mitigasi, sistem akan mengimplementasikan toleransi jendela waktu (\textit{interval window}) pada konfigurasi pustaka \texttt{pyotp} (misalnya mengizinkan validasi $\pm 1$ langkah waktu atau toleransi 30 detik sebelum dan sesudah waktu server) guna mengakomodasi perbedaan waktu (\textit{drift}) yang wajar antar-perangkat keras.
+
+    \item Risiko Ketergantungan Supabase (Konektivitas Dev): Supabase merupakan layanan berbasis awan (\textit{cloud}), sehingga terdapat risiko gangguan akses ke manajemen data pengguna apabila koneksi internet selama proses pengembangan terputus. Untuk memitigasi ketergantungan ini, proses pengembangan akan memanfaatkan fitur \textit{Local Development} yang disediakan oleh Supabase CLI untuk menjalankan emulasi basis data secara lokal. Selain itu, strategi manajemen tugas akan disesuaikan dengan tetap memfokuskan pengerjaan pada logika \textit{offline} di sisi aplikasi React Native ketika konektivitas jaringan tidak tersedia.
+
+    \item Risiko Keterbatasan Kamera Perangkat Uji: Kamera ponsel dengan spesifikasi rendah berpotensi mengalami kesulitan dalam memindai QR Code dinamis, terutama jika densitas data terlalu tinggi atau kondisi pencahayaan lingkungan kurang memadai. Risiko ini dimitigasi dengan cara mengoptimalkan densitas QR Code melalui prinsip \textit{Data Minimization}, yaitu menjaga muatan (\textit{payload}) data tetap berupa \textit{string} yang ringkas. Selain itu, sistem akan menggunakan tingkat koreksi kesalahan (\textit{Error Correction Level}) yang moderat (Level M) untuk menyeimbangkan antara ketahanan kode terhadap kerusakan dan kemudahan pembacaan oleh sensor kamera standar.
 \end{enumerate}

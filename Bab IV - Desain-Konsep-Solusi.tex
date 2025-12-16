@@ -34,10 +34,10 @@ Model sistem usulan dirancang untuk menutup celah keamanan tersebut dengan mengu
 
 Sistem usulan ini secara efektif memutus ancaman sistem lama melalui mekanisme berikut:
 \begin{enumerate}[a)]
-    \item Praktik Percaloan: Menjadi sulit dilakukan karena tiket terus berubah, sehingga menyulitkan penjualan kembali tiket.
-    \item \textit{Anti-Screenshot}: Tindak kejahatan melalui tangkapan layar dapat digagalkan karena gambar tiket akan kedaluwarsa dalam hitungan detik.
-    \item Keamanan Data: Risiko eksfiltrasi data (\textit{Data Exfiltration}) dimitigasi melalui prinsip \textit{Data Minimization}, yaitu dengan mengatur \textit{payload} kode QR hanya memuat data teknis non-sensitif sehingga tidak ada informasi pribadi yang dapat dicuri.
-    \item Validasi: Alat pemindai dapat melakukan validasi secara lebih fleksibel, didukung dengan mekanisme sinkronisasi asinkron (\textit{batching}) yang lebih efisien.
+    \item Pembangkitan Tiket Dinamis: Mekanisme perubahan kode secara terus-menerus menyulitkan praktik percaloan dan penjualan kembali tiket, karena tiket yang dijual saat ini tidak akan valid beberapa detik kemudian.
+    \item Pembatasan Validitas Waktu (\textit{Time-based Validity}): Tindak kejahatan melalui tangkapan layar (\textit{screenshot}) dapat digagalkan karena gambar tiket akan kedaluwarsa secara otomatis dalam hitungan detik (mengikuti siklus TOTP).
+    \item Minimalisasi Data (\textit{Data Minimization}): Risiko eksfiltrasi data dimitigasi dengan hanya memuat data teknis non-sensitif pada \textit{payload} kode QR, sehingga tidak ada informasi pribadi yang dapat dicuri dari perangkat pengguna.
+    \item Validasi Mandiri dan Sinkronisasi Asinkron: Alat pemindai dapat melakukan validasi secara \textit{offline} (\textit{stateless}) untuk mencegah kegagalan sistem, didukung dengan pengiriman log data secara berkala (\textit{batching}) yang lebih efisien.
 \end{enumerate}
 
 \section{Analisis Perbandingan Sistem}
@@ -45,18 +45,21 @@ Sistem usulan ini secara efektif memutus ancaman sistem lama melalui mekanisme b
 
 Berdasarkan kedua model konseptual di atas, analisis perbandingan antara sistem saat ini dengan solusi yang diusulkan dapat dirangkum dalam aspek-aspek berikut:
 \begin{enumerate}
-    \item Mekanisme Pembangkitan Data (\textit{Data Generation}): Sistem saat ini menggunakan mekanisme \textit{Generate Once}, yaitu kode QR dibangkitkan sekali oleh server dan berlaku selamanya. Sebaliknya, sistem usulan menerapkan mekanisme \textit{Continuous Generation}, yaitu dengan mekanisme aplikasi klien membangkitkan kode baru secara berkala berdasarkan algoritma waktu (\textit{Time-Based}) dan kunci rahasia, sebagaimana ditunjukkan oleh indikator \textit{loop} pada model usulan.
+    \item Mekanisme Pembangkitan Data (\textit{Data Generation}): Sistem saat ini menggunakan mekanisme \textit{Generate Once}, yaitu kode QR dibangkitkan sekali oleh server dan berlaku selamanya. Sebaliknya, sistem usulan menerapkan mekanisme \textit{Continuous Generation}, yaitu aplikasi klien membangkitkan kode baru secara berkala berdasarkan algoritma waktu (\textit{Time-Based}) dan kunci rahasia, sebagaimana ditunjukkan oleh indikator \textit{loop} pada model usulan.
     
     \item Integritas dan Validitas Tiket: Pada sistem lama, validitas tiket hanya bergantung pada ID tiket. Jika ID tersebut belum dipindai, maka tiket dianggap sah, tanpa mempedulikan siapa yang memegangnya. Pada sistem usulan, validitas diperketat dengan penambahan variabel waktu dan tanda tangan digital. Hal ini memastikan bahwa tiket yang dipindai adalah tiket yang dibangkitkan secara \textit{real-time} oleh aplikasi resmi, bukan hasil duplikasi atau \textit{replay attack}.
 
-    \item Mitigasi Risiko Keamanan: Seperti yang ditunjukkan oleh tanda silang merah pada model usulan (Gambar \ref{fig:model_usulan}), sistem baru secara desain memblokir vektor serangan umum:
+    \item Manajemen Konektivitas dan Sinkronisasi Data: Sistem saat ini menerapkan model \textit{Synchronous Online Validation}, yaitu setiap pemindaian memerlukan konfirmasi langsung dari server pusat. Hal ini menciptakan ketergantungan fatal terhadap ketersediaan jaringan (\textit{Single Point of Failure}). Sebaliknya, sistem usulan mengadopsi model \textit{Asynchronous Batching} dengan dukungan \textit{Local Cache}. Validasi dapat dilakukan secara mandiri di perangkat pemindai menggunakan data lokal, sementara sinkronisasi status ke server dilakukan secara berkala di latar belakang. Hal ini dapat meminimalisasi risiko kegagalan sistem akibat gangguan jaringan.
+
+    \item Mitigasi Risiko Keamanan: Seperti yang ditunjukkan oleh tanda silang merah pada model usulan (Gambar \ref{fig:model_usulan}), sistem baru secara desain memblokir tiga vektor serangan utama:
     \begin{enumerate}[a)]
-        \item Pencurian Tiket: Dicegah karena tidak ada berkas gambar statis yang tersimpan di galeri pengguna yang bisa dicuri.
-        \item Penggandaan: Dicegah melalui mekanisme kedaluwarsa yang cepat, membuat salinan tiket menjadi tidak berguna (\textit{Denial of Service} bagi pihak ilegal).
+        \item Pencurian dan Percaloan: Sulit dilakukan karena tidak ada berkas gambar statis yang tersimpan permanen di galeri pengguna untuk dipindahtangankan.
+        \item Penggandaan (\textit{Cloning}): Dicegah melalui mekanisme kedaluwarsa yang cepat, membuat salinan tiket (hasil \textit{screenshot}) menjadi tidak berguna saat dipindai (\textit{Denial of Service} bagi pihak ilegal).
+        \item Eksfiltrasi Data: Risiko kebocoran data pribadi dimitigasi melalui prinsip \textit{Data Minimization}, dengan cara mengatur \textit{payload} tiket hanya memuat atribut teknis non-sensitif sehingga tidak ada data privasi yang dapat diekstrak oleh pihak ketiga dari kode QR.
     \end{enumerate}
 \end{enumerate}
 
-Berdasarkan analisis terhadap mekanisme pembangkitan, validitas, dan mitigasi risiko di atas, terlihat jelas adanya pergeseran paradigma keamanan dari sistem konvensional menuju sistem yang diusulkan. Untuk mempermudah pemahaman mengenai signifikansi perubahan tersebut, ringkasan komparatif antara karakteristik sistem saat ini (\textit{As-Is}) dengan sistem usulan (\textit{To-Be}) disajikan secara terstruktur pada Tabel \ref{tab:perbandingan_sistem}. Perbandingan ini menyoroti perbedaan fundamental pada aspek bentuk tiket, masa berlaku, hingga ketergantungan terhadap infrastruktur jaringan.
+Berdasarkan analisis terhadap mekanisme pembangkitan, validitas, manajemen konektivitas, dan mitigasi risiko di atas, terlihat jelas adanya pergeseran paradigma keamanan dari sistem konvensional menuju sistem yang diusulkan. Untuk mempermudah pemahaman mengenai signifikansi perubahan tersebut, ringkasan komparatif antara karakteristik sistem saat ini (\textit{As-Is}) dengan sistem usulan (\textit{To-Be}) disajikan secara terstruktur pada Tabel \ref{tab:perbandingan_sistem}. Perbandingan ini menyoroti perbedaan fundamental pada aspek bentuk tiket, masa berlaku, hingga ketergantungan terhadap infrastruktur jaringan.
 
 \begin{table}[htbp]
     \caption{Perbandingan Sistem Saat Ini dan Sistem Usulan}
@@ -82,21 +85,19 @@ Berdasarkan analisis terhadap mekanisme pembangkitan, validitas, dan mitigasi ri
 \section{Perancangan Alur Proses Sistem}
 \label{sec:perancangan_alur}
 
-Perancangan alur proses berfokus pada mekanisme pembangkitan tiket dan validasi \textit{stateless} (nirkewarganegaraan) yang memungkinkan verifikasi dilakukan secara \textit{offline} tanpa mengorbankan keamanan. Sistem menerapkan pendekatan \textit{Hybrid Verification} yang menggabungkan Tanda Tangan Digital (untuk integritas data statis) dan TOTP (untuk validitas waktu dinamis).
+Perancangan alur proses berfokus pada mekanisme pembangkitan tiket dan validasi \textit{stateless} yang memungkinkan verifikasi dilakukan secara \textit{offline} tanpa mengorbankan keamanan. Sistem menerapkan pendekatan \textit{Hybrid Verification} yang menggabungkan Tanda Tangan Digital (untuk integritas data statis) dan TOTP (untuk validitas waktu dinamis).
 
 \subsection{Alur Pembangkitan Tiket (Sisi Klien)}
 Berbeda dengan pendekatan enkripsi penuh, sistem ini menerapkan prinsip \textit{Data Minimization}. Hanya data teknis non-sensitif yang dimasukkan ke dalam \textit{payload} tiket, sementara data pribadi pengguna tetap tersimpan aman di server. Alur logika pembangkitan tiket pada aplikasi pengguna digambarkan pada Gambar \ref{fig:flowchart_generasi}.
 
-% Sisipkan ini setelah poin 4 (Visualisasi QR) di subbab 4.3.1
 \begin{figure}[htbp]
     \centering
-    % Kamu perlu buat gambar flowchart proses generate di HP User
     \includegraphics[width=0.6\textwidth]{image/TA-flowchart-generasi.png} 
     \caption{Flowchart Proses Pembangkitan Tiket di Sisi Klien}
     \label{fig:flowchart_generasi}
 \end{figure}
 
-Mekanisme pembangkitan tiket yang dijelaskan pada diagram meliputi langkah-langkah berikut:
+Mekanisme pembangkitan tiket yang dijelaskan pada \ref{fig:flowchart_generasi} meliputi langkah-langkah berikut:
 \begin{enumerate}
     \item Inisiasi Data: Saat pembelian berhasil, server menyusun \textit{payload} data yang hanya berisi informasi non-sensitif (ID Tiket, Jenis Tiket, dan Metadata Area). Data identitas pribadi pengguna (PII) tetap disimpan di server dan tidak disertakan dalam \textit{payload}.
     \item Signing \& Key Distribution: Server menandatangani \textit{payload} tersebut menggunakan Kunci Privat Server (untuk integritas). Server juga menurunkan kunci rahasia unik pengguna (\texttt{user\_secret}) dari \texttt{MASTER\_SECRET} menggunakan fungsi \textit{Key Derivation} (HMAC). Kunci unik dan tanda tangan digital dikirim ke aplikasi pengguna.
@@ -109,7 +110,6 @@ Proses validasi dirancang agar dapat berjalan tanpa koneksi internet (\textit{of
 
 \begin{figure}[htbp]
     \centering
-    % Masukkan diagram Flowchart Validasi Baru di sini
     \includegraphics[width=0.8\textwidth]{image/TA-flowchart-validasi.png}
     \caption{Flowchart Proses Validasi Tiket Stateless}
     \label{fig:flowchart_validasi}
@@ -117,7 +117,7 @@ Proses validasi dirancang agar dapat berjalan tanpa koneksi internet (\textit{of
 
 Mekanisme validasi mencakup langkah-langkah berikut:
 \begin{enumerate}
-    \item \textit{Parsing} dan Verifikasi Integritas: Pemindai membaca QR Code dan memisahkan data menjadi \textit{Payload}, \textit{Signature}, dan TOTP. Pemindai memverifikasi Tanda Tangan Digital menggunakan Kunci Publik Server yang tersimpan di aplikasi. Jika tanda tangan tidak cocok, tiket ditolak (terindikasi dimodifikasi).
+    \item \textit{Parsing} dan Verifikasi Integritas: Pemindai membaca Kode QR dan memisahkan data menjadi \textit{Payload}, \textit{Signature}, dan TOTP. Pemindai memverifikasi Tanda Tangan Digital menggunakan Kunci Publik Server yang tersimpan di aplikasi. Jika tanda tangan tidak cocok, tiket ditolak (terindikasi dimodifikasi).
     \item Derivasi Kunci Mandiri (\textit{Key Derivation}): Jika integritas valid, pemindai melakukan perhitungan ulang kunci rahasia pengguna secara mandiri menggunakan rumus:
     \begin{equation}
         User\_Secret = HMAC(MASTER\_SECRET, Ticket\_ID)

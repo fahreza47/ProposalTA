@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.17)  17 DEC 2025 01:21
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.17)  17 DEC 2025 06:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -469,24 +469,31 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTright=\skip100
 \flrow@types=\toks25
 )
+(C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip101
+\multirow@cntb=\count314
+\multirow@dima=\skip102
+\bigstrutjot=\dimen176
+)
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count314
+\lst@mode=\count315
 \lst@gtempboxa=\box57
 \lst@token=\toks26
-\lst@length=\count315
-\lst@currlwidth=\dimen176
-\lst@column=\count316
-\lst@pos=\count317
-\lst@lostspace=\dimen177
-\lst@width=\dimen178
-\lst@newlines=\count318
-\lst@lineno=\count319
-\lst@maxwidth=\dimen179
+\lst@length=\count316
+\lst@currlwidth=\dimen177
+\lst@column=\count317
+\lst@pos=\count318
+\lst@lostspace=\dimen178
+\lst@width=\dimen179
+\lst@newlines=\count319
+\lst@lineno=\count320
+\lst@maxwidth=\dimen180
 
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count320
-\lst@skipnumbers=\count321
+\c@lstnumber=\count321
+\lst@skipnumbers=\count322
 \lst@framebox=\box58
 )
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
@@ -495,7 +502,7 @@ File: listings.cfg 2023/02/27 1.9 listings configuration
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip101
+\@mathmargin=\skip103
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -504,23 +511,23 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks27
-\ex@=\dimen180
+\ex@=\dimen181
 ))
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen181
+\pmbraise@=\dimen182
 )
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count322
+\inf@bad=\count323
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count323
-\leftroot@=\count324
+\uproot@=\count324
+\leftroot@=\count325
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count325
-\DOTSCASE@=\count326
+\classnum@=\count326
+\DOTSCASE@=\count327
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -530,33 +537,33 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen182
+\big@size=\dimen183
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count327
+\macc@depth=\count328
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count328
+\c@MaxMatrixCols=\count329
 \dotsspace@=\muskip17
-\c@parentequation=\count329
-\dspbrk@lvl=\count330
+\c@parentequation=\count330
+\dspbrk@lvl=\count331
 \tag@help=\toks28
-\row@=\count331
-\column@=\count332
-\maxfields@=\count333
+\row@=\count332
+\column@=\count333
+\maxfields@=\count334
 \andhelp@=\toks29
-\eqnshift@=\dimen183
-\alignsep@=\dimen184
-\tagshift@=\dimen185
-\tagwidth@=\dimen186
-\totwidth@=\dimen187
-\lineht@=\dimen188
+\eqnshift@=\dimen184
+\alignsep@=\dimen185
+\tagshift@=\dimen186
+\tagwidth@=\dimen187
+\totwidth@=\dimen188
+\lineht@=\dimen189
 \@envbody=\toks30
-\multlinegap=\skip102
-\multlinetaggap=\skip103
+\multlinegap=\skip104
+\multlinetaggap=\skip105
 \mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -574,73 +581,73 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )) (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.st
 y
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip104
-\enit@outerparindent=\dimen189
+\labelindent=\skip106
+\enit@outerparindent=\dimen190
 \enit@toks=\toks32
 \enit@inbox=\box61
-\enit@count@id=\count334
-\enitdp@description=\count335
+\enit@count@id=\count335
+\enitdp@description=\count336
 ) (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 )
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
-\LTleft=\skip105
-\LTright=\skip106
-\LTpre=\skip107
-\LTpost=\skip108
-\LTchunksize=\count336
-\LTcapwidth=\dimen190
+\LTleft=\skip107
+\LTright=\skip108
+\LTpre=\skip109
+\LTpost=\skip110
+\LTchunksize=\count337
+\LTcapwidth=\dimen191
 \LT@head=\box62
 \LT@firsthead=\box63
 \LT@foot=\box64
 \LT@lastfoot=\box65
 \LT@gbox=\box66
-\LT@cols=\count337
-\LT@rows=\count338
-\c@LT@tables=\count339
-\c@LT@chunks=\count340
+\LT@cols=\count338
+\LT@rows=\count339
+\c@LT@tables=\count340
+\c@LT@chunks=\count341
 \LT@p@ftn=\toks33
 )
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen191
-\lightrulewidth=\dimen192
-\cmidrulewidth=\dimen193
-\belowrulesep=\dimen194
-\belowbottomsep=\dimen195
-\aboverulesep=\dimen196
-\abovetopsep=\dimen197
-\cmidrulesep=\dimen198
-\cmidrulekern=\dimen199
-\defaultaddspace=\dimen256
-\@cmidla=\count341
-\@cmidlb=\count342
-\@aboverulesep=\dimen257
-\@belowrulesep=\dimen258
-\@thisruleclass=\count343
-\@lastruleclass=\count344
-\@thisrulewidth=\dimen259
+\heavyrulewidth=\dimen192
+\lightrulewidth=\dimen193
+\cmidrulewidth=\dimen194
+\belowrulesep=\dimen195
+\belowbottomsep=\dimen196
+\aboverulesep=\dimen197
+\abovetopsep=\dimen198
+\cmidrulesep=\dimen199
+\cmidrulekern=\dimen256
+\defaultaddspace=\dimen257
+\@cmidla=\count342
+\@cmidlb=\count343
+\@aboverulesep=\dimen258
+\@belowrulesep=\dimen259
+\@thisruleclass=\count344
+\@lastruleclass=\count345
+\@thisrulewidth=\dimen260
 )
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen260
+\col@sep=\dimen261
 \ar@mcellbox=\box67
-\extrarowheight=\dimen261
+\extrarowheight=\dimen262
 \NC@list=\toks34
-\extratabsurround=\skip109
-\backup@length=\skip110
+\extratabsurround=\skip111
+\backup@length=\skip112
 \ar@cellbox=\box68
 )
-\TX@col@width=\dimen262
-\TX@old@table=\dimen263
-\TX@old@col=\dimen264
-\TX@target=\dimen265
-\TX@delta=\dimen266
-\TX@cols=\count345
+\TX@col@width=\dimen263
+\TX@old@table=\dimen264
+\TX@old@col=\dimen265
+\TX@target=\dimen266
+\TX@delta=\dimen267
+\TX@cols=\count346
 \TX@ftn=\toks35
 )
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/datetime2\datetime2.sty
@@ -664,7 +671,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks36
 \XKV@tempa@toks=\toks37
 )
-\XKV@depth=\count346
+\XKV@depth=\count347
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 Package tracklang Info: Tracking dialect `bahasai' (language `bahasai') on inpu
@@ -680,8 +687,8 @@ Package: biblatex-chicago 2022/07/02 v 3.18 biblatex style
 
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
-\xs_counta=\count347
-\xs_countb=\count348
+\xs_counta=\count348
+\xs_countb=\count349
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 ) (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
@@ -689,7 +696,7 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count349
+\lrq@indent=\count350
 
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -697,63 +704,63 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count350
-\c@listtotal=\count351
-\c@listcount=\count352
-\c@liststart=\count353
-\c@liststop=\count354
-\c@citecount=\count355
-\c@citetotal=\count356
-\c@multicitecount=\count357
-\c@multicitetotal=\count358
-\c@instcount=\count359
-\c@maxnames=\count360
-\c@minnames=\count361
-\c@maxitems=\count362
-\c@minitems=\count363
-\c@citecounter=\count364
-\c@maxcitecounter=\count365
-\c@savedcitecounter=\count366
-\c@uniquelist=\count367
-\c@uniquename=\count368
-\c@refsection=\count369
-\c@refsegment=\count370
-\c@maxextratitle=\count371
-\c@maxextratitleyear=\count372
-\c@maxextraname=\count373
-\c@maxextradate=\count374
-\c@maxextraalpha=\count375
-\c@abbrvpenalty=\count376
-\c@highnamepenalty=\count377
-\c@lownamepenalty=\count378
-\c@maxparens=\count379
-\c@parenlevel=\count380
-\blx@tempcnta=\count381
-\blx@tempcntb=\count382
-\blx@tempcntc=\count383
-\c@blx@maxsection=\count384
-\blx@maxsegment@0=\count385
-\blx@notetype=\count386
-\blx@parenlevel@text=\count387
-\blx@parenlevel@foot=\count388
-\blx@sectionciteorder@0=\count389
-\blx@sectionciteorderinternal@0=\count390
-\blx@entrysetcounter=\count391
-\blx@biblioinstance=\count392
-\labelnumberwidth=\skip111
-\labelalphawidth=\skip112
-\biblabelsep=\skip113
-\bibitemsep=\skip114
-\bibnamesep=\skip115
-\bibinitsep=\skip116
-\bibparsep=\skip117
-\bibhang=\skip118
+\c@tabx@nest=\count351
+\c@listtotal=\count352
+\c@listcount=\count353
+\c@liststart=\count354
+\c@liststop=\count355
+\c@citecount=\count356
+\c@citetotal=\count357
+\c@multicitecount=\count358
+\c@multicitetotal=\count359
+\c@instcount=\count360
+\c@maxnames=\count361
+\c@minnames=\count362
+\c@maxitems=\count363
+\c@minitems=\count364
+\c@citecounter=\count365
+\c@maxcitecounter=\count366
+\c@savedcitecounter=\count367
+\c@uniquelist=\count368
+\c@uniquename=\count369
+\c@refsection=\count370
+\c@refsegment=\count371
+\c@maxextratitle=\count372
+\c@maxextratitleyear=\count373
+\c@maxextraname=\count374
+\c@maxextradate=\count375
+\c@maxextraalpha=\count376
+\c@abbrvpenalty=\count377
+\c@highnamepenalty=\count378
+\c@lownamepenalty=\count379
+\c@maxparens=\count380
+\c@parenlevel=\count381
+\blx@tempcnta=\count382
+\blx@tempcntb=\count383
+\blx@tempcntc=\count384
+\c@blx@maxsection=\count385
+\blx@maxsegment@0=\count386
+\blx@notetype=\count387
+\blx@parenlevel@text=\count388
+\blx@parenlevel@foot=\count389
+\blx@sectionciteorder@0=\count390
+\blx@sectionciteorderinternal@0=\count391
+\blx@entrysetcounter=\count392
+\blx@biblioinstance=\count393
+\labelnumberwidth=\skip113
+\labelalphawidth=\skip114
+\biblabelsep=\skip115
+\bibitemsep=\skip116
+\bibnamesep=\skip117
+\bibinitsep=\skip118
+\bibparsep=\skip119
+\bibhang=\skip120
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language80
-\c@mincomprange=\count393
-\c@maxcomprange=\count394
-\c@mincompwidth=\count395
+\c@mincomprange=\count394
+\c@maxcomprange=\count395
+\c@mincompwidth=\count396
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -764,88 +771,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count396
-\c@savedafterword=\count397
-\c@annotator=\count398
-\c@savedannotator=\count399
-\c@author=\count400
-\c@savedauthor=\count401
-\c@bookauthor=\count402
-\c@savedbookauthor=\count403
-\c@commentator=\count404
-\c@savedcommentator=\count405
-\c@editor=\count406
-\c@savededitor=\count407
-\c@editora=\count408
-\c@savededitora=\count409
-\c@editorb=\count410
-\c@savededitorb=\count411
-\c@editorc=\count412
-\c@savededitorc=\count413
-\c@foreword=\count414
-\c@savedforeword=\count415
-\c@holder=\count416
-\c@savedholder=\count417
-\c@introduction=\count418
-\c@savedintroduction=\count419
-\c@namea=\count420
-\c@savednamea=\count421
-\c@nameb=\count422
-\c@savednameb=\count423
-\c@namec=\count424
-\c@savednamec=\count425
-\c@translator=\count426
-\c@savedtranslator=\count427
-\c@shortauthor=\count428
-\c@savedshortauthor=\count429
-\c@shorteditor=\count430
-\c@savedshorteditor=\count431
-\c@labelname=\count432
-\c@savedlabelname=\count433
-\c@institution=\count434
-\c@savedinstitution=\count435
-\c@lista=\count436
-\c@savedlista=\count437
-\c@listb=\count438
-\c@savedlistb=\count439
-\c@listc=\count440
-\c@savedlistc=\count441
-\c@listd=\count442
-\c@savedlistd=\count443
-\c@liste=\count444
-\c@savedliste=\count445
-\c@listf=\count446
-\c@savedlistf=\count447
-\c@location=\count448
-\c@savedlocation=\count449
-\c@organization=\count450
-\c@savedorganization=\count451
-\c@origlocation=\count452
-\c@savedoriglocation=\count453
-\c@origpublisher=\count454
-\c@savedorigpublisher=\count455
-\c@publisher=\count456
-\c@savedpublisher=\count457
-\c@language=\count458
-\c@savedlanguage=\count459
-\c@origlanguage=\count460
-\c@savedoriglanguage=\count461
-\c@pageref=\count462
-\c@savedpageref=\count463
-\shorthandwidth=\skip119
-\shortjournalwidth=\skip120
-\shortserieswidth=\skip121
-\shorttitlewidth=\skip122
-\shortauthorwidth=\skip123
-\shorteditorwidth=\skip124
-\locallabelnumberwidth=\skip125
-\locallabelalphawidth=\skip126
-\localshorthandwidth=\skip127
-\localshortjournalwidth=\skip128
-\localshortserieswidth=\skip129
-\localshorttitlewidth=\skip130
-\localshortauthorwidth=\skip131
-\localshorteditorwidth=\skip132
+\c@afterword=\count397
+\c@savedafterword=\count398
+\c@annotator=\count399
+\c@savedannotator=\count400
+\c@author=\count401
+\c@savedauthor=\count402
+\c@bookauthor=\count403
+\c@savedbookauthor=\count404
+\c@commentator=\count405
+\c@savedcommentator=\count406
+\c@editor=\count407
+\c@savededitor=\count408
+\c@editora=\count409
+\c@savededitora=\count410
+\c@editorb=\count411
+\c@savededitorb=\count412
+\c@editorc=\count413
+\c@savededitorc=\count414
+\c@foreword=\count415
+\c@savedforeword=\count416
+\c@holder=\count417
+\c@savedholder=\count418
+\c@introduction=\count419
+\c@savedintroduction=\count420
+\c@namea=\count421
+\c@savednamea=\count422
+\c@nameb=\count423
+\c@savednameb=\count424
+\c@namec=\count425
+\c@savednamec=\count426
+\c@translator=\count427
+\c@savedtranslator=\count428
+\c@shortauthor=\count429
+\c@savedshortauthor=\count430
+\c@shorteditor=\count431
+\c@savedshorteditor=\count432
+\c@labelname=\count433
+\c@savedlabelname=\count434
+\c@institution=\count435
+\c@savedinstitution=\count436
+\c@lista=\count437
+\c@savedlista=\count438
+\c@listb=\count439
+\c@savedlistb=\count440
+\c@listc=\count441
+\c@savedlistc=\count442
+\c@listd=\count443
+\c@savedlistd=\count444
+\c@liste=\count445
+\c@savedliste=\count446
+\c@listf=\count447
+\c@savedlistf=\count448
+\c@location=\count449
+\c@savedlocation=\count450
+\c@organization=\count451
+\c@savedorganization=\count452
+\c@origlocation=\count453
+\c@savedoriglocation=\count454
+\c@origpublisher=\count455
+\c@savedorigpublisher=\count456
+\c@publisher=\count457
+\c@savedpublisher=\count458
+\c@language=\count459
+\c@savedlanguage=\count460
+\c@origlanguage=\count461
+\c@savedoriglanguage=\count462
+\c@pageref=\count463
+\c@savedpageref=\count464
+\shorthandwidth=\skip121
+\shortjournalwidth=\skip122
+\shortserieswidth=\skip123
+\shorttitlewidth=\skip124
+\shortauthorwidth=\skip125
+\shorteditorwidth=\skip126
+\locallabelnumberwidth=\skip127
+\locallabelalphawidth=\skip128
+\localshorthandwidth=\skip129
+\localshortjournalwidth=\skip130
+\localshortserieswidth=\skip131
+\localshorttitlewidth=\skip132
+\localshortauthorwidth=\skip133
+\localshorteditorwidth=\skip134
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
 
@@ -861,19 +868,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count464
-\c@textcitetotal=\count465
-\c@textcitemaxnames=\count466
-\c@biburlbigbreakpenalty=\count467
-\c@biburlbreakpenalty=\count468
-\c@biburlnumpenalty=\count469
-\c@biburlucpenalty=\count470
-\c@biburllcpenalty=\count471
+\c@textcitecount=\count465
+\c@textcitetotal=\count466
+\c@textcitemaxnames=\count467
+\c@biburlbigbreakpenalty=\count468
+\c@biburlbreakpenalty=\count469
+\c@biburlnumpenalty=\count470
+\c@biburlucpenalty=\count471
+\c@biburllcpenalty=\count472
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count472
+\c@smartand=\count473
 )
 Package biblatex Info: Trying to load bibliography style 'chicago-authordate'..
 .
@@ -882,13 +889,13 @@ Package biblatex Info: ... file 'chicago-authordate.bbx' found.
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-chicago\chicag
 o-authordate.bbx
 File: chicago-authordate.bbx 2022/11/17 v 3.18b biblatex bibliography style
-\lositemsep=\skip133
+\lositemsep=\skip135
 Package biblatex Info: Delimiter 'revsdnamedelim' in context '' already defined
 , overwriting.
-\cms@tempcnta=\count473
-\cms@tempcntb=\count474
-\c@bbx:relatedcount=\count475
-\c@bbx:relatedtotal=\count476
+\cms@tempcnta=\count474
+\cms@tempcntb=\count475
+\c@bbx:relatedcount=\count476
+\c@bbx:relatedtotal=\count477
 )
 Package biblatex Info: Trying to load citation style 'chicago-authordate'...
 Package biblatex Info: ... file 'chicago-authordate.cbx' found.
@@ -915,7 +922,7 @@ Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\footcites'.
 Package biblatex Info: Redefining '\footcitetexts'.
-\c@cms@punct=\count477
+\c@cms@punct=\count478
 Package biblatex Info: Delimiter 'dateeradelim' in context '' already defined, 
 overwriting.
 ))
@@ -937,14 +944,14 @@ Package biblatex Info: ... and expl3
 .sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 )))
-Package hyperref Info: Option `colorlinks' set `true' on input line 163.
+Package hyperref Info: Option `colorlinks' set `true' on input line 164.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 
 
 Package csquotes Warning: No style for language 'indonesian'.
-(csquotes)                Using fallback style on input line 204.
+(csquotes)                Using fallback style on input line 205.
 
 Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 (ProposalTA.aux
@@ -955,96 +962,96 @@ Package babel Info: Importing basic data for english
 ))
 \openout1 = `ProposalTA.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 204.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 205.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-04.
+05.
 
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 204.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 204.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 204.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 204.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 204.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 204.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 204.
-LaTeX Font Info:    Redeclaring math accent \check on input line 204.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 204.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 204.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 204.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 204.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 204.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 205.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 205.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 205.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 205.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 205.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 205.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 205.
+LaTeX Font Info:    Redeclaring math accent \check on input line 205.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 205.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 205.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 205.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 205.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 204.
+(Font)              `operators' in the math version `normal' on input line 205.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 2
-04.
+05.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 204.
+(Font)              `operators' in the math version `bold' on input line 205.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
-204.
+205.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
-input line 204.
+input line 205.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
- 204.
+ 205.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
-204.
+205.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 204.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 205.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 204.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 205.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
-input line 204.
+input line 205.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
-e 204.
+e 205.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 204.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 205.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 204.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 205.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1102,7 +1109,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: xetex.def on input line 149.
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 )
-Package hyperref Info: Link coloring ON on input line 204.
+Package hyperref Info: Link coloring ON on input line 205.
  (ProposalTA.out) (ProposalTA.out)
 \@outlinefile=\write4
 \openout4 = `ProposalTA.out'.
@@ -1114,15 +1121,15 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 
 \flrow@LT@lasthead=\box69
 \flrow@LT@prelastfoot=\box70
-\c@FBLTpage=\count478
+\c@FBLTpage=\count479
 )
-\c@lstlisting=\count479
+\c@lstlisting=\count480
 Package biblatex Info: Trying to load language 'indonesian'...
 Package biblatex Info: ... file 'indonesian.lbx' not found.
 
 
 Package biblatex Warning: Language 'indonesian' not supported.
-(biblatex)                Using dummy definitions on input line 204.
+(biblatex)                Using dummy definitions on input line 205.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1140,8 +1147,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ProposalTA.bbl' found.
  (ProposalTA.bbl)
-Package biblatex Info: Reference section=0 on input line 204.
-Package biblatex Info: Reference segment=0 on input line 204.
+Package biblatex Info: Reference section=0 on input line 205.
+Package biblatex Info: Reference segment=0 on input line 205.
 File: image/ganesha.jpg Graphic file (type bmp)
 <image/ganesha.jpg>
 
@@ -1149,7 +1156,7 @@ File: image/ganesha.jpg Graphic file (type bmp)
 Package datetime2 Warning: Region `bahasai' has ignored 
 (datetime2)                the following settings:
 (datetime2)                showmonthname=true
- on input line 246.
+ on input line 247.
 
 [1
 
@@ -1167,15 +1174,14 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
 (C:\Users\E J A\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-[2
-
-]
-Overfull \hbox (1.60182pt too wide) in paragraph at lines 208--208
+Overfull \hbox (1.60182pt too wide) in paragraph at lines 207--207
  [] [][][]\TU/TimesNewRoman(0)/m/n/12 Analisis Kerentanan Autentikasi Seluler B
 erbasis kode QR ([][]Sung dkk. 
  []
 
-)
+[2
+
+])
 \tf@toc=\write5
 \openout5 = `ProposalTA.toc'.
 
@@ -1187,66 +1193,7 @@ erbasis kode QR ([][]Sung dkk.
 \tf@lot=\write7
 \openout7 = `ProposalTA.lot'.
 
- [5] (ProposalTA.lol)
-\tf@lol=\write8
-\openout8 = `ProposalTA.lol'.
-
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@centercr' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightskip' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@flushglue' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leftskip' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@flushglue' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\finalhyphendemerits' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parindent' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parfillskip' on input line 359.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@skip' on input line 359.
-
-[6
-
-] (Bab I - Pendahuluan.tex
+ [5] (Bab I - Pendahuluan.tex
 Bab I.
 
 Package biblatex-chicago Warning: Empty Ibidem citation on input line 9.
@@ -1442,93 +1389,235 @@ File: image/TA-model_konseptual.png Graphic file (type bmp)
 ]
 File: image/TA-model_konseptual_to-be.png Graphic file (type bmp)
 <image/TA-model_konseptual_to-be.png>
- [36] [37]
-Overfull \hbox (11.29068pt too wide) in paragraph at lines 55--56
-[]\TU/TimesNewRoman(0)/m/n/12 Penggandaan: Dicegah melalui mekanisme kedaluwars
-a yang cepat, mem-
+
+Overfull \hbox (11.94852pt too wide) in paragraph at lines 37--38
+[]\TU/TimesNewRoman(0)/m/n/12 Pembangkitan Tiket Dinamis: Mekanisme perubahan k
+ode secara terus-menerus
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+[36] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 \TU/TimesNewRoman(0)/m/n/12 kitkan ulang (\TU/TimesNewRoman(0)/m/it/12 regenera
 ted\TU/TimesNewRoman(0)/m/n/12 )
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 71--71
+Underfull \hbox (badness 1590) in paragraph at lines 74--74
 []|\TU/TimesNewRoman(0)/m/n/12 Permanen (selama tiket be-
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 73--73
+Underfull \hbox (badness 1590) in paragraph at lines 76--76
 \TU/TimesNewRoman(0)/m/n/12 berkas dan tangkapan layar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 []|\TU/TimesNewRoman(0)/m/n/12 Tahan terhadap \TU/TimesNewRoman(0)/m/it/12 scre
 enshot
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 \TU/TimesNewRoman(0)/m/n/12 karena kode visual akan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []|\TU/TimesNewRoman(0)/m/n/12 Ketergantungan
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 77--77
+Underfull \hbox (badness 1122) in paragraph at lines 80--80
 []|\TU/TimesNewRoman(0)/m/n/12 Tinggi (memerlukan sinkro-
  []
 
 
-Overfull \hbox (9.1472pt too wide) in paragraph at lines 65--80
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 68--83
  [][] 
  []
 
 [38]
-File: image/TA-model_konseptual_to-be.png Graphic file (type bmp)
-<image/TA-model_konseptual_to-be.png>
- [39]) (Bab V - Rencana-Selanjutnya.tex [40]
+File: image/TA-flowchart-generasi.png Graphic file (type bmp)
+<image/TA-flowchart-generasi.png>
+ [39]
+File: image/TA-flowchart-validasi.png Graphic file (type bmp)
+<image/TA-flowchart-validasi.png>
+ [40]) (Bab V - Rencana-Selanjutnya.tex [41]
 Bab V.
-) [41
 
-] [42
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\TU/TimesNewRoman(0)/b/n/12 Perangkat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\TU/TimesNewRoman(0)/m/n/12 Komputer Pe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]|\TU/TimesNewRoman(0)/m/n/12 Perangkat Uji
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\TU/TimesNewRoman(0)/b/n/12 Perangkat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\TU/TimesNewRoman(0)/m/n/12 Database Pla-
+ []
+
+
+Underfull \hbox (badness 4279) in paragraph at lines 42--43
+[]|\TU/TimesNewRoman(0)/b/n/12 Supabase \TU/TimesNewRoman(0)/m/n/12 (PostgreSQL
+) sebagai layanan
+ []
+
+
+Underfull \hbox (badness 5504) in paragraph at lines 44--44
+[]|\TU/TimesNewRoman(0)/m/n/12 Mobile Applica-
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 46--47
+\TU/TimesNewRoman(0)/m/n/12 (Digital Signature), \TU/lmtt/m/n/12 hashlib/hmac \
+TU/TimesNewRoman(0)/m/n/12 (Key
+ []
+
+[42
+
+] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|\TU/TimesNewRoman(0)/m/n/12 Uji Pembangkitan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]|\TU/TimesNewRoman(0)/m/n/12 Uji Tanda Tangan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+[]|\TU/TimesNewRoman(0)/b/n/12 Hasil yang Diha-
+ []
+
+
+Overfull \hbox (9.14719pt too wide) in alignment at lines 98--104
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+[]|\TU/TimesNewRoman(0)/b/n/12 Hasil yang Diha-
+ []
+
+
+Overfull \hbox (9.14719pt too wide) in alignment at lines 104--110
+ [] [] [] 
+ []
+
+
+Overfull \hbox (9.14719pt too wide) in alignment at lines 110--114
+ [] [] [] 
+ []
+
+
+Overfull \hbox (9.14719pt too wide) in alignment at lines 114--116
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 120--120
+[]|\TU/TimesNewRoman(0)/m/n/12 Mematikan koneksi internet pada
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+[]|\TU/TimesNewRoman(0)/m/n/12 Akses Diterima
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+\TU/TimesNewRoman(0)/m/n/12 (Membuktikan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+\TU/TimesNewRoman(0)/m/n/12 fitur \TU/TimesNewRoman(0)/m/it/12 Key Deriva-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+\TU/TimesNewRoman(0)/m/it/12 tion \TU/TimesNewRoman(0)/m/n/12 bekerja tanpa
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 122--122
+[]|\TU/TimesNewRoman(0)/m/n/12 Mengambil \TU/TimesNewRoman(0)/m/it/12 screensho
+t \TU/TimesNewRoman(0)/m/n/12 tiket, me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+[]|\TU/TimesNewRoman(0)/m/n/12 Akses Ditolak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+\TU/TimesNewRoman(0)/m/n/12 (Token Expired/In-
+ []
+
+
+Underfull \hbox (badness 8000) in paragraph at lines 124--125
+[]|\TU/TimesNewRoman(0)/m/n/12 Akses Ditolak pa-
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 126--126
+[]|\TU/TimesNewRoman(0)/m/n/12 Memodifikasi \TU/TimesNewRoman(0)/m/it/12 payloa
+d \TU/TimesNewRoman(0)/m/n/12 QR Code
+ []
+
+
+Overfull \hbox (9.14719pt too wide) in alignment at lines 116--128
+ [] [] [] 
+ []
+
+[44] [45]) [46] [47
 
 
 ]
-Overfull \hbox (2.75842pt too wide) in paragraph at lines 404--404
+Overfull \hbox (2.75842pt too wide) in paragraph at lines 405--405
 [][]\TU/TimesNewRoman(0)/m/n/12 Lübeck, Rafael Mendes, Milton Luiz Wittmann, da
 n Luciana Flores Battistella. 2012.
  []
 
 
-Overfull \hbox (7.72517pt too wide) in paragraph at lines 404--404
+Overfull \hbox (7.72517pt too wide) in paragraph at lines 405--405
 [][]\TU/TimesNewRoman(0)/m/n/12 Pamela, Dyah Ayu. 2023. “  Tiket Konser Coldpla
 y di Jakarta 2023 Dijual Calo Berkali-
  []
 
-[43]
-Overfull \hbox (2.06306pt too wide) in paragraph at lines 404--404
+[48]
+Overfull \hbox (2.06306pt too wide) in paragraph at lines 405--405
 [][]\TU/TimesNewRoman(0)/m/n/12 Yanuarafi, Arisal. 2023. “  Perbandingan QR Cod
 e Statis dan QR Code Dinamis dalam
  []
 
 
-Overfull \hbox (13.91933pt too wide) in paragraph at lines 404--404
+Overfull \hbox (13.91933pt too wide) in paragraph at lines 405--405
 \TU/TimesNewRoman(0)/m/n/12 Pengambilan Absen Pegawai di Lingkungan Universitas
  Bung Hatta”. \TU/TimesNewRoman(0)/m/it/12 Al-Ma’arif:
  []
 
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 384.
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 385.
 See the caption package documentation for explanation.
 
-[44] (ProposalTA.aux)
+[49] (ProposalTA.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1538,7 +1627,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: C559B741C850FAD03C74605E80E9F4A3;11264.
+(rerunfilecheck)             Checksum: A2AD62BC2EA4692D41536DE33EA347D4;12920.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -1547,12 +1636,12 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31549 strings out of 409617
- 620020 string characters out of 5774012
- 1967988 words of memory out of 5000000
- 53297 multiletter control sequences out of 15000+600000
- 563290 words of font info for 82 fonts, out of 8000000 for 9000
+ 31632 strings out of 409617
+ 621616 string characters out of 5774012
+ 1970773 words of memory out of 5000000
+ 53380 multiletter control sequences out of 15000+600000
+ 563274 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,10n,93p,1815b,7911s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:/TA\Repo TA\Eja-ProposalTA\ProposalTA.pdf (51 pages).
+Output written on d:/TA\Repo TA\Eja-ProposalTA\ProposalTA.pdf (55 pages).
